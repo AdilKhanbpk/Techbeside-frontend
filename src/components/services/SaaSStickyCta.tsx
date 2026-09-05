@@ -43,7 +43,7 @@ const SaaSStickyCta = () => {
             📅 Book Call
           </a>
           <a 
-            href="https://wa.me/923119265290"
+            href="https://wa.me/923178261618"
             target="_blank"
             rel="noopener noreferrer"
             className="px-3 py-2.5 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg text-xs text-center transition duration-300 flex items-center justify-center"
