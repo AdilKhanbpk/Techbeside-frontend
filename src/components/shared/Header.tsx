@@ -252,7 +252,7 @@ const Header: React.FC = () => {
                 <PhoneCall color="#6366F1" />
                 <span className="text-white">
                   <a href="tel:+13213646803" className="hover:underline">
-                    +1(321)364-6803
+                    +923178261618
                   </a>
                 </span>
               </p>
@@ -264,7 +264,7 @@ const Header: React.FC = () => {
               <PhoneCall color="#6366F1" size={15} />
               <span className="text-white">
                 <a href="tel:+13213646803" className="hover:underline">
-                  +1(321)364-6803
+                  +923178261618
                 </a>
               </span>
             </p>

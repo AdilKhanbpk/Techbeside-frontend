@@ -17,7 +17,7 @@ interface BlogData {
 // Fetch blog data
 async function getBlogById(slug: string): Promise<BlogData> {
   try {
-    const response = await fetch(`https://techcreator-backend.onrender.com/api/v1/blogs/get/${slug}`);
+    const response = await fetch(`https://TechBeside-backend.onrender.com/api/v1/blogs/get/${slug}`);
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: blog.metaTitle || blog.title || "Blog Not Found",
     description: blog.metaDescription || blog.description || "No description available.",
     alternates: {
-      canonical: `https://www.techcreator.co/blog/${slug}`,
+      canonical: `https://www.TechBeside.co/blog/${slug}`,
     },
   };
 }

@@ -394,7 +394,7 @@ const Footer: React.FC = () => {
                   <PhoneCall size={20} className="text-white" />
                 </div>
                 <a href="tel:+13213646803" className="hover:underline">
-                  +1(321)364-6803
+                  +923178261618
                 </a>
               </div>
 
@@ -404,7 +404,7 @@ const Footer: React.FC = () => {
                   <PhoneCall size={20} className="text-white" />
                 </div>
                 <a href="tel:+13213646803" className="hover:underline">
-                  +1(321)364-6803
+                  +923178261618
                 </a>
               </div>
 

@@ -9,7 +9,7 @@ const Technologies = dynamic(() => import("@/components/landingPage/Technologies
 const WorkProcess = dynamic(() => import("@/components/landingPage/WorkProcess"));
 const OurValues = dynamic(() => import("@/components/landingPage/OurValues"));
 const ProjectsCount = dynamic(() => import("@/components/landingPage/ProjectsCount"));
-const Products = dynamic(() => import("@/components/landingPage/Products"));
+// const Products = dynamic(() => import("@/components/landingPage/Products"));
 const OurTeam = dynamic(() => import("@/components/about/OurTeam"));
 const Benefits = dynamic(() => import("@/components/landingPage/Benefits"));
 const IndustriesSection = dynamic(() => import("@/components/landingPage/IndustriesSection"));
@@ -176,7 +176,7 @@ export default function Page() {
         <div className="md:mt-16 mt-9">
           <ProjectsCount />
         </div>
-        <Products />
+        {/* <Products /> */}
         <OurTeam />
         <Benefits />
         { /* <PlatformInfo /> */}

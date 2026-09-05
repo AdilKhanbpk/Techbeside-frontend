@@ -223,7 +223,7 @@ const AdminHeader: React.FC = () => {
             <div className="hide-at-1119">
               <p className="flex gap-2 items-center text-base">
                 <PhoneCall color="#6366F1" />
-                <span>+1(321)364-6803</span>
+                <span>+923178261618</span>
               </p>
             </div>
           </div>

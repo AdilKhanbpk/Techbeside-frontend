@@ -38,7 +38,7 @@ const Navbar = () => {
         className="flex items-center gap-3 bg-[#6366F1] text-white px-5 py-2 rounded-full shadow-lg hover:bg-[#7a00cc] transition-all duration-300 transform hover:scale-105"
       >
         <PhoneCall size={20} className="animate-pulse" />
-        <span className="text-sm font-semibold hidden md:block">+1(321)364-6803</span>
+        <span className="text-sm font-semibold hidden md:block">+923178261618</span>
       </a>
     </nav>
   );

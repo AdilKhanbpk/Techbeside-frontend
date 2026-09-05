@@ -71,7 +71,7 @@ const TermsAndConditionsPage = () => {
         <div className="md:text-lg text-base text-gray-700 mb-6">
           <strong>Email:</strong> <a href="mailto:contact@techbeside.dev" className="text-blue-600">contact@techbeside.dev</a><br />
           <strong>Phone:</strong>  <a href="tel:+13213646803" className="hover:underline">
-                      +1(321)364-6803
+                      +923178261618
                     </a><br />
           <strong>Address:</strong> TechBeside Software Company, 123 Tech Lane, Orlando, FL, USA
         </div>

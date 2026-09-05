@@ -60,7 +60,7 @@ const Footer = () => {
               <PhoneCall size={24} className="text-white" />
             </div>
             <a href="tel:+13213646803" className="hover:text-white text-nowrap transition text-lg">
-              +1(321)364-6803
+              +923178261618
             </a>
           </div>
         </div>
