@@ -133,7 +133,7 @@ const Header: React.FC = () => {
 
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out py-1 ${scrolling
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out py-1.5 ${scrolling
       ? "bg-black backdrop-blur-lg shadow-lg"
       : "bg-transparent"
       }`}>
