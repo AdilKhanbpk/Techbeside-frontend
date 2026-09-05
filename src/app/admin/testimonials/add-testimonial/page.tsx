@@ -214,7 +214,7 @@ const AddNewTestimonial: React.FC = () => {
           <div className="flex justify-end">
           <button
             type="submit"
-            className={` ${loading ? "bg-gray-400 cursor-not-allowed" : "bg-purple-600"} text-white  p-2 w-fit py-2 rounded-md hover:bg-purple-700 transition`}
+            className={` ${loading ? "bg-gray-400 cursor-not-allowed" : "bg-indigo-600"} text-white  p-2 w-fit py-2 rounded-md hover:bg-indigo-700 transition`}
             disabled={loading}
           >
             {loading ? "Submitting..." : "Submit Testimonial"}

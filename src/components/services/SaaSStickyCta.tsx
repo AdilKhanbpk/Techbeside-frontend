@@ -23,10 +23,10 @@ const SaaSStickyCta = () => {
         showStickyCta ? "translate-y-0 opacity-100" : "translate-y-24 opacity-0 pointer-events-none"
       }`}
     >
-      <div className="bg-white/95 border border-purple-250 rounded-2xl p-4 shadow-[0_10px_30px_rgba(154,0,255,0.15)] backdrop-blur-md">
+      <div className="bg-white/95 border border-indigo-250 rounded-2xl p-4 shadow-[0_10px_30px_rgba(154,0,255,0.15)] backdrop-blur-md">
         <div className="flex justify-between items-start mb-2">
           <div>
-            <p className="text-[10px] font-bold text-purple-600 uppercase tracking-widest">SaaS MVP Consultation</p>
+            <p className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest">SaaS MVP Consultation</p>
             <h4 className="text-sm font-bold text-gray-800">Book Free Strategy Call</h4>
           </div>
           <span className="flex h-2 w-2 relative">
@@ -38,7 +38,7 @@ const SaaSStickyCta = () => {
         <div className="flex gap-2">
           <a 
             href="#book-call-bottom"
-            className="flex-1 py-2.5 bg-[#9A00FF] hover:bg-[#7a00cc] text-white font-bold rounded-lg text-xs text-center transition duration-300"
+            className="flex-1 py-2.5 bg-[#6366F1] hover:bg-[#7a00cc] text-white font-bold rounded-lg text-xs text-center transition duration-300"
           >
             📅 Book Call
           </a>

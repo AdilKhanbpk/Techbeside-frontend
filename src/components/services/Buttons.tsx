@@ -10,7 +10,7 @@ const Buttons = () => {
 
   // Open the strategy link in the same tab
   const handleStrategyClick = () => {
-    window.location.href = "https://calendly.com/contact-techcreator/30min";
+    window.location.href = "https://calendly.com/contact-TechBeside/30min";
   };
 
   // Open the WhatsApp link in the same tab
@@ -44,7 +44,7 @@ return (
     <motion.button 
       whileTap={{ scale: 0.95 }}
       {...slowBounce(0)} // First button starts immediately
-      className='bg-purple-700 p-2 rounded-full text-white'
+      className='bg-indigo-700 p-2 rounded-full text-white'
       onClick={handleStrategyClick}
       aria-label="Schedule a strategy call"
     >
@@ -66,7 +66,7 @@ return (
     <motion.button 
       whileTap={{ scale: 0.95 }}
       {...slowBounce(1)} // Even more delay
-      className='bg-orange-500 p-2 rounded-full text-white'
+      className='bg-indigo-500 p-2 rounded-full text-white'
       onClick={handleContactClick}
       aria-label="Go to contact page"
     >

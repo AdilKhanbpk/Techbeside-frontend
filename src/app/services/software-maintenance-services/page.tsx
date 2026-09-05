@@ -65,7 +65,7 @@ const SoftwareMaintenance = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: "Keep your software running smoothly with regular updates and maintenance." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Identify and resolve issues to enhance software performance and reliability.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Identify and resolve issues to enhance software performance and reliability.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: "Implement upgrades to align with the latest technologies and trends." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: "Provide comprehensive support to address all your software maintenance needs." },
   ];
@@ -83,14 +83,14 @@ const SoftwareMaintenance = () => {
       image: softwareImage3,
       alt: "Take advantage of enhanced security, efficiency, and longevity with proactive maintenance solutions",
       title: "Proactive Solutions for Long-Term Software Success",
-      content: 'Our proactive approach to software maintenance services focuses on identifying potential issues before they occur. By implementing regular updates and monitoring, we ensure your software remains secure, efficient, and ready for future challenges.Techcreator adapt such approaches to avoid disruptions and keep your software running without any interruption. Our constant support system keeps you ahead of the trends and ensures better performance.'
+      content: 'Our proactive approach to software maintenance services focuses on identifying potential issues before they occur. By implementing regular updates and monitoring, we ensure your software remains secure, efficient, and ready for future challenges.TechBeside adapt such approaches to avoid disruptions and keep your software running without any interruption. Our constant support system keeps you ahead of the trends and ensures better performance.'
     },
     {
       image: softwareImage4,
       alt: "Software maintenance plans developed to cater to unique business needs and the peculiarities of distinct industries",
       title: "Custom Maintenance Plans for Business Needs",
       content:
-        "Every business is unique, and so are its software requirements. At TechCreator, we craft maintenance plans tailored to your goals, whether you need ongoing software maintenance and support services or assistance with industry-specific tools like construction equipment maintenance software.Before execution or practical work, we go through a proper plan in order to understand your needs that align perfectly to your business. We have expertise that analyze the basic needs and ensure your software always meet your core business objectives.",
+        "Every business is unique, and so are its software requirements. At TechBeside, we craft maintenance plans tailored to your goals, whether you need ongoing software maintenance and support services or assistance with industry-specific tools like construction equipment maintenance software.Before execution or practical work, we go through a proper plan in order to understand your needs that align perfectly to your business. We have expertise that analyze the basic needs and ensure your software always meet your core business objectives.",
     },
   ];
 
@@ -111,13 +111,13 @@ const SoftwareMaintenance = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Software Maintenance",
-                item: "https://www.techcreator.co/services/software-maintenance-services",
+                item: "https://www.TechBeside.co/services/software-maintenance-services",
               },
             ],
           }),
@@ -127,7 +127,7 @@ const SoftwareMaintenance = () => {
         title="Reliable Software Maintenance Services"
         description={
           <>
-           At <Link href="/" className="text-purple-600">TechCreator</Link>,{" "} our software maintenance services are designed to keep your applications running smoothly. From  <Link href="/" className="text-purple-600">bug fixes</Link>,{" "} to performance optimization, we ensure your software stays updated, secure, and aligned with your evolving business.
+           At <Link href="/" className="text-indigo-600">TechBeside</Link>,{" "} our software maintenance services are designed to keep your applications running smoothly. From  <Link href="/" className="text-indigo-600">bug fixes</Link>,{" "} to performance optimization, we ensure your software stays updated, secure, and aligned with your evolving business.
           </>
         }
         image={heroimage}
@@ -162,7 +162,7 @@ const SoftwareMaintenance = () => {
         <OurTeam />
       <RelatedServices services={services} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

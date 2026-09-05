@@ -45,8 +45,8 @@ const AdminSidebar: React.FC = () => {
           {links.map(link => (
             <Link key={link.label} href={link.href} passHref>
               <div 
-                className={`flex gap-2 items-center  sm:ml-4 p-2 hover:text-purple-600 md:px-16
-                  ${pathname === link.href ? 'text-purple-600 ' : ''} 
+                className={`flex gap-2 items-center  sm:ml-4 p-2 hover:text-indigo-600 md:px-16
+                  ${pathname === link.href ? 'text-indigo-600 ' : ''} 
                 `}
               >
                 <div className="block">{link.icon}</div>

@@ -95,7 +95,7 @@ const CareerHeroSection: FC = () => {
         <div className="max-w-6xl mx-auto px-4 py-12 md:py-20">
           <div className="mb-8 md:mb-12 md:p-10 md:mt-0 mt-14">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">
-              Careers - <span className="text-purple-600">Join Our Team</span>
+              Careers - <span className="text-indigo-600">Join Our Team</span>
             </h1>
             <p className="text-lg md:text-xl max-w-2xl mb-8">
               Are you at your best in an atmosphere of trust, knowhow, freedom
@@ -103,7 +103,7 @@ const CareerHeroSection: FC = () => {
               That's our working style.
             </p>
             <CommonButton
-              className="bg-[#9A00FF] hover:bg-purple-700 shadow-[0_4px_16px_-4px_#3b71ca] text-white px-6 py-3 rounded-[12px] transition-colors w-[228px] h-[48px]"
+              className="bg-[#6366F1] hover:bg-indigo-700 shadow-[0_4px_16px_-4px_#3b71ca] text-white px-6 py-3 rounded-[12px] transition-colors w-[228px] h-[48px]"
               title="Send your resume"
               handleClick={handleDialogOpen}
             />
@@ -151,7 +151,7 @@ const CareerHeroSection: FC = () => {
         </button>
 
         {/* Header */}
-        <div className="bg-gradient-to-r from-purple-600 to-purple-800 p-6 text-white">
+        <div className="bg-gradient-to-r from-indigo-600 to-indigo-800 p-6 text-white">
           <h2 className="text-3xl font-bold">Join Our Team</h2>
           <p className="mt-2 opacity-90">Take the next step in your career journey</p>
         </div>
@@ -168,7 +168,7 @@ const CareerHeroSection: FC = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all duration-200 outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
                   placeholder="John Doe"
                   required
                 />
@@ -180,7 +180,7 @@ const CareerHeroSection: FC = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all duration-200 outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
                   placeholder="john@example.com"
                   required
                 />
@@ -196,7 +196,7 @@ const CareerHeroSection: FC = () => {
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all duration-200 outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
                   placeholder="+1 (555) 000-0000"
                   required
                 />
@@ -208,7 +208,7 @@ const CareerHeroSection: FC = () => {
                   name="location"
                   value={formData.location}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all duration-200 outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
                   placeholder="City, Country"
                   required
                 />
@@ -224,7 +224,7 @@ const CareerHeroSection: FC = () => {
                   name="jobField"
                   value={formData.jobField}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all duration-200 outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
                   placeholder="e.g., Frontend Development"
                   required
                 />
@@ -236,7 +236,7 @@ const CareerHeroSection: FC = () => {
                   name="professionalUrl"
                   value={formData.professionalUrl}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all duration-200 outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
                   placeholder="https://linkedin.com/in/..."
                 />
               </div>
@@ -245,11 +245,11 @@ const CareerHeroSection: FC = () => {
             {/* Resume Upload */}
             <div className="relative">
               <label className="block text-sm font-medium text-gray-700 mb-2">Resume</label>
-              <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-purple-500 transition-colors duration-200">
+              <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-indigo-500 transition-colors duration-200">
                 <div className="space-y-1 text-center">
                   <Upload className="mx-auto h-12 w-12 text-gray-400" />
                   <div className="flex text-sm text-gray-600">
-                    <label htmlFor="resume" className="relative cursor-pointer rounded-md font-medium text-purple-600 hover:text-purple-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-purple-500">
+                    <label htmlFor="resume" className="relative cursor-pointer rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
                       <span>Upload a file</span>
                       <input
                         id="resume"
@@ -288,7 +288,7 @@ const CareerHeroSection: FC = () => {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={loading}
-                className="px-6 py-3 rounded-lg text-white bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 transition-all duration-200 font-medium shadow-lg hover:shadow-purple-500/25"
+                className="px-6 py-3 rounded-lg text-white bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 transition-all duration-200 font-medium shadow-lg hover:shadow-indigo-500/25"
               >
                 {loading ? (
                   <div className="flex items-center">

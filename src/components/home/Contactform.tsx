@@ -141,7 +141,7 @@ const ContactForm = () => {
           title={loading ? "Sending..." : "Send Inquiry"}
           type="submit"
           disabled={loading}
-          className={`w-full h-12 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/70 ${
+          className={`w-full h-12 bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-lg font-semibold rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/70 ${
             loading ? "opacity-50 cursor-not-allowed" : ""
           }`}
         />

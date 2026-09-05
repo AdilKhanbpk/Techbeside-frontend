@@ -97,7 +97,7 @@ const testimonials = [
       <div className="bg-gradient-to-r from-[#091424] to-[#031220] text-white py-16 px-4 md:px-8">
         <section className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Feedback from <span className="text-purple-600">Our Customers</span>
+            Feedback from <span className="text-indigo-600">Our Customers</span>
           </h2>
           <p className="text-base md:text-lg text-gray-300 mb-8">
             Proud to serve as the innovation partner for industry leaders.
@@ -106,7 +106,7 @@ const testimonials = [
             {[{ image: upworkstar, reviews: "102 REVIEWS" }, { image: linkedinstar, reviews: "82 REVIEWS" }].map((item, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 bg-[#0d2538] p-4 rounded-lg shadow-lg border border-purple-500 transition-transform duration-300 hover:scale-105"
+                className="flex items-center gap-3 bg-[#0d2538] p-4 rounded-lg shadow-lg border border-indigo-500 transition-transform duration-300 hover:scale-105"
               >
                 <Image src={item.image} alt="logo" width={40} height={40} className="rounded-md" />
                 <div className="text-center text-xl md:text-2xl">
@@ -123,7 +123,7 @@ const testimonials = [
             <Slider {...settings}>
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="p-4">
-                  <div className="bg-[#112240] p-6 rounded-lg shadow-lg border border-purple-500 flex flex-col md:flex-row items-center md:h-[190px] md:w-auto md:items-start transition-transform duration-300 md:hover:scale-105">
+                  <div className="bg-[#112240] p-6 rounded-lg shadow-lg border border-indigo-500 flex flex-col md:flex-row items-center md:h-[190px] md:w-auto md:items-start transition-transform duration-300 md:hover:scale-105">
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
@@ -149,7 +149,7 @@ const testimonials = [
   
         <div className="text-center mt-8 md:mt-12">
          
-            <button  onClick={scrollToContact}  className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-all flex items-center gap-2 mx-auto text-lg">
+            <button  onClick={scrollToContact}  className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-all flex items-center gap-2 mx-auto text-lg">
               Get Your Site Built <ArrowDownIcon className="w-5 h-5" />
             </button>
        

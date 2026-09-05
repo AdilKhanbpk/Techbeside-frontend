@@ -73,7 +73,7 @@ const OurImpressiveProject = () => {
       {/* Heading */}
      <div className="text-center max-w-4xl mx-auto">
      <h2 style={{lineHeight:1.2}} className="text-3xl md:text-4xl lg:text-5xl font-bold">
-  Transforming <span className="text-[#9A00FF]">Industries</span> with Innovation & Excellence
+  Transforming <span className="text-[#6366F1]">Industries</span> with Innovation & Excellence
 </h2>
 <p className="text-gray-500 mt-4 text-base md:text-lg lg:text-xl">
   We proudly serve diverse industries by delivering innovative and high-quality solutions.  
@@ -114,7 +114,7 @@ const OurImpressiveProject = () => {
             <div className="px-6 pb-6">
               <button
                 onClick={() => handleNavigation(project.link)}
-                className="w-full px-6 py-2 bg-[#9A00FF] text-white font-semibold rounded-md hover:bg-[#7a00cc] transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full px-6 py-2 bg-[#6366F1] text-white font-semibold rounded-md hover:bg-[#7a00cc] transition-all duration-300 flex items-center justify-center gap-2"
               >
                 {loading === project.link ? (
                   <FaSpinner className="animate-spin" />

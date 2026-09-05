@@ -66,7 +66,7 @@ const Devops = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: " Automate development and operations processes with powerful DevOps tools." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Optimize workflows with CI/CD pipelines and real-time monitoring.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Optimize workflows with CI/CD pipelines and real-time monitoring.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: "  Enhance collaboration between teams for seamless development cycles." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: "Ensure smooth and efficient deployments with scalable DevOps solutions." },
   ];
@@ -112,13 +112,13 @@ const Devops = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "DevOps",
-                item: "https://www.techcreator.co/services/devops",
+                item: "https://www.TechBeside.co/services/devops",
               },
             ],
           }),
@@ -128,7 +128,7 @@ const Devops = () => {
         title="Expert DevOps Consulting"
         description={
           <>
-            TechCreator provides professional DevOps consulting services to help businesses optimize their development and operations workflows. Our experienced DevOps consultants assess your current processes and implement tailored solutions to enhance efficiency, scalability, and collaboration across teams.
+            TechBeside provides professional DevOps consulting services to help businesses optimize their development and operations workflows. Our experienced DevOps consultants assess your current processes and implement tailored solutions to enhance efficiency, scalability, and collaboration across teams.
           </>
         }
         image={heroimage}
@@ -164,7 +164,7 @@ const Devops = () => {
         <OurTeam />
       <RelatedServices services={services} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

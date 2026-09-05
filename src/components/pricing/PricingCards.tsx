@@ -1,7 +1,7 @@
 import Image from "next/image";
 import backgroundImage from "../../../public/assets/pricingpage/pricing.webp";
 import React from "react";
-import frontImage from "../../../public/assets/pricingpage/List → Listitem.webp";
+import frontImage from "../../../public/assets/pricingpage/pricing1 (2).webp";
 import pricing2 from "../../../public/assets/pricingpage/pricing1 (1).webp";
 import pricing1 from "../../../public/assets/pricingpage/pricing1 (2).webp";
 import PricingForm from "./PricingForm";
@@ -34,13 +34,13 @@ const PricingCards = () => {
           Pricing to Your Success
         </h1>
         <p className="text-lg sm:text-lg md:text-xl font-normal">
-          At TechCreator, we believe in providing clear and competitive pricing
+          At TechBeside, we believe in providing clear and competitive pricing
           for all our services. Our packages are designed to deliver maximum
           value without compromising quality.
         </p>
         <Link
           href="#pricing-form"
-          className="inline-flex items-center gap-2 bg-[#9A00FF] text-lg md:p-4 p-3 rounded-md hover:bg-[#734bdf] shadow-lg transition duration-300"
+          className="inline-flex items-center gap-2 bg-[#6366F1] text-lg md:p-4 p-3 rounded-md hover:bg-[#734bdf] shadow-lg transition duration-300"
         >
           Share Your Requirements <FaArrowDown size={15} />
         </Link>
@@ -83,11 +83,11 @@ const PricingCards = () => {
         {/* Third Pricing Section */}
         <div className="flex md:flex-row flex-col-reverse justify-between md:gap-10 gap-3 md:mt-16 mt-9 md:mb-16 mb-9">
        <div className="">
-       <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:max-w-4xl">Why Choose TechCreator for Your Next Project?</h2>
-       <p className="text-base md:text-lg lg:text-xl text-gray-700 mt-2 md:max-w-5xl">With TechCreator, you get more than just a service—you get a partner committed to your success. Our pricing reflects our dedication to delivering the best results while staying within your budget.Understanding the market and business requirements make you to do something great. This is where TechCreator excels. We first understand your business goals and then deliver solution to tackle the challenges that come your way. We bring expertise and innovation to every project whether it is web development or app development.</p>
+       <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:max-w-4xl">Why Choose TechBeside for Your Next Project?</h2>
+       <p className="text-base md:text-lg lg:text-xl text-gray-700 mt-2 md:max-w-5xl">With TechBeside, you get more than just a service—you get a partner committed to your success. Our pricing reflects our dedication to delivering the best results while staying within your budget.Understanding the market and business requirements make you to do something great. This is where TechBeside excels. We first understand your business goals and then deliver solution to tackle the challenges that come your way. We bring expertise and innovation to every project whether it is web development or app development.</p>
        </div>
 
-        <Image src={pricing1} alt="TechCreator: A partner focused on your success" width={300} height={200} loading="lazy"
+        <Image src={pricing1} alt="TechBeside: A partner focused on your success" width={300} height={200} loading="lazy"
         className="md:h-[50vh] md:w-[25vw] sm:w-[55vw] w-full sm:h-[60vh] h-[50vh] mx-auto md:mx-0 lg:object-cover object-contain rounded-lg"
          />
       </div>

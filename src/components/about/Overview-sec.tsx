@@ -10,7 +10,7 @@ const OverviewSec: React.FC = () => {
       <div className="flex flex-col md:flex-row justify-between md:gap-16 items-center">
         {/* Text Section */}
         <div className="w-full md:mb-12">
-          <h2 className="text-[#9A00FF] font-inter text-3xl md:text-4xl lg:text-5xl  md:leading-[60px] font-semibold mb-4">
+          <h2 className="text-[#6366F1] font-inter text-3xl md:text-4xl lg:text-5xl  md:leading-[60px] font-semibold mb-4">
             CEO Message
           </h2>
         
@@ -24,7 +24,7 @@ const OverviewSec: React.FC = () => {
             I believe, we are not just creating digital assets but are fostering
             long-term partnership built on trust, collaboration and a shared
             vision for success. In this era digital landscape, we are committed
-            to provide our agile services to clients across the globe. We,<Link href="/" className="cursor-pointer text-blue-600">TechCreator</Link> , are here to drive our head towards a future where
+            to provide our agile services to clients across the globe. We,<Link href="/" className="cursor-pointer text-blue-600">TechBeside</Link> , are here to drive our head towards a future where
             innovation meets the demands of the people of future.
           </p>
         </div>

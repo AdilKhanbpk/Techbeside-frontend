@@ -26,7 +26,7 @@ const DiagonalFeatureSection: React.FC<DiagonalFeatureSectionProps> = ({
         >
           {/* Text Section */}
           <div className="w-full md:w-3/5 text-center md:text-left ">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#9A00FF] mb-4 md:mt-0 mt-3">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#6366F1] mb-4 md:mt-0 mt-3">
               {section.title}
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mt-3">

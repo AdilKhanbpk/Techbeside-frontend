@@ -24,7 +24,7 @@ import {
   FaRocket,
 } from "react-icons/fa";
 import { usePathname, useRouter } from "next/navigation";
-import TechcreatorLogo from "../../../public/assets/icons/Tclogo1.png";
+import TechBesideLogo from "../../../public/logo.png";
 
 const AdminHeader: React.FC = () => {
   const pathname = usePathname();
@@ -122,12 +122,12 @@ const AdminHeader: React.FC = () => {
             <Link href="/">
               <div className="flex-shrink-0 flex justify-center gap-2 items-center   ">
                 <Image
-                  src={TechcreatorLogo}
-                  alt="techcreartor_logo"
+                  src={TechBesideLogo}
+                  alt="techbeside_logo"
                   width={158}
                   height={10}
                 />
-                {/* <span className="text-[#FFFFFF] md:text-xl font-semibold">TechCreator</span> */}
+                {/* <span className="text-[#FFFFFF] md:text-xl font-semibold">TechBeside</span> */}
               </div>
             </Link>
           </div>
@@ -144,9 +144,9 @@ const AdminHeader: React.FC = () => {
                       onMouseLeave={() => setIsDropdownOpen(false)}
                     >
                       <span
-                        className={`lg:px-3 px-1 py-2 md:text-sm lg:text-base rounded-md font-medium hover:bg-[#9A00FF] text-white ${
+                        className={`lg:px-3 px-1 py-2 md:text-sm lg:text-base rounded-md font-medium hover:bg-[#6366F1] text-white ${
                           pathname === item.href
-                            ? "bg-[#9A00FF] text-white"
+                            ? "bg-[#6366F1] text-white"
                             : ""
                         }`}
                       >
@@ -162,15 +162,15 @@ const AdminHeader: React.FC = () => {
                                   key={subItem.name}
                                   className={`px-4 py-2 ${
                                     pathname === subItem.href
-                                      ? "text-[#9A00FF] font-semibold "
-                                      : "hover:text-[#9A00FF]"
+                                      ? "text-[#6366F1] font-semibold "
+                                      : "hover:text-[#6366F1]"
                                   }`}
                                 >
                                   <Link
                                     href={subItem.href}
                                     className="flex items-center gap-2"
                                   >
-                                    <span className="text-[#9A00FF]">
+                                    <span className="text-[#6366F1]">
                                       {subItem.icon}
                                     </span>{" "}
                                     {subItem.name}
@@ -185,15 +185,15 @@ const AdminHeader: React.FC = () => {
                                   key={subItem.name}
                                   className={`px-4 py-2 ${
                                     pathname === subItem.href
-                                      ? "text-[#9A00FF] font-semibold"
-                                      : "hover:text-[#9A00FF] "
+                                      ? "text-[#6366F1] font-semibold"
+                                      : "hover:text-[#6366F1] "
                                   }`}
                                 >
                                   <Link
                                     href={subItem.href}
                                     className="flex items-center gap-2"
                                   >
-                                    <span className="text-[#9A00FF]">
+                                    <span className="text-[#6366F1]">
                                       {subItem.icon}
                                     </span>{" "}
                                     {subItem.name}
@@ -209,8 +209,8 @@ const AdminHeader: React.FC = () => {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`lg:px-3 px-1 py-2 md:text-sm lg:text-base rounded-md font-medium hover:bg-[#9A00FF] text-white ${
-                        pathname === item.href ? "bg-[#9A00FF] text-white" : ""
+                      className={`lg:px-3 px-1 py-2 md:text-sm lg:text-base rounded-md font-medium hover:bg-[#6366F1] text-white ${
+                        pathname === item.href ? "bg-[#6366F1] text-white" : ""
                       }`}
                     >
                       {item.name}
@@ -222,7 +222,7 @@ const AdminHeader: React.FC = () => {
 
             <div className="hide-at-1119">
               <p className="flex gap-2 items-center text-base">
-                <PhoneCall color="#9A00FF" />
+                <PhoneCall color="#6366F1" />
                 <span>+1(321)364-6803</span>
               </p>
             </div>
@@ -244,7 +244,7 @@ const AdminHeader: React.FC = () => {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-[#9A00FF] z-20 rounded-md mb-20">
+        <div className="lg:hidden bg-[#6366F1] z-20 rounded-md mb-20">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <div key={item.name}>

@@ -45,7 +45,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           {buttonLink && (
             <Link
               href={buttonLink}
-              className="px-6 py-3 w-fit mx-auto bg-[#9A00FF] text-white rounded-md text-lg font-medium transition-all duration-300 hover:bg-[#6f00b5] focus:outline-none mb-4"
+              className="px-6 py-3 w-fit mx-auto bg-[#6366F1] text-white rounded-md text-lg font-medium transition-all duration-300 hover:bg-[#6f00b5] focus:outline-none mb-4"
             >
               {buttonText}
             </Link>

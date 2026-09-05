@@ -21,11 +21,11 @@ const DiversitySection: FC = () => {
     <div>
       <div className=" mt-9 md:mt-16 mb-9 md:mb-16">
         <div className="max-w-3xl mb-6">
-          <h2 className="font-semibold  font-inter mb-4 text-3xl md:text-5xl text-purple-600">
+          <h2 className="font-semibold  font-inter mb-4 text-3xl md:text-5xl text-indigo-600">
             We're from everywhere
           </h2>
           <p className="text-[#838696] font-normal font-inter text-[22px] leading-[35px]">
-          A TechCreator workplace is more than just a workplace - it's a place where you can grow, innovate, and make an impact. Let's build a culture of excellence, collaboration, and shared purpose together if our values resonate with you. Let's redefine what's possible together.
+          A TechBeside workplace is more than just a workplace - it's a place where you can grow, innovate, and make an impact. Let's build a culture of excellence, collaboration, and shared purpose together if our values resonate with you. Let's redefine what's possible together.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const DiversitySection: FC = () => {
 
          
          <div className="bg-[#651FFF] rounded-2xl cursor-pointer p-8 flex flex-col items-center justify-center text-white col-span-1 sm:col-span-2 md:col-span-1">
-         <Link href="https://www.instagram.com/techcreatorco/" target="_blank" rel="noopener noreferrer">
+         <Link href="https://www.instagram.com/TechBesideco/" target="_blank" rel="noopener noreferrer">
             <Instagram className="w-12 h-12 mb-4 mx-auto" />
             <p className="text-lg font-medium text-center mb-2">Follow us on</p>
             <p className="text-sm opacity-90 text-center">#IPPSIbrogueDeupload</p>

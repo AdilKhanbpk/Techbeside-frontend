@@ -4,7 +4,7 @@ import linkedinstar from "../../../public/assets/aboutpage/linkedin.svg";
 
 const ClientReviews = () => {
   return (
-    <section className="text-white bg-purple-600 md:mt-16 mt-9 md:pt-16 pt-3 px-2 md:px-0 text-center">
+    <section className="text-white bg-indigo-600 md:mt-16 mt-9 md:pt-16 pt-3 px-2 md:px-0 text-center">
     <h2 className="text-3xl md:text-4xl lg:text-[44px] font-semibold mb-4">
       Our clients simply love <span className="text-black">what we do</span>
     </h2>

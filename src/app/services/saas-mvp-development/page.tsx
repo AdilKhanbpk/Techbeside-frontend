@@ -68,7 +68,7 @@ const SaasMvpDevelopment = () => {
 
   const features = [
     { icon: <Rocket className="w-6 h-6 text-pink-500" />, text: "Fast launch in 30-45 days with lean, focused development on core features." },
-    { icon: <Zap className="w-6 h-6 text-purple-500" />, text: "Scalable architecture built for growth from day one without technical debt." },
+    { icon: <Zap className="w-6 h-6 text-indigo-500" />, text: "Scalable architecture built for growth from day one without technical debt." },
     { icon: <Users className="w-6 h-6 text-yellow-500" />, text: "User-focused design that converts visitors into users with intuitive interfaces." },
     { icon: <BarChart3 className="w-6 h-6 text-blue-500" />, text: "SEO-ready foundation for organic growth and digital marketing from launch." },
   ];
@@ -182,13 +182,13 @@ const SaasMvpDevelopment = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "SaaS MVP Development",
-                item: "https://www.techcreator.co/services/saas-mvp-development",
+                item: "https://www.TechBeside.co/services/saas-mvp-development",
               },
             ],
           }),
@@ -199,12 +199,12 @@ const SaasMvpDevelopment = () => {
       <Herosection
         title={
           <>
-            <span className="text-purple-500">SaaS</span> MVP Development - Launch Your Product in 30-45 Days
+            <span className="text-indigo-500">SaaS</span> MVP Development - Launch Your Product in 30-45 Days
           </>
         }
         description={
           <>
-            Turn your SaaS idea into a scalable, market-ready product faster. At TechCreator, we specialize in rapid MVP development for startups and founders who want to validate their idea, gather real user feedback, and start generating revenue—without wasting months or burning budget. We&apos;ve helped dozens of founders go from concept to live product in under 6 weeks, with{" "}
+            Turn your SaaS idea into a scalable, market-ready product faster. At TechBeside, we specialize in rapid MVP development for startups and founders who want to validate their idea, gather real user feedback, and start generating revenue—without wasting months or burning budget. We&apos;ve helped dozens of founders go from concept to live product in under 6 weeks, with{" "}
             <Link href="/services/ui-ux-design-agency" className="text-blue-600 font-semibold hover:underline">clean design</Link>,{" "}
             <Link href="/services/web-development" className="text-blue-600 font-semibold hover:underline">scalable architecture</Link>, {" "}
             <Link href="/services/seo-services-for-small-business" className="text-blue-600 font-semibold hover:underline">SEO optimization</Link>, and production-ready code.
@@ -216,18 +216,18 @@ const SaasMvpDevelopment = () => {
       <div className="max-w-[1450px] mx-auto md:mt-16 mt-9 px-4">
 
         {/* Top CTA Section */}
-        <div className="bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-2xl p-8 md:p-12 mb-16 text-center relative overflow-hidden shadow-lg border border-purple-500/20">
+        <div className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white rounded-2xl p-8 md:p-12 mb-16 text-center relative overflow-hidden shadow-lg border border-indigo-500/20">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none" />
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">Ready to Launch Your SaaS MVP?</h2>
-          <p className="text-lg mb-8 text-purple-100 max-w-2xl mx-auto font-light">
+          <p className="text-lg mb-8 text-indigo-100 max-w-2xl mx-auto font-light">
             Book a free strategy call to discuss your idea, timeline, and budget. Get a clear scope mapping session.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://calendly.com/contact-techcreator/30min"
+              href="https://calendly.com/contact-TechBeside/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-white text-purple-700 px-8 py-4 rounded-xl font-bold hover:bg-purple-50 transition shadow-md flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-white text-indigo-700 px-8 py-4 rounded-xl font-bold hover:bg-indigo-50 transition shadow-md flex items-center justify-center gap-2"
             >
               📅 Book Strategy Call
             </a>
@@ -265,22 +265,22 @@ const SaasMvpDevelopment = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">Our Proven SaaS MVP Process</h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center relative">
-              <div className="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">1</div>
+              <div className="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">1</div>
               <h3 className="font-bold text-lg mb-2 text-gray-800">Strategy & Planning</h3>
               <p className="text-gray-600 text-sm">We define your MVP scope, roadmap milestones, and budget.</p>
             </div>
             <div className="text-center">
-              <div className="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">2</div>
+              <div className="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">2</div>
               <h3 className="font-bold text-lg mb-2 text-gray-800">Design & Development</h3>
               <p className="text-gray-600 text-sm">We build your SaaS using modern web technologies and secure APIs.</p>
             </div>
             <div className="text-center">
-              <div className="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">3</div>
+              <div className="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">3</div>
               <h3 className="font-bold text-lg mb-2 text-gray-800">Testing & Optimization</h3>
               <p className="text-gray-600 text-sm">We check cross-device performance, security, and loading speeds.</p>
             </div>
             <div className="text-center">
-              <div className="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">4</div>
+              <div className="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">4</div>
               <h3 className="font-bold text-lg mb-2 text-gray-800">Launch & Support</h3>
               <p className="text-gray-600 text-sm">We deploy your product to cloud hosting and handle immediate post-launch support.</p>
             </div>
@@ -301,12 +301,12 @@ const SaasMvpDevelopment = () => {
               <Link
                 key={i}
                 href={v.link}
-                className="group bg-white border border-gray-100 p-4 rounded-xl shadow-sm hover:border-purple-300 transition duration-300 flex flex-col"
+                className="group bg-white border border-gray-100 p-4 rounded-xl shadow-sm hover:border-indigo-300 transition duration-300 flex flex-col"
               >
                 <div className="h-32 rounded-lg overflow-hidden relative mb-3">
                   <Image src={v.img} alt={v.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                 </div>
-                <h4 className="font-bold text-gray-900 group-hover:text-purple-600 transition duration-300">{v.title}</h4>
+                <h4 className="font-bold text-gray-900 group-hover:text-indigo-600 transition duration-300">{v.title}</h4>
                 <p className="text-gray-500 text-xs mt-1 leading-relaxed">{v.desc}</p>
               </Link>
             ))}
@@ -314,13 +314,13 @@ const SaasMvpDevelopment = () => {
         </div>
 
         {/* Flexible Pricing Section */}
-        <div className="my-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl p-8 md:p-12 border border-purple-200/40">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-purple-900">Flexible MVP Pricing</h2>
-          <p className="text-center text-purple-700 mb-8 text-lg">We offer flexible packages based on your scope and complexity.</p>
+        <div className="my-16 bg-gradient-to-br from-indigo-100 to-indigo-50 rounded-2xl p-8 md:p-12 border border-indigo-200/40">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-indigo-900">Flexible MVP Pricing</h2>
+          <p className="text-center text-indigo-700 mb-8 text-lg">We offer flexible packages based on your scope and complexity.</p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-purple-100 transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
-              <h3 className="text-xl font-bold text-purple-700 mb-4">Basic MVP</h3>
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-indigo-100 transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+              <h3 className="text-xl font-bold text-indigo-700 mb-4">Basic MVP</h3>
               <p className="text-3xl font-bold mb-2 text-gray-900">$2,000 - $3,500</p>
               <p className="text-gray-600 mb-6">Perfect for validating your core idea</p>
               <ul className="space-y-2 text-sm text-gray-700 border-t border-gray-100 pt-4">
@@ -331,9 +331,9 @@ const SaasMvpDevelopment = () => {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-purple-600 relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
-              <div className="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg absolute top-0 right-0">Most Popular</div>
-              <h3 className="text-xl font-bold text-purple-700 mb-4">Standard MVP</h3>
+            <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-indigo-600 relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg absolute top-0 right-0">Most Popular</div>
+              <h3 className="text-xl font-bold text-indigo-700 mb-4">Standard MVP</h3>
               <p className="text-3xl font-bold mb-2 text-gray-900">$3,500 - $6,000</p>
               <p className="text-gray-600 mb-6">Best for most startups</p>
               <ul className="space-y-2 text-sm text-gray-700 border-t border-gray-100 pt-4">
@@ -346,8 +346,8 @@ const SaasMvpDevelopment = () => {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-purple-100 transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
-              <h3 className="text-xl font-bold text-purple-700 mb-4">Advanced MVP</h3>
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-indigo-100 transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+              <h3 className="text-xl font-bold text-indigo-700 mb-4">Advanced MVP</h3>
               <p className="text-3xl font-bold mb-2 text-gray-900">$6,000 - $8,000+</p>
               <p className="text-gray-600 mb-6">For complex features</p>
               <ul className="space-y-2 text-sm text-gray-700 border-t border-gray-100 pt-4">
@@ -362,12 +362,12 @@ const SaasMvpDevelopment = () => {
           </div>
 
           <div className="text-center mt-10">
-            <p className="text-purple-800 mb-4">Not sure what package fits your requirements? Let&apos;s map it out.</p>
+            <p className="text-indigo-800 mb-4">Not sure what package fits your requirements? Let&apos;s map it out.</p>
             <a
-              href="https://calendly.com/contact-techcreator/30min"
+              href="https://calendly.com/contact-TechBeside/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-purple-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-purple-700 transition shadow-md"
+              className="inline-block bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 transition shadow-md"
             >
               Get Custom Quote estimate
             </a>
@@ -387,18 +387,18 @@ const SaasMvpDevelopment = () => {
         />
 
         {/* Middle CTA Section */}
-        <div className="bg-purple-600 text-white rounded-2xl p-8 md:p-12 my-16 text-center shadow-lg relative overflow-hidden">
+        <div className="bg-indigo-600 text-white rounded-2xl p-8 md:p-12 my-16 text-center shadow-lg relative overflow-hidden">
           <div className="absolute inset-0 bg-white/5 opacity-40 pointer-events-none" />
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">From Idea to Live Product in 30-45 Days</h2>
-          <p className="text-lg mb-8 text-purple-100 max-w-2xl mx-auto font-light">
+          <p className="text-lg mb-8 text-indigo-100 max-w-2xl mx-auto font-light">
             Don&apos;t let perfect be the enemy of done. Launch your MVP, onboard early customers, and start gathering user feedback today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://calendly.com/contact-techcreator/30min"
+              href="https://calendly.com/contact-TechBeside/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-white text-purple-700 px-8 py-4 rounded-xl font-bold hover:bg-purple-50 transition shadow-md flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-white text-indigo-700 px-8 py-4 rounded-xl font-bold hover:bg-indigo-50 transition shadow-md flex items-center justify-center gap-2"
             >
               📅 Book Strategy Call
             </a>
@@ -420,7 +420,7 @@ const SaasMvpDevelopment = () => {
         <RelatedServices services={relatedServices} />
 
         {/* Reviews and Testimonials */}
-        <div className="bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9 rounded-2xl overflow-hidden py-6">
+        <div className="bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9 rounded-2xl overflow-hidden py-6">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>
@@ -433,7 +433,7 @@ const SaasMvpDevelopment = () => {
           </div>
           <div className="relative max-w-4xl mx-auto bg-white rounded-2xl border border-gray-200 p-2 shadow-2xl overflow-hidden">
             <iframe
-              src="https://calendly.com/contact-techcreator/30min?embed_domain=techcreator.co&embed_type=Inline"
+              src="https://calendly.com/contact-TechBeside/30min?embed_domain=TechBeside.co&embed_type=Inline"
               width="100%"
               height="700px"
               className="border-none rounded-xl bg-white"

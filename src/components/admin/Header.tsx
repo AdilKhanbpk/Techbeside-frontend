@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch, buttonType }) => {
           >
             <button
               aria-label={buttonType === 'job' ? "Add Job" : "Add Project"}
-              className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg shadow-sm hover:bg-purple-700"
+              className="flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg shadow-sm hover:bg-indigo-700"
             >
               <IoMdAdd className="mr-2" /> {buttonType === 'job' ? 'Add Job' : 'Add Project'}
             </button>

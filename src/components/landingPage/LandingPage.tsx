@@ -75,7 +75,7 @@
 //           <IndustriesSection />
 //         </Suspense>
 
-//         <div className="bg-purple-600 md:mt-16 mt-9">
+//         <div className="bg-indigo-600 md:mt-16 mt-9">
 //           <Suspense fallback={<p className="text-center">Loading Client Reviews...</p>}>
 //             <ClientReviews />
 //           </Suspense>

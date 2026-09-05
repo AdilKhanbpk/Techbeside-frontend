@@ -65,7 +65,7 @@ const ContactTable: FC<ContactTableProps> = ({ contacts, onDelete, onView }) => 
       <td className="p-4 text-nowrap truncate max-w-xs">{contact.message}</td>
       <td className="p-4 flex space-x-3">
         <FaEye
-          className="text-purple-600 cursor-pointer hover:text-purple-700 transition-all"
+          className="text-indigo-600 cursor-pointer hover:text-indigo-700 transition-all"
           onClick={() => onView(contact._id)}
         />
         <FaTrashAlt
@@ -84,7 +84,7 @@ const ContactTable: FC<ContactTableProps> = ({ contacts, onDelete, onView }) => 
                 <button
                   onClick={handlePrevPage}
                   disabled={currentPage === 1}
-                  className={`px-4 py-2 rounded ${currentPage === 1 ? "bg-gray-200 text-gray-500" : "bg-purple-600 text-white"}`}
+                  className={`px-4 py-2 rounded ${currentPage === 1 ? "bg-gray-200 text-gray-500" : "bg-indigo-600 text-white"}`}
                 >
                   Previous
                 </button>
@@ -94,7 +94,7 @@ const ContactTable: FC<ContactTableProps> = ({ contacts, onDelete, onView }) => 
                 <button
                   onClick={handleNextPage}
                   disabled={currentPage === totalPages}
-                  className={`px-4 py-2 rounded ${currentPage === totalPages ? "bg-gray-200 text-gray-500" : "bg-purple-600 text-white"}`}
+                  className={`px-4 py-2 rounded ${currentPage === totalPages ? "bg-gray-200 text-gray-500" : "bg-indigo-600 text-white"}`}
                 >
                   Next
                 </button>

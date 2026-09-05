@@ -83,7 +83,7 @@ const IndustryRelatedProjects: React.FC<IndustryProjectsProps> = ({ slug }) => {
           <div className="mt-auto pt-4 flex gap-3">
             {project.websiteLink && (
               <Link href={project.websiteLink} target="_blank" rel="noopener noreferrer"
-                className="flex items-center justify-center w-full py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:bg-blue-600 transition">
+                className="flex items-center justify-center w-full py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg hover:bg-blue-600 transition">
                 🌍 Website
               </Link>
             )}

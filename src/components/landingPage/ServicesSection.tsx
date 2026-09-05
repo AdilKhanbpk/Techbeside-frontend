@@ -45,7 +45,7 @@ const ServicesSection: React.FC = () => {
       id: 1,
       title: "Web Design & Development",
       des:
-        "We make what you think. Whether it is through implementation, team extension, or research, we can support you. TechCreator provides web development services that are all about helping your business stand out in the digital world."
+        "We make what you think. Whether it is through implementation, team extension, or research, we can support you. TechBeside provides web development services that are all about helping your business stand out in the digital world."
           .split(" ")
           .slice(0, 26)
           .join(" ") + "...",
@@ -57,7 +57,7 @@ const ServicesSection: React.FC = () => {
       id: 2,
       title: "Mobile App Development",
       des:
-        "Using an agile Mobile App Development methodology, TechCreator churns android app development and iOS app development for businesses of all scales."
+        "Using an agile Mobile App Development methodology, TechBeside churns android app development and iOS app development for businesses of all scales."
           .split(" ")
           .slice(0, 20)
           .join(" ") + "...",
@@ -105,7 +105,7 @@ const ServicesSection: React.FC = () => {
       id: 6,
       title: "Graphic Designing",
       des:
-        "TechCreator’s creatives hail from around the world and bring a comprehensive skill set, ensuring you are matched with the right creatives – quality control included."
+        "TechBeside’s creatives hail from around the world and bring a comprehensive skill set, ensuring you are matched with the right creatives – quality control included."
           .split(" ")
           .slice(0, 27)
           .join(" ") + "...",
@@ -129,7 +129,7 @@ const ServicesSection: React.FC = () => {
       id: 8,
       title: "SEO & Content Writing",
       des:
-        "We aim to create websites and rank them on Google with expert SEO Services. TechCreator builds platforms that meet search engine needs to scale your business into profitability."
+        "We aim to create websites and rank them on Google with expert SEO Services. TechBeside builds platforms that meet search engine needs to scale your business into profitability."
           .split(" ")
           .slice(0, 27)
           .join(" ") + "...",
@@ -171,7 +171,7 @@ const ServicesSection: React.FC = () => {
       {/* Left Arrow */}
       <button 
         onClick={previous} 
-        className="bg-purple-600 shadow-md p-2 rounded-full hover:bg-black text-white transition"
+        className="bg-indigo-600 shadow-md p-2 rounded-full hover:bg-black text-white transition"
         aria-label="Previous Slide"
         title="Previous Slide"
       >
@@ -181,7 +181,7 @@ const ServicesSection: React.FC = () => {
       {/* Right Arrow */}
       <button 
         onClick={next} 
-        className="bg-purple-600 shadow-md p-2 rounded-full hover:bg-black text-white transition"
+        className="bg-indigo-600 shadow-md p-2 rounded-full hover:bg-black text-white transition"
         aria-label="Next Slide"
         title="Next Slide"
       >
@@ -195,7 +195,7 @@ const ServicesSection: React.FC = () => {
  
     return (
       <section>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl  text-center font-bold mb-6 md:mb-9 text-purple-600">Our Premium Services</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl  text-center font-bold mb-6 md:mb-9 text-indigo-600">Our Premium Services</h2>
         <Carousel
           swipeable
           draggable

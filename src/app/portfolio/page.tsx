@@ -22,13 +22,13 @@ const Portfolio = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Portfolio",
-                item: "https://www.techcreator.co/portfolio",
+                item: "https://www.TechBeside.co/portfolio",
               },
             ],
           }),
@@ -39,7 +39,7 @@ const Portfolio = () => {
     <div className="max-w-[1450px] mx-auto px-4 md:mt-16 mt-9">
     {/* <PortfolioSection/> */}
       <OurImpresiveProject/>
-      <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9 ">
+      <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9 ">
 <ClientReviews/>
 <ClientTestimonialsSection />
 </div>

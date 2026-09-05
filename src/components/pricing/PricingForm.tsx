@@ -85,7 +85,7 @@ const PricingForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 pt-3 pb-3">
+    <div className="bg-gradient-to-r from-indigo-600 via-indigo-600 to-blue-500 pt-3 pb-3">
       <div className="flex flex-col md:flex-row md:gap-3 lg:gap-6 justify-between px-2 lg:px-8 mx-auto">
         {/* Left Section */}
         <div className="text-white flex md:mx-0 mx-auto flex-col mb-6 lg:mb-0 p-2">
@@ -224,7 +224,7 @@ const PricingForm: React.FC = () => {
             <div>
               <button
                 type="submit"
-                className={`bg-[#9A00FF] w-full text-white py-2 px-4 rounded-full mt-3 shadow-[0_4px_16px_-4px_#3b71ca] hover:bg-purple-500 ${
+                className={`bg-[#6366F1] w-full text-white py-2 px-4 rounded-full mt-3 shadow-[0_4px_16px_-4px_#3b71ca] hover:bg-indigo-500 ${
                   loading ? "opacity-50 cursor-not-allowed" : ""
                 }`}
                 disabled={loading} // Disable button while loading

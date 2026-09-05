@@ -15,10 +15,10 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="flex justify-center gap-5">
           {[
-            { href: "https://www.facebook.com/techcreatorfb/", icon: faFacebookF, bg: "bg-blue-600" },
-            { href: "https://www.linkedin.com/company/techcreator", icon: faLinkedinIn, bg: "bg-blue-700" },
-            { href: "https://www.youtube.com/@techcreator9512", icon: faYoutube, bg: "bg-red-600" },
-            { href: "https://www.instagram.com/techcreatorco/", icon: faInstagram, bg: "bg-pink-600" },
+            { href: "https://www.facebook.com/TechBesidefb/", icon: faFacebookF, bg: "bg-blue-600" },
+            { href: "https://www.linkedin.com/company/TechBeside", icon: faLinkedinIn, bg: "bg-blue-700" },
+            { href: "https://www.youtube.com/@TechBeside9512", icon: faYoutube, bg: "bg-red-600" },
+            { href: "https://www.instagram.com/TechBesideco/", icon: faInstagram, bg: "bg-pink-600" },
           ].map(({ href, icon, bg }, index) => (
             <Link
               key={index}
@@ -38,11 +38,11 @@ const Footer = () => {
           
           {/* Email */}
           <div className="flex items-center gap-4 mt-3.5">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-purple-600 shadow-md shadow-purple-500">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-600 shadow-md shadow-indigo-500">
               <AiOutlineMail size={24} className="text-white" />
             </div>
-            <Link href="mailto:contact@techcreator.co" className="hover:text-white transition text-lg">
-              contact@techcreator.co
+            <Link href="mailto:contact@techbeside.dev" className="hover:text-white transition text-lg">
+              contact@techbeside.dev
             </Link>
           </div>
 
@@ -56,7 +56,7 @@ const Footer = () => {
 
           {/* Phone Call */}
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-purple-600 shadow-md shadow-purple-500">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-600 shadow-md shadow-indigo-500">
               <PhoneCall size={24} className="text-white" />
             </div>
             <a href="tel:+13213646803" className="hover:text-white text-nowrap transition text-lg">
@@ -72,7 +72,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <p className="text-base border-t border-gray-700 pt-4 text-gray-400 text-center w-full">
-          © 2025 <span className="text-[#9A00FF] font-semibold">TechCreator</span>. All rights reserved.
+          © 2025 <span className="text-[#6366F1] font-semibold">TechBeside</span>. All rights reserved.
         </p>
       </div>
     </footer>

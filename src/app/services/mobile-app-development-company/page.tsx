@@ -38,7 +38,7 @@ const MobileAppDevelopment = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: "Design and develop robust mobile applications for iOS and Android." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Create user-friendly apps with seamless navigation and stunning interfaces.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Create user-friendly apps with seamless navigation and stunning interfaces.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: "Incorporate cutting-edge technologies for faster and smoother performance." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: "Ensure on-time delivery with a focus on quality and user satisfaction." },
   ];
@@ -61,10 +61,10 @@ const MobileAppDevelopment = () => {
     {
       image: appImage3,
       alt: "Enterprise mobile app development company",
-      title: "Advantages of mobile app development with TechCreator",
+      title: "Advantages of mobile app development with TechBeside",
       content: (
         <>
-          Mobile app development with TechCreator combines skilled talent and smart solutions. Our apps are easy to use and meet real user needs. Our apps are built to <Link href="/services/digital-marketing-for-software-companies" className="text-purple-600">grow with your business</Link> , ensuring they stay relevant over time. <Link href="/services/ui-ux-design-agency" className="text-purple-600">Advanced design</Link>  and careful coding make sure your app works smoothly and efficiently for users.
+          Mobile app development with TechBeside combines skilled talent and smart solutions. Our apps are easy to use and meet real user needs. Our apps are built to <Link href="/services/digital-marketing-for-software-companies" className="text-indigo-600">grow with your business</Link> , ensuring they stay relevant over time. <Link href="/services/ui-ux-design-agency" className="text-indigo-600">Advanced design</Link>  and careful coding make sure your app works smoothly and efficiently for users.
         </>
       ),
     },
@@ -112,13 +112,13 @@ const MobileAppDevelopment = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Mobile App Development",
-                item: "https://www.techcreator.co/services/mobile-app-development-company",
+                item: "https://www.TechBeside.co/services/mobile-app-development-company",
               },
             ],
           }),
@@ -128,7 +128,7 @@ const MobileAppDevelopment = () => {
         title="Android and iOS Mobile App Development Services"
         description={
           <>
-           Your business needs a fully crafted, digitized solution to meet your customer needs at one place. At {" "} <Link  href="/" className="text-blue-600">TechCreator</Link>, we specialize in mobile app development that prioritizes functionality and user engagement. Our team creates intuitive and visually appealing apps delivering exceptional user experiences.
+           Your business needs a fully crafted, digitized solution to meet your customer needs at one place. At {" "} <Link  href="/" className="text-blue-600">TechBeside</Link>, we specialize in mobile app development that prioritizes functionality and user engagement. Our team creates intuitive and visually appealing apps delivering exceptional user experiences.
            
           </>
         }
@@ -180,7 +180,7 @@ const MobileAppDevelopment = () => {
         <OurTeam />
       <RelatedServices services={appDevServices} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

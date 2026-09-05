@@ -28,7 +28,7 @@ const ValueCard: React.FC<ValueCardType> = ({ icon, title, description }) => (
       </div>
       <div className="font-inter font-normal text-base leading-7 text-[#838696]">
         
-          <Image src={icon} alt="icon" className="w-12 h-10 text-purple-900 object-contain" />
+          <Image src={icon} alt="icon" className="w-12 h-10 text-indigo-900 object-contain" />
         
       </div>
     </div>
@@ -41,9 +41,9 @@ const CoreValues: React.FC = () => {
     <div className=" md:py-16 mt-9 lg:mt-24 md:mt-44  ">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 sm:space-x-3 ">
         <div className="mb-6">
-          <h2 className="text-3xl md:text-5xl font-bold mb-2 text-purple-600">Our core values</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-2 text-indigo-600">Our core values</h2>
           <p className=" max-w-2xl">
-          Throughout everything we do at TechCreator, our core values guide us. Inspire our team, shape our culture, and ensure that our clients receive exceptional results.
+          Throughout everything we do at TechBeside, our core values guide us. Inspire our team, shape our culture, and ensure that our clients receive exceptional results.
           </p>
         </div>
 

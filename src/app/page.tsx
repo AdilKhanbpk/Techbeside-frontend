@@ -76,10 +76,10 @@ export default function Page() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Corporation",
-            name: "TechCreator",
-            alternateName: "Techcreator",
-            url: "https://www.techcreator.co/",
-            logo: "https://www.techcreator.co/assets/icons/Logo.png",
+            name: "TechBeside",
+            alternateName: "TechBeside",
+            url: "https://www.TechBeside.co/",
+            logo: "https://www.TechBeside.co/assets/icons/Logo.png",
             founder: {
               "@type": "Person",
               name: "Saud Khan",
@@ -99,12 +99,12 @@ export default function Page() {
               availableLanguage: "en",
             },
             sameAs: [
-              "https://www.facebook.com/techcreatorfb/",
-              "https://www.linkedin.com/company/techcreator",
-              "https://www.youtube.com/@techcreator9512",
-              "https://www.instagram.com/techcreatorco/",
-              "https://twitter.com/techcreatorco",
-              "https://www.tiktok.com/@techcreator.co"
+              "https://www.facebook.com/TechBesidefb/",
+              "https://www.linkedin.com/company/TechBeside",
+              "https://www.youtube.com/@TechBeside9512",
+              "https://www.instagram.com/TechBesideco/",
+              "https://twitter.com/TechBesideco",
+              "https://www.tiktok.com/@TechBeside.co"
             ],
           }),
         }}
@@ -136,13 +136,13 @@ export default function Page() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "TechCreator",
-            url: "https://www.techcreator.co/",
+            name: "TechBeside",
+            url: "https://www.TechBeside.co/",
             potentialAction: {
               "@type": "SearchAction",
               target: {
                 "@type": "EntryPoint",
-                urlTemplate: "https://www.techcreator.co/search?q={search_term_string}",
+                urlTemplate: "https://www.TechBeside.co/search?q={search_term_string}",
               },
               "query-input": "required name=search_term_string",
             },

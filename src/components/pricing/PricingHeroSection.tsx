@@ -18,7 +18,7 @@
 //             Innovation Unleashed
 //           </h1>
 //           <p className=" font-inter font-normal text-lg md:text-[20px] mt-4 md:mt-0">
-//           At TechCreator, we turn your digital dreams into reality. From custom software development to tailored hardware solutions, our innovative products and services are designed to elevate your business.
+//           At TechBeside, we turn your digital dreams into reality. From custom software development to tailored hardware solutions, our innovative products and services are designed to elevate your business.
 
 // With a focus on scalability, security, and cutting-edge technology, we deliver solutions that drive success. Partner with us to build the future today.
 //           </p>
@@ -51,7 +51,7 @@
 //         </div>
 //         <div className='md:w-[600px]  '>
 //           <h1 className='text-3xl font-normal'>Affordability Redefined</h1>
-//           <p className='text-xl mt-4'>At TechCreator, we believe that cutting-edge technology should be accessible to all. Our affordable solutions—from custom software development to advanced hardware integrations—are designed to fuel your business growth without compromising on quality.
+//           <p className='text-xl mt-4'>At TechBeside, we believe that cutting-edge technology should be accessible to all. Our affordable solutions—from custom software development to advanced hardware integrations—are designed to fuel your business growth without compromising on quality.
 
 // We blend innovation with cost-effectiveness, delivering scalable, secure, and high-performance products tailored to your needs. Let’s build the future together, without breaking the bank.</p>
 //         </div>
@@ -67,7 +67,7 @@
 //           Seamless Integration
 //           </h1>
 //           <p className=" font-inter font-normal text-lg md:text-[20px] mt-4 md:mt-0">
-//           At TechCreator, we specialize in seamless integration that ensures your technology ecosystem works flawlessly. Whether it’s connecting new systems with legacy infrastructure or developing custom APIs, our solutions are designed for smooth transitions and optimal performance, helping your business stay ahead in a fast-evolving digital world.
+//           At TechBeside, we specialize in seamless integration that ensures your technology ecosystem works flawlessly. Whether it’s connecting new systems with legacy infrastructure or developing custom APIs, our solutions are designed for smooth transitions and optimal performance, helping your business stay ahead in a fast-evolving digital world.
 //           </p>
 //         </div>
 

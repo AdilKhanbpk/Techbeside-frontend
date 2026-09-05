@@ -9,7 +9,7 @@ const Page = () => {
     <div className="flex flex-col items-center min-h-screen ">
       {/* Background Image Section */}
       <div className=" w-full h-72 md:h-96 flex flex-col items-center bg-black justify-center overflow-hidden">
-        <h1 className='text-white text-3xl font-bold'>JOIN TECHCREATOR </h1>
+        <h1 className='text-white text-3xl font-bold'>JOIN TechBeside </h1>
         <p className='text-white text-lg mt-2'>Apply Now</p>
 
       </div>

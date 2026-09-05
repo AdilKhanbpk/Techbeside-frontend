@@ -84,7 +84,7 @@ const Testimonial = () => {
       <AdminLayout>
         <div className="flex md:flex-row flex-col gap-4 mt-20 justify-between items-center mb-4">
           <Link href="/admin/testimonials/add-testimonial">
-            <button className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition">
+            <button className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">
               Add Testimonial
             </button>
           </Link>
@@ -169,7 +169,7 @@ const Testimonial = () => {
   <button
     onClick={() => handlePageChange(currentPage - 1)}
     disabled={currentPage === 1}
-    className="text-gray-500 hover:text-purple-600 disabled:text-gray-300"
+    className="text-gray-500 hover:text-indigo-600 disabled:text-gray-300"
   >
     <FaArrowLeft size={20} />
   </button>
@@ -182,7 +182,7 @@ const Testimonial = () => {
         onClick={() => handlePageChange(index + 1)}
         className={`px-3 py-1 rounded-md ${
           currentPage === index + 1
-            ? "bg-purple-600 text-white"
+            ? "bg-indigo-600 text-white"
             : "bg-gray-200 text-gray-800 hover:bg-gray-300"
         }`}
       >
@@ -195,7 +195,7 @@ const Testimonial = () => {
   <button
     onClick={() => handlePageChange(currentPage + 1)}
     disabled={currentPage === totalPages}
-    className="text-gray-500 hover:text-purple-600 disabled:text-gray-300"
+    className="text-gray-500 hover:text-indigo-600 disabled:text-gray-300"
   >
     <FaArrowRight size={20} />
   </button>

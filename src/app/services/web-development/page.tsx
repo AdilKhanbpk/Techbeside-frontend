@@ -40,7 +40,7 @@ const WebDevelopment = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: "Build scalable websites with modern technologies tailored to your business goals." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Ensure seamless performance and intuitive user experience with our web solutions.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Ensure seamless performance and intuitive user experience with our web solutions.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: "Integrate powerful features and tools to enhance your website’s functionality." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: "Deliver projects on time with precision and a focus on quality." },
   ];
@@ -112,13 +112,13 @@ const WebDevelopment = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Web Development",
-                item: "https://www.techcreator.co/services/web-development",
+                item: "https://www.TechBeside.co/services/web-development",
               },
             ],
           }),
@@ -128,7 +128,7 @@ const WebDevelopment = () => {
         title="Progressive Web Development Company"
         description={
           <>
-            TechCreator, a Progressive Web Development Company, accelerates your business growth by delivering custom web solutions tailored to your objectives. Our team of skilled and experienced developers creates industry-specific websites for  {" "}
+            TechBeside, a Progressive Web Development Company, accelerates your business growth by delivering custom web solutions tailored to your objectives. Our team of skilled and experienced developers creates industry-specific websites for  {" "}
             <Link  href="/healthcare" className="text-blue-600">Healthcare</Link>,{" "}
             <Link href="/real-estate" className="text-blue-600">Real Estate</Link>, {" "}
             <Link href="/restaurants" className="text-blue-600">Restaurants</Link>, and {" "}
@@ -169,7 +169,7 @@ const WebDevelopment = () => {
         <OurTeam />
       <RelatedServices services={webDevServices} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

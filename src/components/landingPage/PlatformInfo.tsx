@@ -3,7 +3,7 @@ import PlatformInfoClient from "./PlatformInfoClient";
 
 const getPlatformInfo = async () => {
   return {
-    heading: "TechCreator – Innovate Faster with AI",
+    heading: "TechBeside – Innovate Faster with AI",
     subHeading: "Where Innovation Meets Efficiency",
     description:
       "We harness the power of artificial intelligence to revolutionize software development. Build sophisticated web and mobile applications in a fraction of the time, without compromising on quality or scalability.",

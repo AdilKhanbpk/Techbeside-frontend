@@ -27,7 +27,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({title, description, imag
       onMouseLeave={() => setIsHovered(false)}
     />
     </div>
-    <div className="bg-[#9A00FF] w-full h-auto p-6 mt-3 lg:mt-0">
+    <div className="bg-[#6366F1] w-full h-auto p-6 mt-3 lg:mt-0">
       <div className="text-white xl:py-20 lg:pl-52 lg:h-[400px]">
         <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold mb-3">
           {title}

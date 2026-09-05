@@ -54,7 +54,7 @@ const router = useRouter()
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="w-full max-w-2xl bg-white rounded-2xl shadow-xl  ">
-                <h1 className="text-center font-bold text-2xl rounded-t-2xl  text-black bg-purple-600 p-6">Job Details</h1>
+                <h1 className="text-center font-bold text-2xl rounded-t-2xl  text-black bg-indigo-600 p-6">Job Details</h1>
                 <Dialog.Title className="text-lg mt-5 p-3 font-medium text-gray-900">
                   <p className="text-gray-600">
                     <span className="text-blue-600  ">Title:</span> {job.title}
@@ -120,7 +120,7 @@ const router = useRouter()
                   >
                     Cancel
                   </button>
-                  <button  onClick={() => router.push(`/job-apply?jobId=${job._id}`)} className="px-4 py-2 text-sm text-white bg-purple-600 rounded ">
+                  <button  onClick={() => router.push(`/job-apply?jobId=${job._id}`)} className="px-4 py-2 text-sm text-white bg-indigo-600 rounded ">
                     Apply
                   </button>
                 </div>

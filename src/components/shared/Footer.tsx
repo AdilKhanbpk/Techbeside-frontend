@@ -131,22 +131,22 @@ const Footer: React.FC = () => {
             <div className="flex gap-5 ">
               {[
                 {
-                  href: "https://www.facebook.com/techcreatorfb/",
+                  href: "https://www.facebook.com/techbesideofficial/",
                   icon: faFacebookF,
                   bg: "bg-blue-600",
                 },
                 {
-                  href: "https://www.linkedin.com/company/techcreator",
+                  href: "https://www.linkedin.com/company/techbeside",
                   icon: faLinkedinIn,
                   bg: "bg-blue-700",
                 },
                 {
-                  href: "https://www.youtube.com/@techcreator9512",
+                  href: "https://www.youtube.com/@techbeside",
                   icon: faYoutube,
                   bg: "bg-red-600",
                 },
                 {
-                  href: "https://www.instagram.com/techcreatorco/",
+                  href: "https://www.instagram.com/techbesideofficial/",
                   icon: faInstagram,
                   bg: "bg-pink-600",
                 },
@@ -189,7 +189,7 @@ const Footer: React.FC = () => {
                     whileTap={{ scale: 0.95 }}
                     type="submit"
                     disabled={loading}
-                    className="bg-[#9A00FF] text-white rounded-md p-2 w-fit shadow-[0_4px_16px_-4px_#3b71ca]"
+                    className="bg-[#6366F1] text-white rounded-md p-2 w-fit shadow-[0_4px_16px_-4px_#3b71ca]"
                   >
                     {loading ? "Subscribing..." : "Subscribe"}
                   </motion.button>
@@ -216,8 +216,8 @@ const Footer: React.FC = () => {
                     href={item.href}
                     className={` text-base ${
                       pathname === item.href
-                        ? "text-[#9A00FF]"
-                        : "hover:text-[#9A00FF]"
+                        ? "text-[#6366F1]"
+                        : "hover:text-[#6366F1]"
                     }`}
                   >
                     {item.label}
@@ -245,8 +245,8 @@ const Footer: React.FC = () => {
                     className={`text-base  transition-colors ${
                       pathname ===
                       (item === "Home" ? "/" : `/${item.toLowerCase()}`)
-                        ? "text-[#9A00FF]"
-                        : "hover:text-[#9A00FF]"
+                        ? "text-[#6366F1]"
+                        : "hover:text-[#6366F1]"
                     }`}
                   >
                     {item}
@@ -262,8 +262,8 @@ const Footer: React.FC = () => {
                         href="/admin"
                         className={`flex items-center gap-2 text-xs md:text-sm transition-colors ${
                           pathname === "/admin"
-                            ? "text-[#9A00FF]"
-                            : "hover:text-[#9A00FF]"
+                            ? "text-[#6366F1]"
+                            : "hover:text-[#6366F1]"
                         }`}
                       >
                         Admin
@@ -273,7 +273,7 @@ const Footer: React.FC = () => {
                   <li>
                     <button
                       onClick={handleLogout}
-                      className="flex items-center gap-2 text-xs md:text-sm hover:text-[#9A00FF] transition-colors"
+                      className="flex items-center gap-2 text-xs md:text-sm hover:text-[#6366F1] transition-colors"
                     >
                       Logout
                     </button>
@@ -286,8 +286,8 @@ const Footer: React.FC = () => {
                       href="/login"
                       className={`flex items-center text-sm gap-2 transition-colors ${
                         pathname === "/login"
-                          ? "text-[#9A00FF]"
-                          : "hover:text-[#9A00FF]"
+                          ? "text-[#6366F1]"
+                          : "hover:text-[#6366F1]"
                       }`}
                     >
                       Admin
@@ -348,8 +348,8 @@ const Footer: React.FC = () => {
                     href={service.link}
                     className={` text-base ${ 
                       pathname === service.link
-                        ? "text-[#9A00FF]"
-                        : "hover:text-[#9A00FF]"
+                        ? "text-[#6366F1]"
+                        : "hover:text-[#6366F1]"
                     }`}
                   >
                     {service.name}
@@ -364,14 +364,14 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               {/* Email */}
               <div className=" flex items-center gap-2 text-base">
-                <div className="iconContainer bg-purple-600">
+                <div className="iconContainer bg-indigo-600">
                   <AiOutlineMail size={20} className="text-white" />
                 </div>
                 <Link
-                  href="mailto:contact@techcreator.co"
+                  href="mailto:contact@techbeside.dev"
                   className="hover:underline"
                 >
-                  contact@techcreator.co
+                  contact@techbeside.dev
                 </Link>
               </div>
 
@@ -390,7 +390,7 @@ const Footer: React.FC = () => {
 
               {/* Phone Call (Mobile) */}
               <div className="md:hidden flex items-center gap-3 text-base">
-                <div className="iconContainer bg-purple-600">
+                <div className="iconContainer bg-indigo-600">
                   <PhoneCall size={20} className="text-white" />
                 </div>
                 <a href="tel:+13213646803" className="hover:underline">
@@ -400,7 +400,7 @@ const Footer: React.FC = () => {
 
               {/* Phone Call (Desktop) */}
               <div className="hidden md:flex items-center gap-3 text-base">
-                <div className="iconContainer bg-purple-600">
+                <div className="iconContainer bg-indigo-600">
                   <PhoneCall size={20} className="text-white" />
                 </div>
                 <a href="tel:+13213646803" className="hover:underline">
@@ -426,8 +426,8 @@ const Footer: React.FC = () => {
                 href={link.href}
                 className={`text-base cursor-pointer md:mt-3 transition-colors ${
                   pathname === link.href
-                    ? "text-purple-600 "
-                    : "text-gray-400 hover:text-purple-600"
+                    ? "text-indigo-600 "
+                    : "text-gray-400 hover:text-indigo-600"
                 }`}
               >
                 {link.label}
@@ -435,7 +435,7 @@ const Footer: React.FC = () => {
             ))}
           </div>
           <p className="text-base text-gray-400 mt-3 ">
-            © 2025 <span className="text-[#9A00FF]">TechCreator</span>. All
+            © 2025 <span className="text-[#6366F1]">TechBeside</span>. All
             rights reserved.
           </p>
         </div>

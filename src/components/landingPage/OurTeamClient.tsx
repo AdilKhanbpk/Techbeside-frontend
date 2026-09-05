@@ -75,7 +75,7 @@ const OurTeamClient = () => {
           value={formData.firstName}
           onChange={changeEventHandler}
           required
-          className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 focus:border-purple-700 focus:outline-none"
+          className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 focus:border-indigo-700 focus:outline-none"
         />
         <input
           placeholder="Last name*"
@@ -84,7 +84,7 @@ const OurTeamClient = () => {
           value={formData.lastName}
           onChange={changeEventHandler}
           required
-          className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 focus:border-purple-700 focus:outline-none"
+          className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 focus:border-indigo-700 focus:outline-none"
         />
       </div>
       <input
@@ -94,7 +94,7 @@ const OurTeamClient = () => {
         value={formData.email}
         onChange={changeEventHandler}
         required
-        className="w-full rounded-lg border border-gray-300 p-3 focus:border-purple-700 focus:outline-none mb-4"
+        className="w-full rounded-lg border border-gray-300 p-3 focus:border-indigo-700 focus:outline-none mb-4"
       />
       {/* PhoneInput */}
       <div className="w-full mb-4">
@@ -103,7 +103,7 @@ const OurTeamClient = () => {
           value={formData.phoneNumber}
           onChange={handlePhoneChange}
           inputStyle={{ width: "100%" }}
-          inputClass="w-full text-black bg-gray-100 border-none rounded-lg p-6 focus:ring-1 focus:ring-purple-700 focus:outline-none"
+          inputClass="w-full text-black bg-gray-100 border-none rounded-lg p-6 focus:ring-1 focus:ring-indigo-700 focus:outline-none"
         />
       </div>
       <textarea
@@ -113,14 +113,14 @@ const OurTeamClient = () => {
         value={formData.message}
         onChange={changeEventHandler}
         required
-        className="w-full rounded-lg border border-gray-300 p-3 focus:border-purple-700 focus:outline-none mb-6"
+        className="w-full rounded-lg border border-gray-300 p-3 focus:border-indigo-700 focus:outline-none mb-6"
       />
       <CommonButton
         title={loading ? "Sending..." : "Send Message"}
         type="submit"
         disabled={loading}
-        className={`bg-purple-600 text-white w-full h-12 rounded-full shadow-[0_4px_16px_-4px_#3b71ca] transition ${
-          loading ? "opacity-50 cursor-not-allowed" : "hover:bg-purple-700"
+        className={`bg-indigo-600 text-white w-full h-12 rounded-full shadow-[0_4px_16px_-4px_#3b71ca] transition ${
+          loading ? "opacity-50 cursor-not-allowed" : "hover:bg-indigo-700"
         } focus:outline-none`}
       />
     </form>

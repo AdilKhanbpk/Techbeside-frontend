@@ -66,7 +66,7 @@ const RelatedBlog: React.FC<RelatedBlogProps> = ({ excludeBlogId }) => {
                         className={`mt-6 w-full py-3 text-sm font-semibold text-white rounded-xl transition duration-300 ${
                           loadingBlogId === blog._id
                             ? "bg-gray-400 cursor-not-allowed"
-                            : "bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900"
+                            : "bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900"
                         }`}
                       >
                         {loadingBlogId === blog._id ? (

@@ -205,7 +205,7 @@ const PricingForm = () => {
                 </td>
                 <td className="border p-2">
                   <button
-                    className="text-purple-600 mr-2"
+                    className="text-indigo-600 mr-2"
                     onClick={() => openModal(item)}
                   >
                     <FaRegEye />
@@ -227,7 +227,7 @@ const PricingForm = () => {
         <button
           onClick={handlePrevious}
           disabled={currentPage === 1}
-          className={`px-4 py-2 rounded ${currentPage === 1 ? "bg-gray-200 text-gray-500" : "bg-purple-600 text-white"}`}
+          className={`px-4 py-2 rounded ${currentPage === 1 ? "bg-gray-200 text-gray-500" : "bg-indigo-600 text-white"}`}
         >
           Previous
         </button>
@@ -237,7 +237,7 @@ const PricingForm = () => {
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          className={`px-4 py-2 rounded ${currentPage === totalPages ? "bg-gray-200 text-gray-500" : "bg-purple-600 text-white"}`}
+          className={`px-4 py-2 rounded ${currentPage === totalPages ? "bg-gray-200 text-gray-500" : "bg-indigo-600 text-white"}`}
         >
           Next
         </button>
@@ -258,7 +258,7 @@ const PricingForm = () => {
             ref={modalRef} 
             className="bg-white  w-1/3"
           >
-            <h2 className="text-2xl font-bold mb-4 text-center bg-[#9A00FF] text-white p-7">
+            <h2 className="text-2xl font-bold mb-4 text-center bg-[#6366F1] text-white p-7">
               Pricing Form Details
             </h2>
             <div className="p-2 mb-3">

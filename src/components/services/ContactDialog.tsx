@@ -66,7 +66,7 @@ router.push("/confirmation")
           value={formData.firstName}
           onChange={changeEventHandler}
           required
-          className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-purple-700 focus:outline-none mb-4 sm:mb-0"
+          className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-indigo-700 focus:outline-none mb-4 sm:mb-0"
         />
         <input
           placeholder="Last name*"
@@ -75,7 +75,7 @@ router.push("/confirmation")
           value={formData.lastName}
           onChange={changeEventHandler}
           required
-          className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-purple-700 focus:outline-none"
+          className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-indigo-700 focus:outline-none"
         />
       </div>
       <div className="mb-4">
@@ -86,7 +86,7 @@ router.push("/confirmation")
           value={formData.email}
           onChange={changeEventHandler}
           required
-          className="w-full rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-purple-700 focus:outline-none"
+          className="w-full rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-indigo-700 focus:outline-none"
         />
       </div>
       <div className="mb-4">
@@ -97,7 +97,7 @@ router.push("/confirmation")
           value={formData.phoneNumber}
           onChange={changeEventHandler}
           required
-          className="w-full rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-purple-700 focus:outline-none"
+          className="w-full rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-indigo-700 focus:outline-none"
         />
       </div>
       <div className="mb-6">
@@ -108,7 +108,7 @@ router.push("/confirmation")
           value={formData.message}
           onChange={changeEventHandler}
           required
-          className="w-full rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-purple-700 focus:outline-none"
+          className="w-full rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-indigo-700 focus:outline-none"
         />
       </div>
       <div>
@@ -116,7 +116,7 @@ router.push("/confirmation")
           title={loading ? "Sending..." : "Send Message"}
           type="submit"
           disabled={loading}
-          className={`bg-purple-700 text-white w-full h-12 rounded-full transition duration-200 ${loading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-purple-800'} focus:outline-none`}
+          className={`bg-indigo-700 text-white w-full h-12 rounded-full transition duration-200 ${loading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-indigo-800'} focus:outline-none`}
         />
       </div>
     </form>

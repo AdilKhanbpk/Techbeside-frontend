@@ -26,20 +26,20 @@ const categories: TechnologyCategory[] = [
 
 const technologies: Record<string, Technology[]> = {
   "mobile-apps": [
-    { name: "Swift", icon: <SiSwift className="text-orange-500 w-8 h-8" />, category: "mobile-apps" },
-    { name: "Kotlin", icon: <SiKotlin className="text-purple-500 w-8 h-8" />, category: "mobile-apps" },
+    { name: "Swift", icon: <SiSwift className="text-indigo-500 w-8 h-8" />, category: "mobile-apps" },
+    { name: "Kotlin", icon: <SiKotlin className="text-indigo-500 w-8 h-8" />, category: "mobile-apps" },
     { name: "Flutter", icon: <SiFlutter className="text-blue-500 w-8 h-8" />, category: "mobile-apps" },
     { name: "React Native", icon: <FaReact className="text-blue-400 w-8 h-8" />, category: "mobile-apps" },
     { name: "Xamarin", icon: <FaMicrosoft className="text-blue-700 w-8 h-8" />, category: "mobile-apps" },
     { name: "Ionic", icon: <SiIonic className="text-gray-500 w-8 h-8" />, category: "mobile-apps" },
     { name: "Dart", icon: <SiDart className="text-blue-400 w-8 h-8" />, category: "mobile-apps" },
     { name: "Objective-C", icon: <FaApple className="text-gray-700 w-8 h-8" />, category: "mobile-apps" },
-    { name: "SwiftUI", icon: <SiSwift className="text-orange-500 w-8 h-8" />, category: "mobile-apps" },
-    { name: "Jetpack Compose", icon: <SiKotlin className="text-purple-500 w-8 h-8" />, category: "mobile-apps" },
+    { name: "SwiftUI", icon: <SiSwift className="text-indigo-500 w-8 h-8" />, category: "mobile-apps" },
+    { name: "Jetpack Compose", icon: <SiKotlin className="text-indigo-500 w-8 h-8" />, category: "mobile-apps" },
     { name: "Android Native", icon: <FaAndroid className="text-green-600 w-8 h-8" />, category: "mobile-apps" },
     { name: "Expo", icon: <SiExpo className="text-black w-8 h-8" />, category: "mobile-apps" },
     { name: "GraphQL", icon: <SiGraphql className="text-pink-500 w-8 h-8" />, category: "mobile-apps" },
-    { name: "Redux", icon: <SiRedux className="text-purple-600 w-8 h-8" />, category: "mobile-apps" },
+    { name: "Redux", icon: <SiRedux className="text-indigo-600 w-8 h-8" />, category: "mobile-apps" },
     { name: "Realm DB", icon: <SiRealm className="text-green-500 w-8 h-8" />, category: "mobile-apps" },
     { name: "Firebase", icon: <SiFirebase className="text-yellow-500 w-8 h-8" />, category: "mobile-apps" },
     { name: "Supabase", icon: <SiSupabase className="text-green-400 w-8 h-8" />, category: "mobile-apps" },
@@ -54,20 +54,20 @@ const technologies: Record<string, Technology[]> = {
     { name: "React", icon: <FaReact className="text-blue-400 w-8 h-8" />, category: "web-platforms" },
     { name: "Next.js", icon: <SiNextdotjs className="text-black w-8 h-8" />, category: "web-platforms" },
     { name: "Vue.js", icon: <SiVuedotjs className="text-green-500 w-8 h-8" />, category: "web-platforms" },
-    { name: "Svelte", icon: <SiSvelte className="text-orange-500 w-8 h-8" />, category: "web-platforms" },
+    { name: "Svelte", icon: <SiSvelte className="text-indigo-500 w-8 h-8" />, category: "web-platforms" },
     { name: "Angular", icon: <SiAngular className="text-red-500 w-8 h-8" />, category: "web-platforms" },
-    { name: "Gatsby", icon: <SiGatsby className="text-purple-600 w-8 h-8" />, category: "web-platforms" },
+    { name: "Gatsby", icon: <SiGatsby className="text-indigo-600 w-8 h-8" />, category: "web-platforms" },
     { name: "Astro", icon: <SiAstro className="text-yellow-400 w-8 h-8" />, category: "web-platforms" },
     { name: "Eleventy", icon: <SiEleventy className="text-gray-600 w-8 h-8" />, category: "web-platforms" },
 
     // 🎨 UI Frameworks
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-400 w-8 h-8" />, category: "web-platforms" },
-    { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600 w-8 h-8" />, category: "web-platforms" },
+    { name: "Bootstrap", icon: <FaBootstrap className="text-indigo-600 w-8 h-8" />, category: "web-platforms" },
     { name: "Sass", icon: <FaSass className="text-pink-500 w-8 h-8" />, category: "web-platforms" },
     { name: "Pug (Jade)", icon: <SiPug className="text-green-600 w-8 h-8" />, category: "web-platforms" },
 
     // ⚡ State Management & APIs
-    { name: "Redux", icon: <SiRedux className="text-purple-600 w-8 h-8" />, category: "web-platforms" },
+    { name: "Redux", icon: <SiRedux className="text-indigo-600 w-8 h-8" />, category: "web-platforms" },
     { name: "GraphQL", icon: <SiGraphql className="text-pink-500 w-8 h-8" />, category: "web-platforms" },
 
     // ⚙️ Web Backend Technologies
@@ -82,7 +82,7 @@ const technologies: Record<string, Technology[]> = {
     { name: "WordPress", icon: <FaWordpress className="text-blue-600 w-8 h-8" />, category: "web-platforms" },
 
     // 🛠️ Headless CMS
-    { name: "Strapi", icon: <SiStrapi className="text-purple-500 w-8 h-8" />, category: "web-platforms" },
+    { name: "Strapi", icon: <SiStrapi className="text-indigo-500 w-8 h-8" />, category: "web-platforms" },
     { name: "Sanity", icon: <SiSanity className="text-red-500 w-8 h-8" />, category: "web-platforms" },
 
     // ⚡ Build Tools
@@ -91,7 +91,7 @@ const technologies: Record<string, Technology[]> = {
     { name: "Parcel", icon: <SiVuedotjs className="text-yellow-600 w-8 h-8" />, category: "web-platforms" },
 
     // 🏆 Programming Languages
-    { name: "HTML5", icon: <FaHtml5 className="text-orange-600 w-8 h-8" />, category: "web-platforms" },
+    { name: "HTML5", icon: <FaHtml5 className="text-indigo-600 w-8 h-8" />, category: "web-platforms" },
     { name: "CSS3", icon: <FaCss3 className="text-blue-600 w-8 h-8" />, category: "web-platforms" },
     { name: "JavaScript", icon: <FaJs className="text-yellow-500 w-8 h-8" />, category: "web-platforms" },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-500 w-8 h-8" />, category: "web-platforms" },
@@ -128,9 +128,9 @@ const technologies: Record<string, Technology[]> = {
   ],
 
   "ai-ml": [
-    { name: "TensorFlow", icon: <SiTensorflow className="text-orange-500 w-8 h-8" />, category: "ai-ml" },
+    { name: "TensorFlow", icon: <SiTensorflow className="text-indigo-500 w-8 h-8" />, category: "ai-ml" },
     { name: "PyTorch", icon: <SiPytorch className="text-red-500 w-8 h-8" />, category: "ai-ml" },
-    { name: "GPT-4", icon: <FaBrain className="text-purple-600 w-8 h-8" />, category: "ai-ml" },
+    { name: "GPT-4", icon: <FaBrain className="text-indigo-600 w-8 h-8" />, category: "ai-ml" },
     { name: "OpenAI API", icon: <SiOpenai className="text-gray-600 w-8 h-8" />, category: "ai-ml" },
     { name: "Hugging Face", icon: <SiHuggingface className="text-yellow-500 w-8 h-8" />, category: "ai-ml" },
   ],
@@ -155,7 +155,7 @@ export default function TechnologiesSection() {
   const [activeCategory, setActiveCategory] = useState("mobile-apps");
 
   return (
-    <section className="relative bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white md:py-20 py-10 px-3 md:px-16">
+    <section className="relative bg-gradient-to-r from-indigo-500 via-indigo-500 to-blue-500 text-white md:py-20 py-10 px-3 md:px-16">
       <div className="absolute inset-0 bg-black bg-opacity-40 blur-lg"></div>
 
       <motion.div
@@ -182,8 +182,8 @@ export default function TechnologiesSection() {
               className={cn(
                 "px-6 py-3 rounded-full font-medium text-lg transition-all duration-300 text-nowrap",
                 activeCategory === category.id
-                  ? "bg-white text-purple-600 shadow-lg transform scale-105"
-                  : "bg-purple-600 text-white hover:bg-white hover:text-purple-600 shadow-md"
+                  ? "bg-white text-indigo-600 shadow-lg transform scale-105"
+                  : "bg-indigo-600 text-white hover:bg-white hover:text-indigo-600 shadow-md"
               )}
             >
               {category.name}

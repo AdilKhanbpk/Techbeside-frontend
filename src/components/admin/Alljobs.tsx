@@ -30,7 +30,7 @@ const JobCard: React.FC<JobCardProps> = ({
   title = "Urgent webapp and mobile app",
   location = "Tokyo",
   type = "Freelance",
-  company = "Techcreator",
+  company = "TechBeside",
   timeAgo = new Date(),
 }) => {
   const timeAgoFormatted = typeof timeAgo === 'string' ? new Date(timeAgo) : timeAgo
@@ -68,8 +68,8 @@ const JobCard: React.FC<JobCardProps> = ({
     <div className="bg-[#F4F6FC] text-black rounded-[24px] p-6 lg:w-[360px] w-[300px] h-[280px] hover:shadow-lg transition-shadow">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center">
-          <div className="w-2 h-2 rounded-full bg-purple-600 mr-2"></div>
-          <span className="text-purple-600 text-sm font-medium">{category}</span>
+          <div className="w-2 h-2 rounded-full bg-indigo-600 mr-2"></div>
+          <span className="text-indigo-600 text-sm font-medium">{category}</span>
         </div>
 
         <div className='flex gap-3'>
@@ -93,7 +93,7 @@ const JobCard: React.FC<JobCardProps> = ({
 
       <div className="flex items-center justify-between mt-20">
         <div className="flex items-center">
-          <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center mr-2">
+          <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center mr-2">
             <span className="text-white text-sm">T</span>
           </div>
           <span className="font-medium">{company}</span>

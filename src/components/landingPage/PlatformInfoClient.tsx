@@ -30,7 +30,7 @@ const PlatformInfoClient: React.FC<PlatformInfoProps> = ({ platformData }) => {
         viewport={{ once: true }}
         className="text-center  md:mt-16 mt-9"
       >
-        <h2 className="text-3xl md:text-4xl lg:text-5xl  font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-800">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl  font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-indigo-800">
           {platformData.heading}
         </h2>
         <p className="text-lg md:text-xl text-gray-700 mt-4 max-w-3xl mx-auto">
@@ -57,7 +57,7 @@ const PlatformInfoClient: React.FC<PlatformInfoProps> = ({ platformData }) => {
           </div>
 
           <div className="space-y-2">
-            <h4 className="text-xl font-semibold text-purple-600">Why Choose TechCreator?</h4>
+            <h4 className="text-xl font-semibold text-indigo-600">Why Choose TechBeside?</h4>
             <ul className="space-y-2 text-gray-700 list-disc list-inside">
               <li> Lightning-fast development cycles</li>
               <li> AI-powered code optimization</li>
@@ -70,7 +70,7 @@ const PlatformInfoClient: React.FC<PlatformInfoProps> = ({ platformData }) => {
             href="https://www.linkedin.com/in/saudkhan39"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center md:px-6 md:py-3 px-2 py-2 text-lg font-medium text-white bg-purple-600 rounded-full hover:bg-purple-700 transition-colors duration-200 group"
+            className="inline-flex items-center md:px-6 md:py-3 px-2 py-2 text-lg font-medium text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition-colors duration-200 group"
           >
             Connect on LinkedIn
             <FaLinkedin className="ml-2  group-hover:scale-110 transition-transform duration-200" />
@@ -90,7 +90,7 @@ const PlatformInfoClient: React.FC<PlatformInfoProps> = ({ platformData }) => {
           <iframe
             className="w-full h-full rounded-xl"
             src={platformData.youtubeEmbedUrl}
-            title="TechCreator Introduction"
+            title="TechBeside Introduction"
             loading="lazy"
             onLoad={() => setIsVideoLoaded(true)}
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

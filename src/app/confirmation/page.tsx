@@ -20,7 +20,7 @@ const ConfirmationPage: React.FC = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
       {/* Icon and Title Section */}
       <div className="flex flex-col items-center space-y-4">
-        <FaCheckCircle className="text-6xl text-purple-600 animate-bounce" />
+        <FaCheckCircle className="text-6xl text-indigo-600 animate-bounce" />
         <h1 className="text-4xl font-extrabold tracking-wide text-center">
           Thank You!
         </h1>
@@ -32,12 +32,12 @@ const ConfirmationPage: React.FC = () => {
 
       {/* Action Buttons */}
       <div className="mt-10 flex space-x-4">
-        <Link href="/" passHref   className="bg-purple-600 hover:bg-purple-700 transition duration-300 px-6 py-3 rounded-full text-lg font-semibold shadow-lg">
+        <Link href="/" passHref   className="bg-indigo-600 hover:bg-indigo-700 transition duration-300 px-6 py-3 rounded-full text-lg font-semibold shadow-lg">
           
             Go to Home
           
         </Link>
-        <Link href="/contact" passHref className="bg-white text-purple-600 hover:bg-gray-100 transition duration-300 px-6 py-3 rounded-full text-lg font-semibold shadow-lg">
+        <Link href="/contact" passHref className="bg-white text-indigo-600 hover:bg-gray-100 transition duration-300 px-6 py-3 rounded-full text-lg font-semibold shadow-lg">
         
             Contact Us
          

@@ -63,7 +63,7 @@ const DigitalMarketing = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: "Grow your online presence with targeted digital marketing campaigns." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Boost engagement with creative social media strategies and analytics.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Boost engagement with creative social media strategies and analytics.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: "Leverage data to drive traffic and convert leads effectively." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: "Achieve consistent results with data-driven and time-tested techniques." },
   ];
@@ -109,13 +109,13 @@ const DigitalMarketing = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Digital Marketing",
-                item: "https://www.techcreator.co/services/digital-marketing-for-software-companies",
+                item: "https://www.TechBeside.co/services/digital-marketing-for-software-companies",
               },
             ],
           }),
@@ -125,7 +125,7 @@ const DigitalMarketing = () => {
         title="Digital Marketing Services"
         description={
           <>
-           At TechCreator, we combine creativity and strategy to offer tailored digital marketing services that meet your unique business goals. From effective branding to result-driven campaigns, our team’s expertise ensures your online success.
+           At TechBeside, we combine creativity and strategy to offer tailored digital marketing services that meet your unique business goals. From effective branding to result-driven campaigns, our team’s expertise ensures your online success.
           </>
         }
         image={digitalMarketingHeroImage}
@@ -160,7 +160,7 @@ const DigitalMarketing = () => {
         <OurTeam />
       <RelatedServices services={services} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

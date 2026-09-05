@@ -173,7 +173,7 @@ const Page = () => {
                         className={`px-4 py-2 rounded ${
                           currentPage === 1
                             ? "bg-gray-200 text-gray-500"
-                            : "bg-purple-600 text-white"
+                            : "bg-indigo-600 text-white"
                         }`}
                       >
                         Previous
@@ -187,7 +187,7 @@ const Page = () => {
                         className={`px-4 py-2 rounded ${
                           currentPage === totalPages
                             ? "bg-gray-200 text-gray-500"
-                            : "bg-purple-600 text-white"
+                            : "bg-indigo-600 text-white"
                         }`}
                       >
                         Next

@@ -67,7 +67,7 @@ const projectManagement = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: " Manage projects with precision using advanced tracking and analytics tools." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: ' Ensure timely delivery with streamlined workflows and resource allocation.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: ' Ensure timely delivery with streamlined workflows and resource allocation.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: " Drive collaboration across teams for successful project execution." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: "Monitor progress in real-time to achieve project goals efficiently." },
   ];
@@ -83,7 +83,7 @@ const projectManagement = () => {
     },
     {
       image: projectimage3,
-      alt: "Project Management Services by TechCreator",
+      alt: "Project Management Services by TechBeside",
       title: "Project Planning and Team Management Services",
       content: (
         <>
@@ -132,13 +132,13 @@ const projectManagement = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Project Management",
-                item: "https://www.techcreator.co/services/project-management",
+                item: "https://www.TechBeside.co/services/project-management",
               },
             ],
           }),
@@ -148,7 +148,7 @@ const projectManagement = () => {
         title="Development Management and Complete Project Management Services"
         description={
           <>
-           <Link href="/" className="text-purple-600">TechCreator</Link>,{" "}  offers expert project management services for businesses, designed to optimize workflows and ensure the timely delivery of <strong className="font-bold">software development, apps or website development.</strong> Our team focuses on aligning development project objectives with your business goals, providing clarity, structure, and seamless execution for agile <strong className="font-bold">software development and IT project management.</strong>
+           <Link href="/" className="text-indigo-600">TechBeside</Link>,{" "}  offers expert project management services for businesses, designed to optimize workflows and ensure the timely delivery of <strong className="font-bold">software development, apps or website development.</strong> Our team focuses on aligning development project objectives with your business goals, providing clarity, structure, and seamless execution for agile <strong className="font-bold">software development and IT project management.</strong>
 
           </>
         }
@@ -160,7 +160,7 @@ const projectManagement = () => {
         title="Efficient Project Management Services" 
         description={
           <>
-           <Link href="/" className="underline">TechCreator</Link> ,{" "} offers reliable project management services designed to streamline workflows and ensure timely delivery of projects. Our team focuses on aligning project objectives with your business goals, providing clarity, structure, and seamless execution.With a keen focus on communication and collaboration, projects are delivered on time and within budget. Our approach minimizes risks and maximizes project success, driving growth and efficiency.
+           <Link href="/" className="underline">TechBeside</Link> ,{" "} offers reliable project management services designed to streamline workflows and ensure timely delivery of projects. Our team focuses on aligning project objectives with your business goals, providing clarity, structure, and seamless execution.With a keen focus on communication and collaboration, projects are delivered on time and within budget. Our approach minimizes risks and maximizes project success, driving growth and efficiency.
           </>
         }
            image={projectimage1}
@@ -184,7 +184,7 @@ const projectManagement = () => {
         <OurTeam />
       <RelatedServices services={services} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

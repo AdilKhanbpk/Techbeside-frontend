@@ -110,7 +110,7 @@ const OurProjectsGrid = ({ searchTerm }: OurProjectsGridProps) => {
                   className="bg-black bg-opacity-75 rounded-full p-2"
                   onClick={() => handleOpenWebsite(project.websiteLink)}
                 >
-                  <FaEye className="text-purple-600 w-6 h-6" />
+                  <FaEye className="text-indigo-600 w-6 h-6" />
                 </div>
                 {/* Edit Icon (for Update) */}
                 <div className="bg-black bg-opacity-75 rounded-full p-2">
@@ -130,7 +130,7 @@ const OurProjectsGrid = ({ searchTerm }: OurProjectsGridProps) => {
             </div>
 
             {/* Title always visible */}
-            <div className="absolute bottom-4 left-4 bg-[#9A00FF] bg-opacity-75 text-white p-2 rounded">
+            <div className="absolute bottom-4 left-4 bg-[#6366F1] bg-opacity-75 text-white p-2 rounded">
               <p className="text-sm font-semibold">{project.title}</p>
             </div>
           </div>
@@ -144,7 +144,7 @@ const OurProjectsGrid = ({ searchTerm }: OurProjectsGridProps) => {
           onClick={handlePrevious}
           disabled={currentPage === 1}
           className={`p-2 rounded-full ${
-            currentPage === 1 ? "text-gray-400" : "text-purple-600"
+            currentPage === 1 ? "text-gray-400" : "text-indigo-600"
           }`}
         >
           <FaArrowLeft size={20} />
@@ -158,7 +158,7 @@ const OurProjectsGrid = ({ searchTerm }: OurProjectsGridProps) => {
               onClick={() => handlePageClick(index + 1)}
               className={`px-3 py-1 rounded ${
                 currentPage === index + 1
-                  ? "bg-purple-600 text-white"
+                  ? "bg-indigo-600 text-white"
                   : "bg-gray-200 text-gray-800"
               }`}
             >
@@ -172,7 +172,7 @@ const OurProjectsGrid = ({ searchTerm }: OurProjectsGridProps) => {
           onClick={handleNext}
           disabled={currentPage === totalPages}
           className={`p-2 rounded-full ${
-            currentPage === totalPages ? "text-gray-400" : "text-purple-600"
+            currentPage === totalPages ? "text-gray-400" : "text-indigo-600"
           }`}
         >
           <FaArrowRight size={20} />

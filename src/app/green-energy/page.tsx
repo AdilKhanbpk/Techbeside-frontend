@@ -17,7 +17,7 @@ const GreenEnergy = () => {
       title="Green Energy Software Solutions for Sustainable Future"
       description={
         <>
-         With a mission to help user in the future of innovation in renewable energy, TechCreator Software Company also creates custom software solutions for sustainability and efficiency.
+         With a mission to help user in the future of innovation in renewable energy, TechBeside Software Company also creates custom software solutions for sustainability and efficiency.
         </>
       }
       buttonText="Get Started Today"

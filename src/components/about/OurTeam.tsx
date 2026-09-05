@@ -19,7 +19,7 @@ const OurTeam = async () => {
   
   {/* Text Section */}
   <div className="lg:w-1/2 w-full flex flex-col justify-center">
-    <h2 className="text-3xl md:text-4xl lg:text-5xl text-purple-600 font-bold">
+    <h2 className="text-3xl md:text-4xl lg:text-5xl text-indigo-600 font-bold">
       {teamData.heading}
     </h2>
     <p className="text-gray-600 mt-3 text-base md:text-lg">{teamData.description}</p>

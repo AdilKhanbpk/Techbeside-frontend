@@ -21,7 +21,7 @@ const ContactModal: FC<ContactModalProps> = ({ contact, onClose }) => {
         >
           &times;
         </button> */}
-        <h2 className="text-xl font-semibold mb-4 bg-[#9A00FF] text-white p-7 text-center">
+        <h2 className="text-xl font-semibold mb-4 bg-[#6366F1] text-white p-7 text-center">
           Contact Details
         </h2>
         <div className="p-2 mb-3">

@@ -23,7 +23,7 @@ const JobCard = ({
   title = "Urgent webapp and mobile app",
   location = "Tokyo",
   type = "Freelance",
-  company = "Techcreator",
+  company = "TechBeside",
   timeAgo = new Date(),
 }: JobCardProps) => {
   const timeAgoFormatted =
@@ -36,8 +36,8 @@ const JobCard = ({
     <div className="bg-[#F4F6FC] text-black rounded-[24px] p-6 md:w-[360px] w-[300px] h-[280px] hover:shadow-lg transition-shadow">
       <div className="flex items-center mb-3">
         <div className="flex items-center">
-          <div className="w-2 h-2 rounded-full bg-purple-600 mr-2"></div>
-          <span className="text-purple-600 text-sm font-medium">
+          <div className="w-2 h-2 rounded-full bg-indigo-600 mr-2"></div>
+          <span className="text-indigo-600 text-sm font-medium">
             {category}
           </span>
         </div>
@@ -58,7 +58,7 @@ const JobCard = ({
 
       <div className="flex items-center justify-between mt-20">
         <div className="flex items-center">
-          <div className="w-8 h-8 bg-[#9A00FF] rounded-full flex items-center justify-center mr-2">
+          <div className="w-8 h-8 bg-[#6366F1] rounded-full flex items-center justify-center mr-2">
             <span className="text-white text-sm">T</span>
           </div>
           <span className="font-medium">{company}</span>
@@ -94,7 +94,7 @@ useGetAllJobs()
     <>
       <div className=" mt-9 md:mt-16">
         <div className=" ">
-          <p className="font-inter font-semibold md:text-5xl text-3xl text-purple-600">Open positions</p>
+          <p className="font-inter font-semibold md:text-5xl text-3xl text-indigo-600">Open positions</p>
           <p className="font-inter font-normal text-[22px] text-[#838696] mt-2">
             Come join the team!
           </p>

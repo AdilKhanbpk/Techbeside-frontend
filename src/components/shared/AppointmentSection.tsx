@@ -37,7 +37,7 @@ const AppointmentSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleButtonClick = () => {
-    window.open("https://calendly.com/contact-techcreator/30min", "_blank");
+    window.open("https://calendly.com/contact-techbeside/30min", "_blank");
   };
 
   useEffect(() => {
@@ -73,9 +73,9 @@ const AppointmentSection: React.FC = () => {
     script.onload = () => {
       if (window.Calendly) {
         window.Calendly.initBadgeWidget({
-          url: "https://calendly.com/contact-techcreator/30min",
+          url: "https://calendly.com/contact-techbeside/30min",
           text: "Schedule Free Strategy Call",
-          color: "#9A00FF",
+          color: "#6366F1",
           textColor: "#ffffff",
         });
       }
@@ -101,7 +101,7 @@ const AppointmentSection: React.FC = () => {
   return (
     <div ref={containerRef} className="appointment-section">
       <CommonButton
-        className="bg-[#9A00FF] shadow-[0_4px_16px_-4px_#3b71ca] text-white px-3 py-1.5 h-fit md:px-4 md:py-2 rounded-full text-xs md:text-sm flex items-center gap-2"
+        className="bg-[#6366F1] shadow-[0_4px_16px_-4px_#3b71ca] text-white px-3 py-1.5 h-fit md:px-4 md:py-2 rounded-full text-xs md:text-sm flex items-center gap-2"
         title={
           <>
             <FaCalendarAlt /> Book Appointment

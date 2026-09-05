@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       disallow: ['/admin', '/admin/*', '/api/*'],
     },
-    sitemap: 'https://www.techcreator.co/sitemap.xml',
+    sitemap: 'https://www.TechBeside.co/sitemap.xml',
   }
 }

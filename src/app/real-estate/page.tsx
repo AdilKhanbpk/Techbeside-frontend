@@ -19,7 +19,7 @@ const RealEstate = () => {
         title="Real Estate Web and App development company"
         description={
           <>
-            At TechCreator, we go beyond app creation by offering comprehensive maintenance services to keep your app updated and running smoothly. From resolving bugs to implementing version updates, our experts ensure your app stays reliable and efficient.
+            At TechBeside, we go beyond app creation by offering comprehensive maintenance services to keep your app updated and running smoothly. From resolving bugs to implementing version updates, our experts ensure your app stays reliable and efficient.
             <br /><br />
             Our mobile apps come packed with features like price insights, location details, property age, and more—delivering the tools your audience needs to make informed decisions.
           </>

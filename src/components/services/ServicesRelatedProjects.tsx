@@ -50,7 +50,7 @@ const ServicesRelatedProjects: React.FC<IndustryProjectsProps> = ({ slug }) => {
           <div className=" mx-auto md:mt-16 mt-9 ">
             {/* Heading Section */}
             <div className="text-center ">
-              <h2 className="text-3xl md:text-5xl font-bold text-purple-600">Recent Work</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-indigo-600">Recent Work</h2>
               <p className="mt-4 text-lg text-gray-600   mx-auto">
               Explore our related work that highlights our commitment to innovation, seamless functionality, and delivering solutions tailored to meet diverse business needs. We specialize in creating responsive and user-friendly designs that yield measurable results.
 Want to bring your ideas to life? Let us help you achieve your goals with precision and creativity. Get in touch with us today to start your project!
@@ -76,7 +76,7 @@ Want to bring your ideas to life? Let us help you achieve your goals with precis
             quality={75} 
           />
                    <div className='pt-20'>
-                   <p className="absolute bottom-0 left-0 w-full  bg-purple-600 text-white text-center md:p-2 p-1 text-lg font-semibold">
+                   <p className="absolute bottom-0 left-0 w-full  bg-indigo-600 text-white text-center md:p-2 p-1 text-lg font-semibold">
     {project.title}
   </p>
                    </div>
@@ -90,7 +90,7 @@ Want to bring your ideas to life? Let us help you achieve your goals with precis
                         onKeyDown={(e) => e.key === "Enter" && handleRedirect(project.websiteLink)}
                         aria-label={`View project: ${project.title}`}
                       >
-                        <FaEye className=" text-4xl text-purple-600" />
+                        <FaEye className=" text-4xl text-indigo-600" />
                       </div>
                     </div>
                   ))}

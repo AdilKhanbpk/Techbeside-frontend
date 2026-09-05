@@ -23,7 +23,7 @@ const values = [
   {
     title: "Empower & Grow",
     description:
-      "At TechCreator, you will consistently enhance and develop your skills while widening your personal and professional experiences.",
+      "At TechBeside, you will consistently enhance and develop your skills while widening your personal and professional experiences.",
     icon: <FaRocket />,
   },
   {
@@ -44,7 +44,7 @@ const OurValues: React.FC = () => {
   return (
     <section className="relative  text-white md:mt-16 mt-9">
 
-      <h2 className="text-3xl text-center md:text-4xl lg:text-5xl  font-bold md:mb-9 mb-6 tracking-wide text-purple-600">
+      <h2 className="text-3xl text-center md:text-4xl lg:text-5xl  font-bold md:mb-9 mb-6 tracking-wide text-indigo-600">
         Our Core Values
       </h2>
 
@@ -52,7 +52,7 @@ const OurValues: React.FC = () => {
         {values.map((value, index) => (
           <div
             key={index}
-            className="relative md:p-6 p-2 bg-gradient-to-r from-purple-500 to-indigo-500 bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg hover:bg-opacity-20 transition duration-300  hover:scale-105 hover:shadow-2xl"
+            className="relative md:p-6 p-2 bg-gradient-to-r from-indigo-500 to-indigo-500 bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg hover:bg-opacity-20 transition duration-300  hover:scale-105 hover:shadow-2xl"
           >
             <div className="flex flex-col items-center ">
               <div className="text-5xl text-yellow-400  ">{value.icon}</div>

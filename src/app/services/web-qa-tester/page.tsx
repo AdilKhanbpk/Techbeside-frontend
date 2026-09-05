@@ -63,7 +63,7 @@ const QATesting = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: "Conduct rigorous testing to ensure bug-free and reliable applications." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Perform detailed testing for performance, security, and compatibility.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Perform detailed testing for performance, security, and compatibility.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: "Deliver reports with actionable insights to enhance application quality." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: "Ensure seamless user experience with comprehensive quality assurance." },
   ];
@@ -75,7 +75,7 @@ const QATesting = () => {
       alt: "Customized QA solutions for different sectors toward achieving error-free working",
       title: "Specialized For Diverse Industries",
       content:
-        "No matter your industry, TechCreator offers tailored QA solutions. From e-commerce to healthcare and beyond, our testing services are designed to meet the specific challenges of your domain, ensuring error-free performance. We have councilors to understand the unique requirements of each industry and make sure our testing methods align with your business end goals. Whether it's compliance for healthcare or scalability for e-commerce, we ensure your software meets the expectations you desire and get you to your targeted audience and results that support your business growth.",
+        "No matter your industry, TechBeside offers tailored QA solutions. From e-commerce to healthcare and beyond, our testing services are designed to meet the specific challenges of your domain, ensuring error-free performance. We have councilors to understand the unique requirements of each industry and make sure our testing methods align with your business end goals. Whether it's compliance for healthcare or scalability for e-commerce, we ensure your software meets the expectations you desire and get you to your targeted audience and results that support your business growth.",
     },
     {
       image: qaimage3,
@@ -109,13 +109,13 @@ const QATesting = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "QA Testing",
-                item: "https://www.techcreator.co/services/web-qa-tester",
+                item: "https://www.TechBeside.co/services/web-qa-tester",
               },
             ],
           }),
@@ -125,7 +125,7 @@ const QATesting = () => {
         title="QA Testing Services"
         description={
           <>
-           At TechCreator, Expert QA testing services ensure your software is flawless and reliable. From <Link href="/services/web-development" className="text-purple-600">identifying bugs</Link>,{" "}to improving functionality, we help businesses deliver top-quality applications that meet user expectations.
+           At TechBeside, Expert QA testing services ensure your software is flawless and reliable. From <Link href="/services/web-development" className="text-indigo-600">identifying bugs</Link>,{" "}to improving functionality, we help businesses deliver top-quality applications that meet user expectations.
           </>
         }
         image={qatestinImage}
@@ -160,7 +160,7 @@ const QATesting = () => {
         <OurTeam />
       <RelatedServices services={services} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

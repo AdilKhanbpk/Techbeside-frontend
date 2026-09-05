@@ -62,7 +62,7 @@ const UIUXDesign = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: "Design intuitive interfaces that enhance user experience across platforms." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Simplify navigation with creative and responsive UI designs.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Simplify navigation with creative and responsive UI designs.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: " Incorporate user feedback to deliver tailored designs that engage and delight." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: " Ensure every design aligns with your brand and user expectations." },
   ];
@@ -71,14 +71,14 @@ const UIUXDesign = () => {
   const sections = [
     {
       image: uxdesignimage2,
-      alt: "Mobile UI/UX design from TechCreator comes with sleek, responsive, and intuitive interfaces for maximum engaging on-the-go experience",
+      alt: "Mobile UI/UX design from TechBeside comes with sleek, responsive, and intuitive interfaces for maximum engaging on-the-go experience",
       title: "Mobile UI/UX Design for On-the-Go Excellence",
       content:
         "In a mobile-first world, our expertise in mobile UI/UX design ensures your applications are optimized for smaller screens without compromising user experience. We design sleek, responsive, and intuitive interfaces that captivate users across all devices. Our focus on simplicity and accessibility ensures a seamless experience for users on the go. We create mobile interfaces that engage users and keep them coming back for more.",
     },
     {
       image: uxdesignimage3,
-      alt: "Comprehensive UI/UX solutions by TechCreator, solving user challenges and driving business results from ideation to implementation",
+      alt: "Comprehensive UI/UX solutions by TechBeside, solving user challenges and driving business results from ideation to implementation",
       title: "Your Choice for Multi-Device Reach",
       content: 'We provide comprehensive UI/UX design services, covering every step from ideation to implementation. Our goal is to deliver designs that not only look great but also solve real user challenges, driving results for your business.Designs are crafted with user behavior in mind, ensuring a seamless experience that leads to higher engagement. Tailored to your business goals, the result is a user-friendly interface that fuels growth and satisfaction.'
     },
@@ -108,13 +108,13 @@ const UIUXDesign = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "UI/UX Design Agency",
-                item: "https://www.techcreator.co/services/ui-ux-design-agency",
+                item: "https://www.TechBeside.co/services/ui-ux-design-agency",
               },
             ],
           }),
@@ -124,7 +124,7 @@ const UIUXDesign = () => {
         title="Exceptional Digital Experiences: UI/UX Design Services"
         description={
           <>
-            At TechCreator, our UI/UX design is built around delivering intuitive and visually engaging interfaces. We focus on creating user journeys that enhance interaction and improve satisfaction, ensuring your platform stands out in a competitive digital landscape.
+            At TechBeside, our UI/UX design is built around delivering intuitive and visually engaging interfaces. We focus on creating user journeys that enhance interaction and improve satisfaction, ensuring your platform stands out in a competitive digital landscape.
           </>
         }
         image={UIUXDesignImage}
@@ -160,7 +160,7 @@ const UIUXDesign = () => {
         <OurTeam />
       <RelatedServices services={services} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

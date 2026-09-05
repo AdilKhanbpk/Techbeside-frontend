@@ -105,7 +105,7 @@ const AllBlogs: React.FC = () => {
         <Link href="/admin/create-blog" passHref>
           <button
             aria-label="Add Blog"
-            className="flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-lg shadow-md hover:from-indigo-600 hover:to-purple-500 transition duration-300"
+            className="flex items-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg shadow-md hover:from-indigo-600 hover:to-indigo-500 transition duration-300"
           >
             <IoMdAdd className="mr-2 text-xl" /> Add Blog
           </button>
@@ -198,7 +198,7 @@ const AllBlogs: React.FC = () => {
                 <button
                   onClick={handlePrevious}
                   disabled={currentPage === 1}
-                  className={`px-4 py-2 rounded ${currentPage === 1 ? "bg-gray-200 text-gray-500" : "bg-purple-600 text-white"}`}
+                  className={`px-4 py-2 rounded ${currentPage === 1 ? "bg-gray-200 text-gray-500" : "bg-indigo-600 text-white"}`}
                 >
                   Previous
                 </button>
@@ -208,7 +208,7 @@ const AllBlogs: React.FC = () => {
                 <button
                   onClick={handleNext}
                   disabled={currentPage === totalPages}
-                  className={`px-4 py-2 rounded ${currentPage === totalPages ? "bg-gray-200 text-gray-500" : "bg-purple-600 text-white"}`}
+                  className={`px-4 py-2 rounded ${currentPage === totalPages ? "bg-gray-200 text-gray-500" : "bg-indigo-600 text-white"}`}
                 >
                   Next
                 </button>

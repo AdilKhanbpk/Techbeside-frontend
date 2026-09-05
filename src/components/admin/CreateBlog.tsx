@@ -332,7 +332,7 @@ const CreateBlogForm = () => {
               <IoIosAddCircle
                 size={32}
                 onClick={handleTagAdd}
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-purple-600"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-indigo-600"
               />
             </div>
           </div>
@@ -342,7 +342,7 @@ const CreateBlogForm = () => {
         <div className="mb-4 text-center">
   <button
     type="submit"
-    className="bg-purple-600 text-white py-2 px-6 rounded-lg hover:bg-purple-700 focus:outline-none relative"
+    className="bg-indigo-600 text-white py-2 px-6 rounded-lg hover:bg-indigo-700 focus:outline-none relative"
     disabled={loading}
   >
     {loading ? (

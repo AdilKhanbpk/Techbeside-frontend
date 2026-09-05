@@ -16,10 +16,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "TechCreator - Software Development & Digital Marketing Agency",
+  title: "TechBeside - Software Development & Digital Marketing Agency",
   description:
-    "With TechCreator, you can get the marketing and development solutions you need to grow your company. Compete in your market now.",
-  metadataBase: new URL("https://www.techcreator.co"),
+    "With TechBeside, you can get the marketing and development solutions you need to grow your company. Compete in your market now.",
+  metadataBase: new URL("https://www.TechBeside.co"),
 };
 
 export default function RootLayout({

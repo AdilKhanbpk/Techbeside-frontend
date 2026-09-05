@@ -64,7 +64,7 @@ const SeoContentWriting = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: " Improve your search engine rankings with optimized and engaging content." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Craft compelling content tailored to your audience and business goals.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Craft compelling content tailored to your audience and business goals.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: "Implement effective strategies to drive traffic and boost online visibility." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: " Deliver consistent and high-quality content on time to meet your needs." },
   ];
@@ -110,13 +110,13 @@ const SeoContentWriting = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "SEO Services",
-                item: "https://www.techcreator.co/services/seo-services-for-small-business",
+                item: "https://www.TechBeside.co/services/seo-services-for-small-business",
               },
             ],
           }),
@@ -126,7 +126,7 @@ const SeoContentWriting = () => {
         title="SEO Content Writing Services"
         description={
           <>
-          At TechCreator, we provide professional SEO content writing services designed to align with your business goals and improve search engine visibility. With a focus on quality and relevance, our content engages audiences and supports a comprehensive SEO content strategy that drives measurable results.
+          At TechBeside, we provide professional SEO content writing services designed to align with your business goals and improve search engine visibility. With a focus on quality and relevance, our content engages audiences and supports a comprehensive SEO content strategy that drives measurable results.
           </>
         }
         image={SEOImage}
@@ -161,7 +161,7 @@ const SeoContentWriting = () => {
         <OurTeam />
       <RelatedServices services={services} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

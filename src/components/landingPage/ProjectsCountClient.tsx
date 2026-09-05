@@ -35,7 +35,7 @@ const StatItem: React.FC<StatItemProps> = ({ value, label, description, delay })
             "10+"
           )}
         </div>
-        <h3 className="text-xl md:text-2xl font-semibold text-purple-400 mb-2">
+        <h3 className="text-xl md:text-2xl font-semibold text-indigo-400 mb-2">
           {label}
         </h3>
         <p className="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -66,7 +66,7 @@ const ProjectsCountClient: React.FC<{ stats: StatItemProps[] }> = ({ stats }) =>
         onLoad={() => setIsImageLoaded(true)}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/30 to-transparent" />
     </div>
   
     {/* ✅ Content */}
@@ -79,7 +79,7 @@ const ProjectsCountClient: React.FC<{ stats: StatItemProps[] }> = ({ stats }) =>
         viewport={{ once: true }} 
         className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
       >
-        Empowered Teams, <span className="text-purple-400">Proven Success</span>
+        Empowered Teams, <span className="text-indigo-400">Proven Success</span>
       </motion.h2>
       <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-16">
         Our global impact and dedication to excellence have helped businesses achieve their digital transformation goals.

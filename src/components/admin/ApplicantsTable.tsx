@@ -146,7 +146,7 @@ const ApplicantsTable: React.FC<UserTableProps> = ({ users }) => {
               <td className="px-4 py-2">
                 <div className="flex space-x-4">
                   <button
-                    className="text-purple-600 hover:text-purple-700"
+                    className="text-indigo-600 hover:text-indigo-700"
                     onClick={() => handleSeeDetail(user)}
                     aria-label="See Detail"
                   >
@@ -174,7 +174,7 @@ const ApplicantsTable: React.FC<UserTableProps> = ({ users }) => {
                   className={`px-4 py-2 rounded ${
                     currentPage === 1
                       ? "bg-gray-200 text-gray-500"
-                      : "bg-purple-600 text-white"
+                      : "bg-indigo-600 text-white"
                   }`}
                 >
                   Previous
@@ -188,7 +188,7 @@ const ApplicantsTable: React.FC<UserTableProps> = ({ users }) => {
                   className={`px-4 py-2 rounded ${
                     currentPage === totalPages
                       ? "bg-gray-200 text-gray-500"
-                      : "bg-purple-600 text-white"
+                      : "bg-indigo-600 text-white"
                   }`}
                 >
                   Next
@@ -209,7 +209,7 @@ const ApplicantsTable: React.FC<UserTableProps> = ({ users }) => {
             className="bg-white text-black  w-full md:max-w-xl shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-lg font-semibold mb-8 text-center bg-[#9A00FF] text-white p-7">
+            <h2 className="text-lg font-semibold mb-8 text-center bg-[#6366F1] text-white p-7">
               User Details
             </h2>
             <div className="p-2 mb-3">

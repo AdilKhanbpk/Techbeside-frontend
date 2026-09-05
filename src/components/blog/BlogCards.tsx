@@ -89,7 +89,7 @@ const BlogCards: React.FC<BlogCardsProps> = ({ initialBlogs = [] }) => {
                         className={`mt-6 w-full py-3 text-sm font-semibold text-white rounded-xl transition duration-300 mb-2 ${
                           loadingBlogId === blog._id
                             ? "bg-gray-400 cursor-not-allowed"
-                            : "bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900"
+                            : "bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900"
                         }`}
                       >
                         {loadingBlogId === blog._id ? (
@@ -151,7 +151,7 @@ const BlogCards: React.FC<BlogCardsProps> = ({ initialBlogs = [] }) => {
                   onClick={() => paginate(index + 1)}
                   className={`p-3 px-5 rounded-full ${
                     currentPage === index + 1
-                      ? "bg-[#9A00FF] text-white"
+                      ? "bg-[#6366F1] text-white"
                       : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                   }`}
                 >

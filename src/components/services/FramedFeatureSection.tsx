@@ -10,7 +10,7 @@
 
 // const FramedFeatureSection: React.FC<FramedFeatureSectionProps> = ({ image, alt, title, content }) => {
 //   return (
-//     <div className="lg:relative bg-[#9A00FF] lg:h-[450px] mx-auto md:mt-32 mt-9">
+//     <div className="lg:relative bg-[#6366F1] lg:h-[450px] mx-auto md:mt-32 mt-9">
 //       <div className="lg:relative px-5 flex flex-col lg:flex-row items-center lg:items-start gap-3 md:gap-10">
 //         {/* Text Content */}
 //         <div className="lg:relative z-10 lg:max-w-[600px] xl:max-w-[800px] xl:p-10 text-center lg:text-left">
@@ -56,7 +56,7 @@ const FramedFeatureSection: React.FC<FramedFeatureSectionProps> = ({
   content,
 }) => {
   return (
-    <div className="relative bg-gradient-to-br from-[#9A00FF] to-[#6200EA] py-12 px-6 sm:px-12 lg:px-16 rounded-lg shadow-xl mx-auto md:mt-32 mt-10">
+    <div className="relative bg-gradient-to-br from-[#6366F1] to-[#6200EA] py-12 px-6 sm:px-12 lg:px-16 rounded-lg shadow-xl mx-auto md:mt-32 mt-10">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-16">
         
         {/* 📝 Text Content */}

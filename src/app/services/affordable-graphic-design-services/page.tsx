@@ -63,7 +63,7 @@ const GraphicDesign = () => {
 
   const features = [
     { icon: <LayoutDashboard className="w-6 h-6 text-pink-500" />, text: "Create eye-catching designs that represent your brand effectively." },
-    { icon: <FileText className="w-6 h-6 text-purple-500" />, text: 'Deliver creative solutions for logos, banners, brochures, and more.' },
+    { icon: <FileText className="w-6 h-6 text-indigo-500" />, text: 'Deliver creative solutions for logos, banners, brochures, and more.' },
     { icon: <Zap className="w-6 h-6 text-yellow-500" />, text: "Focus on innovation to create stunning visuals that captivate your audience." },
     { icon: <Clock className="w-6 h-6 text-blue-500" />, text: "Ensure timely delivery of designs without compromising on quality." },
   ];
@@ -72,14 +72,14 @@ const GraphicDesign = () => {
   const sections = [
     {
       image: graphic1,
-      alt: "TechCreator attracts audience to your products graphic designing",
+      alt: "TechBeside attracts audience to your products graphic designing",
       title: "Agency for Graphic Design Tailored to Your Brand",
       content:
-        "At TechCreator, we understand the importance of design diversity. Our expertise spans various graphic design styles, ensuring we can create the perfect visual identity for your business, whether it’s modern, minimalistic, or vibrant and bold.We work closely and understand the needs of your business and then translating them into audience-oriented designs. We deal in different categories such as digital assets, print materials or full brand overhauls. Our designs will always resonate with your target market.",
+        "At TechBeside, we understand the importance of design diversity. Our expertise spans various graphic design styles, ensuring we can create the perfect visual identity for your business, whether it’s modern, minimalistic, or vibrant and bold.We work closely and understand the needs of your business and then translating them into audience-oriented designs. We deal in different categories such as digital assets, print materials or full brand overhauls. Our designs will always resonate with your target market.",
     },
     {
       image: graphic2,
-      alt: "TechCreator offers services in graphic designing for your brand",
+      alt: "TechBeside offers services in graphic designing for your brand",
       title: "Custom Designs for Every Need",
       content: 'We offer a wide range of services, including branding, infographics, and digital marketing assets. With our agency for graphic design, you’ll receive personalized solutions designed to stand out in today’s competitive market.Our team of experts make sure that every element in design reflect your unique identity of your brand. Along with attention-grabbing logos to engaging social media visuals we guarantee designs that not only look great but also driven results and elevate your brand’s online presence.'
     },
@@ -109,13 +109,13 @@ const GraphicDesign = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.techcreator.co/",
+                item: "https://www.TechBeside.co/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Graphic Design Services",
-                item: "https://www.techcreator.co/services/affordable-graphic-design-services",
+                item: "https://www.TechBeside.co/services/affordable-graphic-design-services",
               },
             ],
           }),
@@ -125,7 +125,7 @@ const GraphicDesign = () => {
         title="Affordable Graphic Design Services for Your Business"
         description={
           <>
-           <Link href="/" className="text-purple-600">TechCreator</Link>,{" "}is your go-to agency for graphic design, offering creative solutions that bring your ideas to life. From logos to <Link href="/services/digital-marketing-for-software-companies" className="text-purple-600">marketing materials</Link>,{" "}our designs are crafted to communicate your brand's message effectively and captivate your audience.
+           <Link href="/" className="text-indigo-600">TechBeside</Link>,{" "}is your go-to agency for graphic design, offering creative solutions that bring your ideas to life. From logos to <Link href="/services/digital-marketing-for-software-companies" className="text-indigo-600">marketing materials</Link>,{" "}our designs are crafted to communicate your brand's message effectively and captivate your audience.
           </>
         }
         image={heroimage}
@@ -160,7 +160,7 @@ const GraphicDesign = () => {
         <OurTeam />
       <RelatedServices services={services} />
     
-        <div className=" bg-purple-600 md:mt-16 mt-9 md:mb-16 mb-9">
+        <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           <ClientReviews />
           <ClientTestimonialsSection />
         </div>

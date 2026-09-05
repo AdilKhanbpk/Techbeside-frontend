@@ -17,7 +17,7 @@ const Healthcare = () => {
       title="Custom HealthCare Software Development Solutions & Services"
       description={
         <>
-          At TechCreator, we don’t just develop software—we build lasting relationships by bridging the bio and tech fields. With over five years of experience in the medical and tech industries, we understand the unique challenges healthcare organizations face.
+          At TechBeside, we don’t just develop software—we build lasting relationships by bridging the bio and tech fields. With over five years of experience in the medical and tech industries, we understand the unique challenges healthcare organizations face.
           <br /><br />
           That’s why we deliver tailored solutions that seamlessly improve patient care, enhance reporting and analytics, strengthen data security, and boost efficiency—all under one roof. Using advanced approaches like IoMT, Blockchain, and AI, we combine expertise and innovation to meet your needs and drive meaningful results.
         </>

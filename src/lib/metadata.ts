@@ -13,8 +13,8 @@ interface MetadataOptions {
   type?: 'website' | 'article';
 }
 
-const BASE_URL = 'https://www.techcreator.co';
-const DEFAULT_OG_IMAGE = 'https://www.techcreator.co/assets/icons/Logo.png';
+const BASE_URL = 'https://www.techbeside.dev';
+const DEFAULT_OG_IMAGE = 'https://www.techbeside.dev/logo.png';
 
 export const generateMetadata = (
   path: string,
@@ -25,7 +25,7 @@ export const generateMetadata = (
     description,
     keywords,
     ogImage = DEFAULT_OG_IMAGE,
-    ogImageAlt = 'TechCreator - Software Development & Digital Marketing',
+    ogImageAlt = 'TechBeside - Software Development & Digital Marketing',
     twitterCard = 'summary_large_image',
     author,
     publishedDate,
@@ -34,7 +34,7 @@ export const generateMetadata = (
   } = options;
 
   const url = `${BASE_URL}${path}`;
-  const fullTitle = `${title} | TechCreator`;
+  const fullTitle = `${title} | TechBeside`;
 
   const metadata: Metadata = {
     title: fullTitle,
@@ -57,14 +57,14 @@ export const generateMetadata = (
           alt: ogImageAlt,
         },
       ],
-      siteName: 'TechCreator',
+      siteName: 'TechBeside',
     },
     twitter: {
       card: twitterCard,
       title: fullTitle,
       description,
       images: [ogImage],
-      creator: '@techcreatorco',
+      creator: '@techbesideofficial',
     },
   };
 
@@ -90,7 +90,7 @@ export const pageMetadata = {
   home: generateMetadata('/', {
     title: 'Software Development and Digital Marketing Agency',
     description:
-      'With TechCreator, you can get the marketing and development solutions you need to grow your company. Compete in your market now.',
+      'With TechBeside, you can get the marketing and development solutions you need to grow your company. Compete in your market now.',
     keywords: [
       'software development',
       'digital marketing',
@@ -103,9 +103,9 @@ export const pageMetadata = {
   about: generateMetadata('/about', {
     title: 'About Us',
     description:
-      'Learn about TechCreator team of expert developers, designers, and marketers dedicated to delivering innovative software solutions and digital marketing strategies.',
+      'Learn about TechBeside team of expert developers, designers, and marketers dedicated to delivering innovative software solutions and digital marketing strategies.',
     keywords: [
-      'about techcreator',
+      'about techbeside',
       'software development team',
       'digital marketing experts',
       'custom software company',
@@ -135,7 +135,7 @@ export const pageMetadata = {
   blog: generateMetadata('/blog', {
     title: 'Blog - Tech Insights & Industry Trends',
     description:
-      'Stay updated with the latest trends in software development, digital marketing, technology insights, and best practices from TechCreator experts.',
+      'Stay updated with the latest trends in software development, digital marketing, technology insights, and best practices from TechBeside experts.',
     keywords: [
       'tech blog',
       'software development trends',
@@ -174,7 +174,7 @@ export const pageMetadata = {
   contact: generateMetadata('/contact', {
     title: 'Contact Us - Get Your Free Consultation',
     description:
-      'Ready to transform your business? Contact TechCreator today for a free consultation and let us help you achieve your goals.',
+      'Ready to transform your business? Contact TechBeside today for a free consultation and let us help you achieve your goals.',
     keywords: [
       'contact us',
       'get in touch',
@@ -187,7 +187,7 @@ export const pageMetadata = {
   career: generateMetadata('/career', {
     title: 'Careers - Join Our Team',
     description:
-      'Join the TechCreator team! Explore career opportunities and become part of our innovative software development and digital marketing company.',
+      'Join the TechBeside team! Explore career opportunities and become part of our innovative software development and digital marketing company.',
     keywords: [
       'careers',
       'jobs',
@@ -200,7 +200,7 @@ export const pageMetadata = {
   termsConditions: generateMetadata('/terms-conditions', {
     title: 'Terms and Conditions - Rules for Using Our Platform',
     description:
-      'Understand the rules, responsibilities, and limitations for using TechCreator\'s services. Explore user obligations, prohibited activities, content policies, and governing laws.',
+      'Understand the rules, responsibilities, and limitations for using TechBeside\'s services. Explore user obligations, prohibited activities, content policies, and governing laws.',
     keywords: [
       'terms and conditions',
       'terms of service',
@@ -213,7 +213,7 @@ export const pageMetadata = {
   privacyPolicy: generateMetadata('/privacy-policy', {
     title: 'Privacy Policy - Your Data, Protected',
     description:
-      'Learn how TechCreator collects, uses, and protects your data to ensure a safe and personalized experience. Explore our privacy practices, data security measures, and cookie usage.',
+      'Learn how TechBeside collects, uses, and protects your data to ensure a safe and personalized experience. Explore our privacy practices, data security measures, and cookie usage.',
     keywords: [
       'privacy policy',
       'data protection',
@@ -225,12 +225,12 @@ export const pageMetadata = {
   }),
 
   jobApply: generateMetadata('/job-apply', {
-    title: 'Apply for a Job at TechCreator',
+    title: 'Apply for a Job at TechBeside',
     description:
-      'Submit your job application to TechCreator. Send us your CV and join our team of expert developers, designers, and digital marketers.',
+      'Submit your job application to TechBeside. Send us your CV and join our team of expert developers, designers, and digital marketers.',
     keywords: [
       'job application',
-      'careers at TechCreator',
+      'careers at TechBeside',
       'apply now',
       'software developer jobs',
       'digital marketer jobs',
@@ -241,7 +241,7 @@ export const pageMetadata = {
     ...generateMetadata('/confirmation', {
       title: 'Thank You - Request Submitted',
       description:
-        'Your request has been submitted successfully. TechCreator will review it and get back to you as soon as possible.',
+        'Your request has been submitted successfully. TechBeside will review it and get back to you as soon as possible.',
       keywords: [],
     }),
     robots: {
@@ -286,13 +286,13 @@ export const blogPostMetadata = (
 export const servicesMetadata = {
   webDevelopment: generateMetadata('/services/web-development', {
     title: 'Progressive Web Development Company',
-    description: 'TechCreator provides full-fledged progressive web app development services. Custom, scalable, and SEO-friendly web solutions for your business.',
+    description: 'TechBeside provides full-fledged progressive web app development services. Custom, scalable, and SEO-friendly web solutions for your business.',
     keywords: ['progressive web development', 'web development company', 'custom web solutions', 'responsive web design', 'progressive web apps'],
   }),
 
   mobileApp: generateMetadata('/services/mobile-app-development-company', {
     title: 'Android and iOS Mobile App Development Services',
-    description: 'Build iOS and Android mobile apps with TechCreator. Expert mobile app developers creating innovative, user-centric applications.',
+    description: 'Build iOS and Android mobile apps with TechBeside. Expert mobile app developers creating innovative, user-centric applications.',
     keywords: ['Android app development', 'iOS app development', 'mobile app development services', 'cross-platform apps', 'mobile solutions'],
   }),
 

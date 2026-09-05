@@ -38,12 +38,12 @@ const ServiceSection = () => {
         transition={{ duration: 0.8 }}
         className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-6 leading-tight"
       >
-        Elevate Your <span className='text-purple-600'>Online</span> Presence
+        Elevate Your <span className='text-indigo-600'>Online</span> Presence
       </motion.h2>
 
       <p className="text-center text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-10 md:mb-12">
         We craft <span className="font-semibold">high-performance websites</span> using  
-        <span className="font-semibold text-purple-400"> MERN, MEAN, and Next.js</span>.
+        <span className="font-semibold text-indigo-400"> MERN, MEAN, and Next.js</span>.
       </p>
 
       {/* Features & Image */}
@@ -60,7 +60,7 @@ const ServiceSection = () => {
             alt="High-performance website services"
             width={500}
             height={380}
-            className="rounded-lg shadow-lg border-2 md:border-4 border-purple-500 transform hover:scale-105 transition-transform duration-500"
+            className="rounded-lg shadow-lg border-2 md:border-4 border-indigo-500 transform hover:scale-105 transition-transform duration-500"
           />
         </motion.div>
 
@@ -88,9 +88,9 @@ const ServiceSection = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.3 }}
-              className="flex items-start bg-[#0f1b2b] p-4 md:p-6 rounded-lg md:rounded-xl shadow-lg md:shadow-xl backdrop-blur-md bg-opacity-80 hover:scale-105 transition-transform duration-300 border border-purple-500"
+              className="flex items-start bg-[#0f1b2b] p-4 md:p-6 rounded-lg md:rounded-xl shadow-lg md:shadow-xl backdrop-blur-md bg-opacity-80 hover:scale-105 transition-transform duration-300 border border-indigo-500"
             >
-              <feature.Icon className="text-purple-400 w-10 h-10 md:w-12 md:h-12 flex-shrink-0" />
+              <feature.Icon className="text-indigo-400 w-10 h-10 md:w-12 md:h-12 flex-shrink-0" />
               <div className="ml-3 md:ml-4">
                 <h3 className="text-xl md:text-2xl font-semibold text-white">{feature.title}</h3>
                 <p className="text-gray-400 text-sm md:text-base mt-1">{feature.description}</p>
@@ -112,7 +112,7 @@ const ServiceSection = () => {
            onClick={scrollToContact} 
             whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(0, 123, 255, 0.6)" }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold shadow-lg hover:shadow-blue-500/50 transition-all duration-300 flex items-center gap-2 md:gap-3 mx-auto text-lg md:text-xl"
+            className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold shadow-lg hover:shadow-blue-500/50 transition-all duration-300 flex items-center gap-2 md:gap-3 mx-auto text-lg md:text-xl"
           >
             Get Built Your Site
             <ArrowDownIcon className="w-5 h-5 md:w-6 md:h-6" />

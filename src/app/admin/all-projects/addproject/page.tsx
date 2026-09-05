@@ -565,7 +565,7 @@ const AddProjectPage: React.FC = () => {
                   onClick={() =>
                     document.getElementById("projectScreenshot")?.click()
                   }
-                  className="mt-2 px-4 py-2 bg-purple-600 text-white rounded-lg"
+                  className="mt-2 px-4 py-2 bg-indigo-600 text-white rounded-lg"
                 >
                   Browse File
                 </button>
@@ -584,7 +584,7 @@ const AddProjectPage: React.FC = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full md:w-auto px-4 py-2 bg-purple-600 text-white font-semibold rounded-lg"
+                className="w-full md:w-auto px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg"
               >
                 {loading
                   ? "Loading..."
