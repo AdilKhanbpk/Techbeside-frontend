@@ -421,7 +421,7 @@ const SaasMvpDevelopment = () => {
 
         {/* Reviews and Testimonials */}
         <div className="bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9 rounded-2xl overflow-hidden py-6">
-          <ClientReviews />
+          {/* <ClientReviews /> */}
           <ClientTestimonialsSection />
         </div>
 

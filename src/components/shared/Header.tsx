@@ -1,347 +1,259 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Menu, PhoneCall, X } from "lucide-react";
+import { Menu, PhoneCall, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from 'framer-motion';
-
+import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import {
-  FaHome,
-  FaInfoCircle,
-  FaTags,
-  FaBlog,
-  FaProjectDiagram,
-  FaWrench,
-  FaPencilRuler,
-  FaBriefcase,
-  FaEnvelope,
   FaDesktop,
   FaMobileAlt,
   FaPaintBrush,
   FaCogs,
-  FaTasks,
-  FaSearch,
-  FaCheck,
   FaBullhorn,
   FaRocket,
+  FaTasks,
+  FaSearch,
+  FaWrench,
+  FaPencilRuler,
+  FaCheck,
 } from "react-icons/fa";
-import { usePathname, useRouter } from "next/navigation";
 import TechBesideLogo from "../../../public/logo.png";
 
-const Header: React.FC = () => {
+const services = [
+  { name: "Web Development", href: "/services/web-development", icon: <FaDesktop /> },
+  { name: "Mobile App Development", href: "/services/mobile-app-development-company", icon: <FaMobileAlt /> },
+  { name: "UI & UX Designing", href: "/services/ui-ux-design-agency", icon: <FaPaintBrush /> },
+  { name: "DevOps", href: "/services/devops", icon: <FaCogs /> },
+  { name: "Digital Marketing", href: "/services/digital-marketing-for-software-companies", icon: <FaBullhorn /> },
+  { name: "SaaS MVP Development", href: "/services/saas-mvp-development", icon: <FaRocket /> },
+  { name: "Project Management", href: "/services/project-management", icon: <FaTasks /> },
+  { name: "SEO & Content Writing", href: "/services/seo-services-for-small-business", icon: <FaSearch /> },
+  { name: "Software Maintenance", href: "/services/software-maintenance-services", icon: <FaWrench /> },
+  { name: "Graphic Designing", href: "/services/affordable-graphic-design-services", icon: <FaPencilRuler /> },
+  { name: "QA Testing", href: "/services/web-qa-tester", icon: <FaCheck /> },
+];
+
+const navLinks = [
+  { name: "About Us", href: "/about" },
+  { name: "Pricing", href: "/pricing" },
+  { name: "Blog", href: "/blog" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "Career", href: "/career" },
+  { name: "Contact", href: "/contact" },
+];
+
+const Header = () => {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  let timer: NodeJS.Timeout;
-  const [scrolling, setScrolling] = useState(false);
-
-
+  const [scrolled, setScrolled] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolling(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = drawerOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [drawerOpen]);
 
-  const navItems = [
-    // { name: "Home", href: "/", icon: <FaHome /> },
-    { name: "About Us", href: "/about", icon: <FaInfoCircle /> },
-    {
-      name: "Services",
-      href: "#",
-      icon: <FaDesktop />,
-      dropdown: [
-        {
-          name: "Web Development",
-          href: "/services/web-development",
-          icon: <FaDesktop />,
-        },
-        {
-          name: "Mobile App Development",
-          href: "/services/mobile-app-development-company",
-          icon: <FaMobileAlt />,
-        },
-        {
-          name: "UI & UX Designing",
-          href: "/services/ui-ux-design-agency",
-          icon: <FaPaintBrush />,
-        },
-        { name: "DevOps", href: "/services/devops", icon: <FaCogs /> },
-        {
-          name: "Digital Marketing ",
-          href: "/services/digital-marketing-for-software-companies",
-          icon: <FaBullhorn />,
-        },
-        {
-          name: "SaaS MVP Development",
-          href: "/services/saas-mvp-development",
-          icon: <FaRocket />,
-        },
-        {
-          name: "Project Management",
-          href: "/services/project-management",
-          icon: <FaTasks />,
-        },
-        {
-          name: "SEO & Content Writing",
-          href: "/services/seo-services-for-small-business",
-          icon: <FaSearch />,
-        },
-        {
-          name: "Software Maintenance",
-          href: "/services/software-maintenance-services",
-          icon: <FaWrench />,
-        },
-        {
-          name: "Graphic Designing",
-          href: "/services/affordable-graphic-design-services",
-          icon: <FaPencilRuler />,
-        },
-        { name: "QA Testing", href: "/services/web-qa-tester", icon: <FaCheck /> },
-      ],
-    },
-    { name: "Pricing", href: "/pricing", icon: <FaTags /> },
-    { name: "Blog", href: "/blog", icon: <FaBlog /> },
-    { name: "Portfolio", href: "/portfolio", icon: <FaProjectDiagram /> },
-    { name: "Career", href: "/career", icon: <FaBriefcase /> },
-    { name: "Contact", href: "/contact", icon: <FaEnvelope /> },
-  ];
-
-  // const toggleDropdown = () => {
-  //   setIsDropdownOpen(!isDropdownOpen);
-  // };
-
-
-
-  const handleMouseEnter = (name: string) => {
-    clearTimeout(timer);
-    setActiveDropdown(name);
-  };
-
-  const handleMouseLeave = () => {
-    timer = setTimeout(() => {
-      setActiveDropdown(null);
-    }, 200);
-  };
-
-
+  const isActive = (href: string) => pathname === href;
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out py-1.5 ${scrolling
-      ? "bg-black backdrop-blur-lg shadow-lg"
-      : "bg-transparent"
-      }`}>
-      <div className="md:px-9 px-2">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1.2,
-            ease: [0.6, -0.05, 0.01, 0.99],
-          }}
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+        scrolled ? "bg-[#0A0E17]/95 backdrop-blur border-b border-white/10" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-[93rem] mx-auto px-5 md:px-8 h-[72px] flex items-center justify-between">
+        <Link href="/" className="flex items-center shrink-0">
+          <Image
+            src={TechBesideLogo}
+            alt="TechBeside logo"
+            width={170}
+            height={38}
+            priority
+            className="w-32 sm:w-36 lg:w-40 h-auto"
+          />
+        </Link>
 
-          className="flex items-center justify-between h-14">
-
-          <Link href="/" className="flex items-center">
-            <div className="flex-shrink-0 flex items-center justify-center">
-              <Image
-                src={TechBesideLogo}
-                alt="techbeside_logo"
-                width={180}
-                height={40}
-                className="w-36 sm:w-40 lg:w-44 h-auto transition-transform duration-300 hover:scale-105"
-                priority
-              />
-            </div>
-          </Link>
-
-
-
-          <div className="flex items-center gap-9">
-            <div className="hidden md:block">
-              <div className="flex items-baseline space-x-2">
-                {navItems.map((item) =>
-                  item.dropdown ? (
-                    <div
-                      key={item.name}
-                      className="relative group"
-                      onMouseEnter={() => handleMouseEnter(item.name)}
-                      onMouseLeave={handleMouseLeave}
-                    >
-                      <span
-                        className={`lg:px-3 px-1 py-2 md:text-sm lg:text-base rounded-md font-medium hover:bg-[#6366F1]  text-white ${pathname === item.href
-                          ? "bg-[#6366F1] text-white"
-                          : ""
-                          }`}
-                      >
-                        {item.name}
-                      </span>
-                      {activeDropdown === item.name && (
-                        <div className="absolute bg-white text-black shadow-lg rounded-md mt-2 z-20 w-full md:w-auto">
-                          <div className="flex flex-row p-4 gap-0 w-[500px] items-start">
-                            {/* Left Column */}
-                            <ul className="flex flex-col gap-2 w-[230px] shrink-0">
-                              {item.dropdown.slice(0, 5).map((subItem) => (
-                                <li
-                                  key={subItem.name}
-                                  className={`px-4 py-2 ${pathname === subItem.href
-                                    ? "text-[#6366F1] font-semibold "
-                                    : "hover:text-[#6366F1]"
-                                    }`}
-                                >
-                                  <Link
-                                    href={subItem.href}
-                                    className="flex items-center gap-2"
-                                  >
-                                    <span className="text-[#6366F1]">
-                                      {subItem.icon}
-                                    </span>{" "}
-                                    {subItem.name}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                            {/* Right Column */}
-                            <ul className="flex flex-col gap-2 w-[230px] shrink-0">
-                              {item.dropdown.slice(5).map((subItem) => (
-                                <li
-                                  key={subItem.name}
-                                  className={`px-4 py-2 ${pathname === subItem.href
-                                    ? "text-[#6366F1] font-semibold"
-                                    : "hover:text-[#6366F1] "
-                                    }`}
-                                >
-                                  <Link
-                                    href={subItem.href}
-                                    className="flex items-center gap-2"
-                                  >
-                                    <span className="text-[#6366F1]">
-                                      {subItem.icon}
-                                    </span>{" "}
-                                    {subItem.name}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  ) : (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className={`lg:px-3 px-1 py-2 md:text-sm lg:text-base rounded-md font-medium hover:bg-[#6366F1] text-white ${pathname === item.href ? "bg-[#6366F1] text-white" : ""
-                        }`}
-                    >
-                      {item.name}
-                    </Link>
-                  )
-                )}
-              </div>
-            </div>
-
-            <div className="hide-at-1119">
-              <p className="flex gap-2 items-center text-base">
-                <PhoneCall color="#6366F1" />
-                <span className="text-white">
-                  <a href="tel:+13213646803" className="hover:underline">
-                    +923178261618
-                  </a>
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div className="md:hidden block">
-            <p className=" flex gap-2 items-center text-sm ">
-              <PhoneCall color="#6366F1" size={15} />
-              <span className="text-white">
-                <a href="tel:+13213646803" className="hover:underline">
-                  +923178261618
-                </a>
-              </span>
-            </p>
-          </div>
-          <div className="md:hidden flex items-center">
+        {/* Desktop nav */}
+        <nav className="hidden lg:flex items-center gap-1">
+          <div
+            className="relative"
+            onMouseEnter={() => setServicesOpen(true)}
+            onMouseLeave={() => setServicesOpen(false)}
+          >
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md  hover:text-white hover:bg-gray-700 focus:outline-none text-white"
-              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              className={`flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-[#D5D9E2] hover:text-white transition-colors`}
             >
-              {isOpen ? (
-                <X className="block h-6 w-6" />
-              ) : (
-                <Menu className="block h-6 w-6" />
-              )}
+              Services
+              <ChevronDown size={14} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
             </button>
 
+            <AnimatePresence>
+              {servicesOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 8 }}
+                  transition={{ duration: 0.18 }}
+                  className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[560px]"
+                >
+                  <div className="bg-[#0D1420] border border-white/10 rounded-lg shadow-2xl p-5 grid grid-cols-2 gap-1">
+                    {services.map((s) => (
+                      <Link
+                        key={s.name}
+                        href={s.href}
+                        className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors ${
+                          isActive(s.href) ? "bg-[#6366F1]/10 text-[#6366F1]" : "text-[#D5D9E2] hover:bg-white/5 hover:text-white"
+                        }`}
+                      >
+                        <span className="text-[#6366F1]">{s.icon}</span>
+                        {s.name}
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-        </motion.div>
 
+          {navLinks.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={`relative px-4 py-2 text-sm font-medium transition-colors ${
+                isActive(item.href) ? "text-white" : "text-[#D5D9E2] hover:text-white"
+              }`}
+            >
+              {item.name}
+              {isActive(item.href) && (
+                <span className="absolute left-4 right-4 -bottom-[1px] h-[2px] bg-[#6366F1] rounded-full" />
+              )}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Right actions */}
+        <div className="flex items-center gap-3">
+          <a
+            href="tel:+13213646803"
+            className="hidden md:flex items-center gap-2 text-sm text-[#D5D9E2] hover:text-white transition-colors"
+          >
+            <PhoneCall size={16} className="text-[#6366F1]" />
+            +923178261618
+          </a>
+          <Link
+            href="/contact"
+            className="hidden lg:inline-flex bg-[#6366F1] hover:bg-[#4F46E5] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
+          >
+            Get a quote
+          </Link>
+          <button
+            onClick={() => setDrawerOpen(true)}
+            className="lg:hidden text-white p-2 -mr-2"
+            aria-label="Open menu"
+          >
+            <Menu size={24} />
+          </button>
+        </div>
       </div>
 
-      {isOpen && (
-        <div className="lg:hidden bg-[#6366F1] z-20 rounded-md mb-20">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
-              <div key={item.name}>
-                {item.dropdown ? (
-                  // Dropdown menu for Services
-                  <div className="flex flex-col">
-                    <button
-                      onClick={() => {
-                        setActiveDropdown(item.name === activeDropdown ? null : item.name);
-                      }}
-                      className={`flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 ${pathname === item.href ? "bg-[#0c080f] text-white" : ""
-                        }`}
-                    >
-                      <span className="flex items-center gap-3">
-                        {item.icon} {item.name}
-                      </span>
-                      <span>{activeDropdown === item.name ? "-" : "+"}</span>
-                    </button>
-                    {activeDropdown === item.name && (
-                      <div className="pl-6">
-                        {item.dropdown.map((subItem) => (
+      {/* Mobile drawer */}
+      <AnimatePresence>
+        {drawerOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setDrawerOpen(false)}
+              className="fixed inset-0 bg-black/60 z-40 lg:hidden"
+            />
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#0A0E17] border-l border-white/10 z-50 lg:hidden flex flex-col"
+            >
+              <div className="flex items-center justify-between px-5 h-[72px] border-b border-white/10">
+                <Image src={TechBesideLogo} alt="TechBeside logo" width={140} height={32} className="w-32 h-auto" />
+                <button onClick={() => setDrawerOpen(false)} aria-label="Close menu" className="text-white p-2">
+                  <X size={22} />
+                </button>
+              </div>
+
+              <div className="flex-1 overflow-y-auto px-5 py-6 space-y-1">
+                <div>
+                  <button
+                    onClick={() => setMobileServicesOpen((v) => !v)}
+                    className="flex items-center justify-between w-full py-3 text-white font-medium"
+                  >
+                    Services
+                    <ChevronDown size={16} className={`transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  <AnimatePresence>
+                    {mobileServicesOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden pl-2"
+                      >
+                        {services.map((s) => (
                           <Link
-                            key={subItem.name}
-                            href={subItem.href}
-                            onClick={() => {
-                              setIsOpen(false);
-                            }}
-                            className="flex items-center gap-3 text-wrap px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-600"
+                            key={s.name}
+                            href={s.href}
+                            onClick={() => setDrawerOpen(false)}
+                            className="flex items-center gap-3 py-2.5 text-sm text-[#D5D9E2] hover:text-white"
                           >
-                            {subItem.icon} {subItem.name}
+                            <span className="text-[#6366F1]">{s.icon}</span>
+                            {s.name}
                           </Link>
                         ))}
-                      </div>
+                      </motion.div>
                     )}
-                  </div>
-                ) : (
-                  // Regular menu items
-                  <Link
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className={`flex items-center gap-3 px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 ${pathname === item.href ? "bg-[#0c080f] text-white" : ""
-                      }`}
-                  >
-                    {item.icon} {item.name}
-                  </Link>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+                  </AnimatePresence>
+                </div>
 
-    </nav>
+                {navLinks.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setDrawerOpen(false)}
+                    className="block py-3 text-white font-medium border-t border-white/5"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+
+              <div className="px-5 py-6 border-t border-white/10 space-y-4">
+                <a href="tel:+13213646803" className="flex items-center gap-2 text-[#D5D9E2] text-sm">
+                  <PhoneCall size={16} className="text-[#6366F1]" />
+                  +923178261618
+                </a>
+                <Link
+                  href="/contact"
+                  onClick={() => setDrawerOpen(false)}
+                  className="block text-center bg-[#6366F1] hover:bg-[#4F46E5] text-white font-semibold py-3 rounded-md transition-colors"
+                >
+                  Get a quote
+                </Link>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </header>
   );
 };
 

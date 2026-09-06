@@ -163,7 +163,7 @@ const SoftwareMaintenance = () => {
       <RelatedServices services={services} />
     
         <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
-          <ClientReviews />
+          {/* <ClientReviews /> */}
           <ClientTestimonialsSection />
         </div>
       </div>

@@ -7,71 +7,57 @@ import { PhoneCall } from "lucide-react";
 import Link from "next/link";
 import AppointmentSection from "../shared/AppointmentSection";
 
+const socials = [
+  { href: "https://www.facebook.com/TechBesidefb/", icon: faFacebookF, label: "Facebook" },
+  { href: "https://www.linkedin.com/company/TechBeside", icon: faLinkedinIn, label: "LinkedIn" },
+  { href: "https://www.youtube.com/@TechBeside9512", icon: faYoutube, label: "YouTube" },
+  { href: "https://www.instagram.com/TechBesideco/", icon: faInstagram, label: "Instagram" },
+];
+
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-black via-gray-900 to-black text-white px-6 md:px-14 py-12">
-      <div className="max-w-6xl mx-auto flex flex-col items-center  gap-8 border-t border-gray-700 pt-8">
-        
-        {/* Social Media Links */}
-        <div className="flex justify-center gap-5">
-          {[
-            { href: "https://www.facebook.com/TechBesidefb/", icon: faFacebookF, bg: "bg-blue-600" },
-            { href: "https://www.linkedin.com/company/TechBeside", icon: faLinkedinIn, bg: "bg-blue-700" },
-            { href: "https://www.youtube.com/@TechBeside9512", icon: faYoutube, bg: "bg-red-600" },
-            { href: "https://www.instagram.com/TechBesideco/", icon: faInstagram, bg: "bg-pink-600" },
-          ].map(({ href, icon, bg }, index) => (
+    <footer className="bg-[#0A0E17] text-white px-6 md:px-14 py-14 border-t border-white/10">
+      <div className="max-w-6xl mx-auto flex flex-col items-center gap-10">
+        <div className="flex justify-center gap-3">
+          {socials.map(({ href, icon, label }, index) => (
             <Link
               key={index}
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`w-14 h-14 flex items-center justify-center rounded-full ${bg} transition-transform duration-300 hover:scale-110 shadow-lg shadow-gray-800`}
-              aria-label="Social Media"
+              aria-label={label}
+              className="w-11 h-11 flex items-center justify-center rounded-md border border-white/10 text-[#8993A8] hover:text-white hover:border-[#6366F1] transition-colors"
             >
-              <FontAwesomeIcon icon={icon} className="text-white text-2xl" />
+              <FontAwesomeIcon icon={icon} className="text-lg" />
             </Link>
           ))}
         </div>
 
-        {/* Contact Section */}
-        <div className="space-y-2  flex flex-wrap md:items-center items-start lg:gap-12 gap-4 text-gray-400">
-          
-          {/* Email */}
-          <div className="flex items-center gap-4 mt-3.5">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-600 shadow-md shadow-indigo-500">
-              <AiOutlineMail size={24} className="text-white" />
-            </div>
-            <Link href="mailto:contact@techbeside.dev" className="hover:text-white transition text-lg">
-              contact@techbeside.dev
-            </Link>
-          </div>
-
-          {/* WhatsApp */}
-          <Link href="https://wa.me/923178261618" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:text-white transition text-nowrap text-lg">
-            <div className="w-12 h-12 text-nowrap flex items-center justify-center rounded-full bg-green-600 shadow-md shadow-green-500">
-              <FaWhatsapp size={24} className="text-white" />
-            </div>
-            <span>+923178261618</span>
+        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-[#8993A8]">
+          <Link href="mailto:contact@techbeside.dev" className="flex items-center gap-2.5 hover:text-white transition-colors">
+            <AiOutlineMail size={20} />
+            <span>contact@techbeside.dev</span>
           </Link>
 
-          {/* Phone Call */}
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-600 shadow-md shadow-indigo-500">
-              <PhoneCall size={24} className="text-white" />
-            </div>
-            <a href="tel:+13213646803" className="hover:text-white text-nowrap transition text-lg">
-              +923178261618
-            </a>
-          </div>
+          <Link
+            href="https://wa.me/923119265290"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2.5 hover:text-white transition-colors"
+          >
+            <FaWhatsapp size={20} />
+            <span>+92 317 8261618</span>
+          </Link>
+
+          <a href="tel:+13213646803" className="flex items-center gap-2.5 hover:text-white transition-colors">
+            <PhoneCall size={20} />
+            <span>+92 317 8261618</span>
+          </a>
         </div>
 
-        {/* Appointment Section */}
-        <div className="mt-6">
-          <AppointmentSection />
-        </div>
+        <AppointmentSection />
 
-        {/* Copyright Section */}
-        <p className="text-base border-t border-gray-700 pt-4 text-gray-400 text-center w-full">
+        <p className="text-sm text-[#8993A8] border-t border-white/10 pt-6 w-full text-center">
           © 2025 <span className="text-[#6366F1] font-semibold">TechBeside</span>. All rights reserved.
         </p>
       </div>

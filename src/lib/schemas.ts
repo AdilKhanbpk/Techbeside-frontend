@@ -8,7 +8,7 @@ export const generateLocalBusinessSchema = () => ({
   url: "https://www.techbeside.dev",
   logo: "https://www.techbeside.dev/logo.png",
   image: "https://www.techbeside.dev/logo.png",
-  telephone: "+92 311 9265290",
+  telephone: "+92 317 8261618",
   email: "info@techbeside.dev",
   address: {
     "@type": "PostalAddress",
@@ -119,7 +119,7 @@ export const generateOrganizationSchema = () => ({
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+92 311 9265290",
+    telephone: "+92 317 8261618",
     contactType: "Customer Service",
     email: "info@techbeside.dev",
     areaServed: ["US", "GB", "CA", "PK"],

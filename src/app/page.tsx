@@ -4,7 +4,6 @@ import Slider from "@/components/landingPage/HeroSection";
 import Companies from "@/components/landingPage/Companies";
 import ServicesSection from "@/components/landingPage/ServicesSection";
 import Script from "next/script";
-
 const Technologies = dynamic(() => import("@/components/landingPage/Technologies"));
 const WorkProcess = dynamic(() => import("@/components/landingPage/WorkProcess"));
 const OurValues = dynamic(() => import("@/components/landingPage/OurValues"));
@@ -78,8 +77,8 @@ export default function Page() {
             "@type": "Corporation",
             name: "TechBeside",
             alternateName: "TechBeside",
-            url: "https://www.TechBeside.co/",
-            logo: "https://www.TechBeside.co/assets/icons/Logo.png",
+            url: "https://www.techbeside.dev/",
+            logo: "https://www.techbeside.dev/logo.png",
             founder: {
               "@type": "Person",
               name: "Saud Khan",
@@ -92,19 +91,19 @@ export default function Page() {
             },
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+92 311 9265290",
+              telephone: "+92 317 8261618",
               contactType: "customer service",
               contactOption: "TollFree",
               areaServed: ["US", "GB", "CA"],
               availableLanguage: "en",
             },
             sameAs: [
-              "https://www.facebook.com/TechBesidefb/",
-              "https://www.linkedin.com/company/TechBeside",
-              "https://www.youtube.com/@TechBeside9512",
-              "https://www.instagram.com/TechBesideco/",
-              "https://twitter.com/TechBesideco",
-              "https://www.tiktok.com/@TechBeside.co"
+              "https://www.facebook.com/techbesideofficial/",
+              "https://www.linkedin.com/company/techbeside",
+              "https://www.youtube.com/@techbeside",
+              "https://www.instagram.com/techbesideofficial/",
+              "https://twitter.com/techbesideofficial",
+              "https://www.tiktok.com/@techbeside"
             ],
           }),
         }}
@@ -137,12 +136,12 @@ export default function Page() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "TechBeside",
-            url: "https://www.TechBeside.co/",
+            url: "https://www.techbeside.dev/",
             potentialAction: {
               "@type": "SearchAction",
               target: {
                 "@type": "EntryPoint",
-                urlTemplate: "https://www.TechBeside.co/search?q={search_term_string}",
+                urlTemplate: "https://www.techbeside.dev/search?q={search_term_string}",
               },
               "query-input": "required name=search_term_string",
             },
@@ -180,8 +179,8 @@ export default function Page() {
         <OurTeam />
         <Benefits />
         { /* <PlatformInfo /> */}
-        <IndustriesSection />
-        <ClientReviews />
+        {/* <IndustriesSection /> */}
+        {/* <ClientReviews /> */}
         <ClientTestimonialsSection />
         <FaqSection title="Frequently Asked Questions" faqs={homePageFaqs} />
         <GetQoute />

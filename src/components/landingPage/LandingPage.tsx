@@ -77,7 +77,7 @@
 
 //         <div className="bg-indigo-600 md:mt-16 mt-9">
 //           <Suspense fallback={<p className="text-center">Loading Client Reviews...</p>}>
-//             <ClientReviews />
+//             {/* <ClientReviews /> */}
 //           </Suspense>
 
 //           <Suspense fallback={<p className="text-center">Loading Testimonials...</p>}>

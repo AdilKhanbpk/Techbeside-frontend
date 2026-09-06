@@ -1,66 +1,91 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
+import { Space_Grotesk } from "next/font/google";
 import { FaHeart, FaUserCheck, FaLightbulb, FaRocket, FaBook, FaUsers } from "react-icons/fa";
+
+const display = Space_Grotesk({ subsets: ["latin"], weight: ["600", "700"] });
 
 const values = [
   {
-    title: "Cultivate Compassion",
+    title: "Cultivate compassion",
     description:
-      "Exhibiting honesty, dependability, empathy, assistance, and respect towards others is what it takes to exemplify goodness to us.",
-    icon: <FaHeart />,
+      "Honesty, dependability, empathy, and respect toward others — that's what goodness looks like to us.",
+    icon: FaHeart,
   },
   {
-    title: "Keep It Real",
+    title: "Keep it real",
     description:
-      "We thrive by being authentic, engaged, fun-loving, humble, direct, and committed to our mission.",
-    icon: <FaUserCheck />,
+      "We thrive by being authentic, engaged, humble, and direct about what we can and can't do.",
+    icon: FaUserCheck,
   },
   {
-    title: "Think Innovatively",
+    title: "Think innovatively",
     description:
-      "We value curiosity, creativity, ambition, decisiveness, risk-taking, and tackling challenges.",
-    icon: <FaLightbulb />,
+      "Curiosity, creativity, and a willingness to take risks on the way to solving hard problems.",
+    icon: FaLightbulb,
   },
   {
-    title: "Empower & Grow",
+    title: "Empower & grow",
     description:
-      "At TechBeside, you will consistently enhance and develop your skills while widening your personal and professional experiences.",
-    icon: <FaRocket />,
+      "At TechBeside, your skills and experience keep expanding — personally and professionally.",
+    icon: FaRocket,
   },
   {
-    title: "Share Knowledge",
+    title: "Share knowledge",
     description:
-      "By sharing insights, knowledge, and wisdom with each other and our community, we all achieve success.",
-    icon: <FaBook />,
+      "We succeed by sharing insight and expertise with each other and with the people we work for.",
+    icon: FaBook,
   },
   {
-    title: "Unified Teamwork",
+    title: "Unified teamwork",
     description:
-      "As a unified team, we strive to serve our clients and one another by working diligently and intelligently.",
-    icon: <FaUsers />,
+      "One team, working diligently and intelligently to serve our clients and each other.",
+    icon: FaUsers,
   },
 ];
 
 const OurValues: React.FC = () => {
+  const [left, right] = [values.slice(0, 3), values.slice(3)];
+
   return (
-    <section className="relative  text-white md:mt-16 mt-9">
-
-      <h2 className="text-3xl text-center md:text-4xl lg:text-5xl  font-bold md:mb-9 mb-6 tracking-wide text-indigo-600">
-        Our Core Values
-      </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
-        {values.map((value, index) => (
-          <div
-            key={index}
-            className="relative md:p-6 p-2 bg-gradient-to-r from-indigo-500 to-indigo-500 bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg hover:bg-opacity-20 transition duration-300  hover:scale-105 hover:shadow-2xl"
-          >
-            <div className="flex flex-col items-center ">
-              <div className="text-5xl text-yellow-400  ">{value.icon}</div>
-              <h3 className="text-lg font-semibold mt-2">{value.title}</h3>
-            </div>
-            <p className="text-white mt-1">{value.description}</p>
+    <section className="py-16 md:py-24 px-6 md:px-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10 lg:gap-16">
+        <div>
+          <div className="flex items-center gap-2 mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-600" />
+            <span className="text-sm text-gray-500">What we stand for</span>
           </div>
-        ))}
+          <h2 className={`${display.className} text-3xl md:text-4xl font-semibold text-gray-900 leading-tight`}>
+            Our core values
+          </h2>
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-x-12">
+          {[left, right].map((column, colIndex) => (
+            <div key={colIndex} className="divide-y divide-gray-200">
+              {column.map((value, index) => {
+                const Icon = value.icon;
+                return (
+                  <motion.div
+                    key={value.title}
+                    initial={{ opacity: 0, y: 12 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "0px 0px -60px 0px" }}
+                    transition={{ duration: 0.4, delay: index * 0.08 }}
+                    className={`py-7 flex gap-5 ${index === 0 ? "pt-0" : ""}`}
+                  >
+                    <Icon className="text-indigo-600 text-xl mt-1 shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900">{value.title}</h3>
+                      <p className="text-gray-500 mt-1.5 leading-relaxed">{value.description}</p>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
