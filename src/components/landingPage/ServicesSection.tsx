@@ -131,7 +131,7 @@ const ServicesSection: React.FC = () => {
   // Autoplay: advance one card at a time, looping the last back to the first.
   useEffect(() => {
     const interval = setInterval(() => {
-      if (!pausedRef.current) scrollByCard(1);
+      if (!pausedRef.current) scrollByCard(2);
     }, 3200);
     return () => clearInterval(interval);
   }, []);
@@ -154,7 +154,7 @@ const ServicesSection: React.FC = () => {
           <div className="flex items-center gap-3">
             <button
               onClick={() => {
-                scrollByCard(-1);
+                scrollByCard(-2);
                 pause();
                 setTimeout(resume, 4000);
               }}
@@ -165,7 +165,7 @@ const ServicesSection: React.FC = () => {
             </button>
             <button
               onClick={() => {
-                scrollByCard(1);
+                scrollByCard(2);
                 pause();
                 setTimeout(resume, 4000);
               }}

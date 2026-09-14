@@ -12,95 +12,84 @@ const features = [
     title: "AI-first development",
     description:
       "A fully AI-powered team — using AI to automate development, optimize workflows, and ship faster than traditional agencies.",
-    gradient: "from-indigo-500 to-violet-500",
   },
   {
     icon: FaBolt,
     title: "Lightning-fast execution",
     description: "What typically takes months, we accomplish in a fraction of the time with AI-driven automation.",
-    gradient: "from-amber-400 to-orange-500",
   },
   {
     icon: FaLightbulb,
     title: "Future-proof by design",
     description: "We build for where the industry is going, not just where it is today.",
-    gradient: "from-sky-400 to-blue-500",
   },
   {
     icon: FaChartLine,
     title: "High value, low cost",
     description: "AI-powered efficiency means better software without the traditional price tag.",
-    gradient: "from-emerald-400 to-teal-500",
   },
   {
     icon: FaClock,
     title: "Time-saving & scalable",
     description: "Fewer unnecessary cycles, faster deployment, businesses that scale without delay.",
-    gradient: "from-fuchsia-400 to-pink-500",
   },
   {
     icon: FaCogs,
     title: "AI-enhanced customization",
     description: "Hyper-personalized solutions built around your exact needs — never a one-size-fits-all template.",
-    gradient: "from-indigo-500 to-blue-500",
   },
   {
     icon: FaRocket,
     title: "Redefining the industry",
     description: "AI-driven innovation that makes software development smarter, faster, and more cost-effective.",
-    gradient: "from-rose-400 to-red-500",
   },
 ];
 
 const Benefits = () => {
   return (
-    <section className="relative py-20 md:py-28 px-6 md:px-8 overflow-hidden">
-      {/* soft decorative glow — not a full background */}
-      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[42rem] h-[42rem] bg-indigo-100 rounded-full blur-[120px] opacity-60" />
-
-      <div className="relative max-w-6xl mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-600 text-sm font-medium mb-5">
-            <FaRocket size={12} /> Why teams choose us
-          </span>
-          <h2 className={`${display.className} text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900`}>
+    <section className="py-20 md:py-28 px-6 md:px-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
+        {/* Sticky intro */}
+        <div className="lg:sticky lg:top-28 lg:self-start">
+          <div className="flex items-center gap-2 mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-600" />
+            <span className="text-sm text-gray-500">Why teams choose us</span>
+          </div>
+          <h2 className={`${display.className} text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-gray-900 leading-[1.15]`}>
             What makes us unique
           </h2>
-          <p className="text-gray-500 mt-4 text-lg">
-            Seven reasons our clients keep coming back for more.
+          <p className="text-gray-500 mt-5 text-lg leading-relaxed max-w-sm">
+            Seven reasons clients stay with us long after the first project ships.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Feature list */}
+        <div className="border-t border-gray-200">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <motion.div
                 key={feature.title}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "0px 0px -60px 0px" }}
-                transition={{ duration: 0.45, delay: index * 0.06 }}
-                whileHover={{ y: -6 }}
-                className="group relative bg-white rounded-2xl border border-gray-100 shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(99,102,241,0.15)] transition-shadow p-8"
+                viewport={{ once: true, margin: "0px 0px -80px 0px" }}
+                transition={{ duration: 0.45, delay: index * 0.04 }}
+                className="group relative border-b border-gray-200 py-8 pl-6 -ml-6 transition-colors hover:bg-gray-50/80"
               >
-                <div className="relative w-16 h-16 mb-6">
-                  <div
-                    className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-90 blur-md group-hover:blur-lg group-hover:opacity-100 transition-all`}
-                  />
-                  <div
-                    className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center transform group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300`}
-                  >
-                    <Icon className="text-white" size={26} />
+                <span className="absolute left-0 top-8 bottom-8 w-[2px] bg-indigo-600 scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-300" />
+
+                <div className="flex items-start gap-5">
+                  <span className={`${display.className} text-sm text-gray-300 group-hover:text-indigo-500 pt-1 w-6 shrink-0 transition-colors`}>
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+
+                  <Icon className="text-indigo-600 text-xl mt-1 shrink-0" />
+
+                  <div className="flex-1 pr-4">
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-900">{feature.title}</h3>
+                    <p className="text-gray-500 mt-1.5 leading-relaxed max-w-xl">{feature.description}</p>
                   </div>
                 </div>
-
-                <h3 className="text-xl font-semibold text-gray-900 mb-2.5">{feature.title}</h3>
-                <p className="text-gray-500 leading-relaxed">{feature.description}</p>
-
-                <div
-                  className={`absolute bottom-0 left-8 right-8 h-[3px] rounded-full bg-gradient-to-r ${feature.gradient} scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300`}
-                />
               </motion.div>
             );
           })}

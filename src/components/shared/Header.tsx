@@ -38,7 +38,7 @@ const navLinks = [
   { name: "About Us", href: "/about" },
   { name: "Pricing", href: "/pricing" },
   { name: "Blog", href: "/blog" },
-  { name: "Portfolio", href: "/portfolio" },
+  // { name: "Portfolio", href: "/portfolio" },
   { name: "Career", href: "/career" },
   { name: "Contact", href: "/contact" },
 ];
@@ -143,13 +143,13 @@ const Header = () => {
 
         {/* Right actions */}
         <div className="flex items-center gap-3">
-          <a
+          {/* <a
             href="tel:+13213646803"
             className="hidden md:flex items-center gap-2 text-sm text-[#D5D9E2] hover:text-white transition-colors"
           >
             <PhoneCall size={16} className="text-[#6366F1]" />
             +923178261618
-          </a>
+          </a> */}
           <Link
             href="/contact"
             className="hidden lg:inline-flex bg-[#6366F1] hover:bg-[#4F46E5] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"

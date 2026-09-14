@@ -3,7 +3,7 @@ import Slider from "./Slider";
 const getSlides = async () => {
   return [
     {
-      videoSrc: "/videos/backgroundVideo.webm",
+      videoSrc: "/backgroundVideo.webm",
       heading: "Custom Web Development & Mobile App Development Services for Growing Businesses",
       highlight: "Development Services",
       highlightColor: "text-indigo-600",
@@ -13,7 +13,7 @@ const getSlides = async () => {
       imageSrc: "/assets/homepage/webapp.webp",
     },
     {
-      videoSrc: "/videos/aibakgroundvideo.webm",
+      videoSrc: "/aibakgroundvideo.webm",
       heading: "AI Agent Development Services to Automate Your Business Workflows",
       highlight: "AI Agent Development",
       highlightColor: "text-indigo-600",
@@ -23,7 +23,7 @@ const getSlides = async () => {
       imageSrc: "/assets/homepage/aifuture.webp",
     },
     {
-      videoSrc: "/videos/shapping-background-video.webm",
+      videoSrc: "/shapping-background-video.webm",
       heading: "Affordable Custom Software Development Company for Startups & Enterprises",
       highlight: "Custom Software Development",
       highlightColor: "text-indigo-500",

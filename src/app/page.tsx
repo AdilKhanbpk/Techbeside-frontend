@@ -168,10 +168,13 @@ export default function Page() {
         <Companies />
       </div>
       <div className="max-w-[1450px] mx-auto px-4 md:mt-16 mt-9">
-        <ServicesSection />
+        {/* <ServicesSection /> */}
         <Technologies />
-        <WorkProcess />
-        <OurValues />
+<div className="relative h-[400vh]">
+  <div className="sticky top-[80px] h-[calc(100vh-80px)]">
+    <WorkProcess />
+  </div>
+</div>        <OurValues />
         <div className="md:mt-16 mt-9">
           <ProjectsCount />
         </div>
