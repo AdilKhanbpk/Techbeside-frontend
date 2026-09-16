@@ -111,9 +111,9 @@ export const generateOrganizationSchema = () => ({
     "TechBeside is a software development and digital marketing agency providing innovative solutions globally.",
   founder: {
     "@type": "Person",
-    name: "Saud Khan",
+    name: "Muhammad Adil",
     sameAs: [
-      "https://www.linkedin.com/in/saudkhan39",
+      "https://www.linkedin.com/in/muhammad-adil-1a44a830b/",
       "https://github.com/saudkhanbpk/",
     ],
   },

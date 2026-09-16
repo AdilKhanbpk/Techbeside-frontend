@@ -98,3 +98,55 @@
 .custom-phone-input .country-list .country:hover {
   background: rgba(0, 123, 255, 0.5) !important;
 }
+
+/* Premium Contact Page Phone Input */
+
+.contact-phone-container {
+  width: 100% !important;
+}
+
+.contact-phone-container .form-control {
+  width: 100% !important;
+  height: 56px !important;
+  padding-left: 52px !important;
+  border-radius: 12px !important;
+  border: 1px solid #e5e7eb !important;
+  background: #ffffff !important;
+  color: #111827 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  outline: none !important;
+  transition: all 0.2s ease;
+}
+
+.contact-phone-container .form-control:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1) !important;
+}
+
+.contact-phone-container .flag-dropdown {
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px 0 0 12px !important;
+  background: #ffffff !important;
+}
+
+.contact-phone-container .selected-flag {
+  height: 54px !important;
+  border-radius: 12px 0 0 12px !important;
+  padding-left: 14px !important;
+}
+
+.contact-phone-container .country-list {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12) !important;
+  color: #111827 !important;
+  z-index: 50 !important;
+}
+
+.contact-phone-container .country-list .country:hover {
+  background: #eef2ff !important;
+}
+
+.contact-phone-container .country-list .country.highlight {
+  background: #e0e7ff !important;
+}

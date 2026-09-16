@@ -1,7 +1,13 @@
-// ContactForm.tsx
+"use client";
+
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import CommonButton from "../common/Button";
-import { MapPin, PhoneCall, Mail } from "lucide-react";
+import {
+  MapPin,
+  PhoneCall,
+  Mail,
+  Clock3,
+} from "lucide-react";
 import axios from "axios";
 import { backend_url } from "@/newLayout";
 import { toast } from "react-toastify";
@@ -9,7 +15,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import PhoneInput from "react-phone-input-2";
-
 
 interface FormData {
   firstName: string;
@@ -34,11 +39,17 @@ const ContactForm: React.FC = () => {
   const changeEventHandler = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handlePhoneChange = (value: string) => {
-    setFormData({ ...formData, phoneNumber: value });
+    setFormData({
+      ...formData,
+      phoneNumber: value,
+    });
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -60,6 +71,7 @@ const ContactForm: React.FC = () => {
       if (res.data.success) {
         toast.success(res.data.message);
         router.push("/confirmation");
+
         setFormData({
           firstName: "",
           lastName: "",
@@ -70,137 +82,347 @@ const ContactForm: React.FC = () => {
       }
     } catch (error: any) {
       console.log(error);
+
       const errorMessage =
         error?.response?.data?.message || "An error occurred";
+
       toast.error(errorMessage);
     } finally {
       setLoading(false);
     }
   };
 
-  
-
   return (
-    <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24  lg:py-32">
-    <form
-      onSubmit={handleSubmit}
-      className="flex flex-wrap justify-around items-start gap-10 mt-20"
-    >
-      {/* Contact Information */}
-      <div className="max-w-lg text-white">
-      <h1 className="font-semibold text-3xl sm:text-5xl">
-        Let's Create Something Amazing
-      </h1>
+    <main className="relative isolate overflow-hidden bg-[#080b20] text-white">
 
-      {/* Location */}
-      <div className="mt-6 flex items-center gap-3 text-lg">
-        <div className=" bg-indigo-600 rounded-full p-1.5">
-          <MapPin size={30} className="text-white " />
-        </div>
-        <p className="text-xl">TechBeside, Florida, Orlando, USA</p>
-      </div>
+      {/* Premium background image + overlay */}
+      <div
+        className="absolute inset-0 -z-20 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('/images/contact-bg.jpg')",
+        }}
+      />
 
-      {/* Contact Methods */}
-      <div className="mt-3 space-y-3 text-xl">
-        <Link
-          href="https://wa.me/+13213646803"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 "
-        >
-          <div className=" bg-green-600 rounded-full p-1.5">
-            <FaWhatsapp size={28} className="text-white" />
+      <div className="absolute inset-0 -z-10 bg-[#080b20]/90" />
+
+      {/* Soft indigo light */}
+      <div className="absolute -left-40 top-20 -z-10 h-[420px] w-[420px] rounded-full bg-indigo-600/20 blur-[140px]" />
+
+      <div className="absolute -right-40 bottom-0 -z-10 h-[420px] w-[420px] rounded-full bg-violet-500/10 blur-[140px]" />
+
+      <section className="mx-auto w-full max-w-[1440px] px-5 py-20 sm:px-8 md:py-28 lg:px-12 lg:py-36">
+
+        {/* Header */}
+        <div className="mx-auto mb-16 max-w-3xl text-center md:mb-20">
+
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-medium tracking-[0.18em] text-indigo-200 uppercase">
+            <span className="h-1.5 w-1.5 rounded-full bg-indigo-400" />
+            Get in touch
           </div>
-          <span className="hover:underline ">+923178261618</span>
-        </Link>
 
-        <Link href="tel:+13213646803" className="flex items-center gap-3 ">
-          <div className=" bg-indigo-700 rounded-full p-2">
-            <PhoneCall className="text-white" />
+          <h1 className="text-4xl font-normal leading-[1.12] tracking-[-0.04em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            Let&apos;s build something
+            <span className="block text-indigo-300">
+              meaningful together.
+            </span>
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-xl text-base font-light leading-7 text-white/60 sm:text-lg">
+            Have an idea, a project, or a challenge in mind?
+            Tell us about it. We&apos;d love to hear from you.
+          </p>
+
+        </div>
+
+        {/* Main Contact Layout */}
+        <div className="grid items-stretch gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
+
+          {/* Left Contact Information */}
+          <div className="flex flex-col justify-between rounded-[28px] border border-white/10 bg-white/[0.035] p-7 backdrop-blur-sm sm:p-10 lg:p-12">
+
+            <div>
+
+              <p className="mb-4 text-sm font-medium tracking-[0.16em] text-indigo-300 uppercase">
+                Contact information
+              </p>
+
+              <h2 className="max-w-md text-3xl font-normal leading-tight tracking-tight text-white sm:text-4xl">
+                We&apos;re here to bring your ideas to life.
+              </h2>
+
+              <p className="mt-5 max-w-md text-base font-light leading-7 text-white/55">
+                Whether you&apos;re starting something new or looking
+                to improve an existing product, let&apos;s start a
+                conversation.
+              </p>
+
+              {/* Contact details */}
+              <div className="mt-10 space-y-7">
+
+                {/* Location */}
+                {/* <div className="flex items-start gap-4"> */}
+
+                  {/* <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.06]">
+                    <MapPin size={19} strokeWidth={1.5} className="text-indigo-300" />
+                  </div> */}
+
+                  {/* <div>
+                    <p className="mb-1 text-xs tracking-wider text-white/40 uppercase">
+                      Our location
+                    </p>
+
+                    <p className="text-sm font-light leading-6 text-white/80 sm:text-base">
+                       
+                    </p>
+                  </div> */}
+
+                {/* </div> */}
+
+                {/* WhatsApp */}
+                <div className="flex items-start gap-4">
+
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.06]">
+                    <FaWhatsapp size={20} className="text-emerald-400" />
+                  </div>
+
+                  <div>
+                    <p className="mb-1 text-xs tracking-wider text-white/40 uppercase">
+                      WhatsApp
+                    </p>
+
+                    <Link
+                      href="https://wa.me/13213646803"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-light text-white/80 transition-colors hover:text-indigo-300 sm:text-base"
+                    >
+                      +92 317 8261618
+                    </Link>
+                  </div>
+
+                </div>
+
+                {/* Phone */}
+                <div className="flex items-start gap-4">
+
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.06]">
+                    <PhoneCall size={19} strokeWidth={1.5} className="text-indigo-300" />
+                  </div>
+
+                  <div>
+                    <p className="mb-1 text-xs tracking-wider text-white/40 uppercase">
+                      Call us
+                    </p>
+
+                    <Link
+                      href="tel:+13213646803"
+                      className="text-sm font-light text-white/80 transition-colors hover:text-indigo-300 sm:text-base"
+                    >
+                      +92 317 8261618
+                    </Link>
+                  </div>
+
+                </div>
+
+                {/* Email */}
+                <div className="flex items-start gap-4">
+
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.06]">
+                    <Mail size={19} strokeWidth={1.5} className="text-indigo-300" />
+                  </div>
+
+                  <div className="min-w-0">
+                    <p className="mb-1 text-xs tracking-wider text-white/40 uppercase">
+                      Email us
+                    </p>
+
+                    <Link
+                      href="mailto:contact@techbeside.dev"
+                      className="break-all text-sm font-light text-white/80 transition-colors hover:text-indigo-300 sm:text-base"
+                    >
+                      contact@techbeside.dev
+                    </Link>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Bottom availability card */}
+            <div className="mt-12 border-t border-white/10 pt-7">
+
+              <div className="flex items-center gap-3">
+
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-400/10">
+                  <Clock3 size={18} className="text-emerald-400" strokeWidth={1.5} />
+                </div>
+
+                <div>
+                  <p className="text-sm font-medium text-white/85">
+                    Let&apos;s talk
+                  </p>
+
+                  <p className="mt-1 text-xs font-light text-white/45">
+                    We&apos;d love to hear about your project.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
-          <span className="hover:underline">+923178261618</span>
-        </Link>
-      </div>
 
-      {/* Email */}
-      <div className="mt-4 flex items-center gap-3">
-        <div className=" bg-blue-600 rounded-full p-1.5">
-          <Mail size={28} className="text-white" />
+          {/* Contact Form Card */}
+          <div className="rounded-[28px] bg-[#f8f8fb] p-6 text-[#11152d] shadow-[0_25px_80px_-30px_rgba(0,0,0,0.65)] sm:p-8 md:p-10">
+
+            <div className="mb-6">
+              <h2 className="text-2xl font-normal tracking-tight text-[#11152d] sm:text-[28px]">
+                Start a conversation
+              </h2>
+
+              <p className="mt-2 text-sm font-light leading-6 text-gray-500">
+                Fill out the form below and we&apos;ll get back to you.
+              </p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+
+              {/* First and Last Name */}
+              <div className="grid gap-4 sm:grid-cols-2">
+
+                <div>
+                  <label htmlFor="firstName" className="sr-only">
+                    First name
+                  </label>
+                  <input
+                    id="firstName"
+                    placeholder="First name*"
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={changeEventHandler}
+                    required
+                    className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm font-light text-gray-900 outline-none transition-all placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="lastName" className="sr-only">
+                    Last name
+                  </label>
+                  <input
+                    id="lastName"
+                    placeholder="Last name*"
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={changeEventHandler}
+                    required
+                    className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm font-light text-gray-900 outline-none transition-all placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10"
+                  />
+                </div>
+
+              </div>
+
+              {/* Email */}
+              <div>
+                <label htmlFor="email" className="sr-only">
+                  Email address
+                </label>
+                <input
+                  id="email"
+                  placeholder="Email address*"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={changeEventHandler}
+                  required
+                  className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm font-light text-gray-900 outline-none transition-all placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10"
+                />
+              </div>
+
+              {/* Phone */}
+              <div>
+                <PhoneInput
+                  country={"us"}
+                  value={formData.phoneNumber}
+                  onChange={handlePhoneChange}
+                  containerClass="contact-phone-container"
+                  inputStyle={{
+                    width: "100%",
+                    height: "48px",
+                    borderRadius: "12px",
+                    border: "1px solid #e5e7eb",
+                    background: "#ffffff",
+                    color: "#111827",
+                    fontSize: "14px",
+                    fontWeight: "300",
+                  }}
+                  buttonStyle={{
+                    border: "1px solid #e5e7eb",
+                    borderRight: "none",
+                    borderRadius: "12px 0 0 12px",
+                    background: "#ffffff",
+                  }}
+                  dropdownStyle={{
+                    background: "#ffffff",
+                    color: "#111827",
+                  }}
+                  inputClass="contact-phone-input"
+                  buttonClass="contact-phone-button"
+                  dropdownClass="contact-phone-dropdown"
+                />
+              </div>
+
+              {/* Message */}
+              <div>
+                <label htmlFor="message" className="sr-only">
+                  Your message
+                </label>
+                <textarea
+                  id="message"
+                  placeholder="Your message*"
+                  rows={3}
+                  name="message"
+                  value={formData.message}
+                  onChange={changeEventHandler}
+                  required
+                  className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm font-light leading-6 text-gray-900 outline-none transition-all placeholder:text-gray-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10"
+                />
+              </div>
+
+              {/* Submit */}
+              <div className="pt-1">
+                <CommonButton
+                  title={loading ? "Sending..." : "Send Message"}
+                  type="submit"
+                  disabled={loading}
+                  className={`flex h-12 w-full items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white shadow-[0_8px_24px_-8px_rgba(79,70,229,0.7)] transition-all duration-300 ${
+                    loading
+                      ? "cursor-not-allowed opacity-50"
+                      : "hover:bg-indigo-700 hover:shadow-[0_12px_28px_-8px_rgba(79,70,229,0.8)]"
+                  } focus:outline-none focus:ring-4 focus:ring-indigo-500/20`}
+                />
+              </div>
+
+              <p className="flex items-center justify-center gap-2 text-center text-xs font-light text-gray-400">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                Your information is safe with us.
+              </p>
+
+            </form>
+
+          </div>
+
         </div>
-        <Link href="mailto:contact@techbeside.dev" className="hover:underline text-xl">
-          contact@techbeside.dev
-        </Link>
-      </div>
-    </div>
-  
-      {/* Form Section */}
-      <div className="md:w-[565px] w-full shadow-lg p-6 sm:p-10 bg-white text-black rounded-md">
-        <div className="flex flex-col sm:flex-row gap-4 mb-4">
-          <input
-            placeholder="First name*"
-            type="text"
-            name="firstName"
-            value={formData.firstName}
-            onChange={changeEventHandler}
-            required
-            className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 focus:border-indigo-700 focus:outline-none"
-          />
-          <input
-            placeholder="Last name*"
-            type="text"
-            name="lastName"
-            value={formData.lastName}
-            onChange={changeEventHandler}
-            required
-            className="w-full sm:w-1/2 rounded-lg border border-gray-300 p-3 focus:border-indigo-700 focus:outline-none"
-          />
-        </div>
-        <input
-          placeholder="Email*"
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={changeEventHandler}
-          required
-          className="w-full rounded-lg border border-gray-300 p-3 focus:border-indigo-700 focus:outline-none mb-4"
-        />
-     {/* PhoneInput  */}
-     <div className="w-full mb-4">
-  <PhoneInput
-    country={"us"} 
-    value={formData.phoneNumber}
-    onChange={handlePhoneChange}
-    containerClass=" rounded-lg " 
-    containerStyle={{ width: '100%' }}
-  inputStyle={{ width: '100%' }}
-    inputClass="w-full text-black bg-gray-100 border-none rounded-lg p-6 focus:ring-1 focus:ring-indigo-700 focus:outline-none"
-    buttonClass="bg-gray-100 rounded-l-lg border-r border-gray-300"
-    dropdownClass="bg-white text-black rounded-lg shadow-lg"
-  />
-</div>
 
+      </section>
 
-
-        <textarea
-          placeholder="Your Message..."
-          rows={4}
-          name="message"
-          value={formData.message}
-          onChange={changeEventHandler}
-          required
-          className="w-full rounded-lg border border-gray-300 p-3 focus:border-indigo-700 focus:outline-none mb-6"
-        />
-        <CommonButton
-          title={loading ? "Sending..." : "Send Message"}
-          type="submit"
-          disabled={loading}
-          className={`bg-indigo-600 text-white w-full h-12 rounded-full shadow-[0_4px_16px_-4px_#3b71ca] transition ${
-            loading ? "opacity-50 cursor-not-allowed" : "hover:bg-indigo-700"
-          } focus:outline-none`}
-        />
-      </div>
-    </form>
-  </div>
-  
+    </main>
   );
 };
 

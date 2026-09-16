@@ -81,9 +81,9 @@ export default function Page() {
             logo: "https://www.techbeside.dev/logo.png",
             founder: {
               "@type": "Person",
-              name: "Saud Khan",
+              name: "Muhammad Adil",
               sameAs: [
-                "https://www.linkedin.com/in/saudkhan39",
+                "https://www.linkedin.com/in/muhammad-adil-1a44a830b/",
                 "https://github.com/saudkhanbpk/",
                 "https://gitlab.com/saudkhanbpk",
                 "https://www.behance.net/saudkhan39"
@@ -170,7 +170,7 @@ export default function Page() {
       <div className="max-w-[1450px] mx-auto px-4 md:mt-16 mt-9">
         {/* <ServicesSection /> */}
         <Technologies />
-<div className="relative h-[400vh]">
+<div className="relative h-[300vh]">
   <div className="sticky top-[80px] h-[calc(100vh-80px)]">
     <WorkProcess />
   </div>

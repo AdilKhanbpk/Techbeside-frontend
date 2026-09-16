@@ -157,9 +157,7 @@ const PricingForm: React.FC = () => {
                 { id: "ui-ux-designing", label: "UI/UX Designing" },
                 { id: "logo-designing", label: "Logo Designing" },
                 { id: "devops", label: "DevOps" },
-                { id: "graphic-designing", label: "Graphic Designing" },
                 { id: "project-management", label: "Project Management" },
-                { id: "seo-content-writing", label: "SEO & Content Writing" },
                 { id: "software-maintenance", label: "Software Maintenance" },
                 { id: "qa-testing", label: "QA Testing" },
               ].map((service) => (

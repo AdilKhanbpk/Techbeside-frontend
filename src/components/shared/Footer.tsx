@@ -423,10 +423,7 @@ const Footer = () => {
             © {new Date().getFullYear()} TechBeside. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-2 text-xs text-gray-500">
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
-            <span>Crafted with care</span>
-          </div>
+       
 
         </div>
       </div>

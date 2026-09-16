@@ -139,17 +139,6 @@ export default function ClientProviders({ children, poppinsClass }: ClientProvid
 
       {/* Layout Wrapper */}
       <Layout>{children}</Layout>
-
-      {/* WhatsApp Floating Button */}
-      <Link
-        href="https://wa.me/923178261618"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-20 right-3 p-3 animate-bounce hover:animate-none bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 z-50"
-        aria-label="Chat with us on WhatsApp"
-      >
-        <FaWhatsapp size={40} />
-      </Link>
     </>
   );
 }

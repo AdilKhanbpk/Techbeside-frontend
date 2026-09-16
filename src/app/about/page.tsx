@@ -54,7 +54,7 @@ const About = () => {
               foundingDate: "2019",
               description:
                 "TechBeside is a software company delivering web development, mobile app development, DevOps and graphic design services for startups and enterprises.",
-              sameAs: ["https://www.linkedin.com/in/saudkhan39"],
+              sameAs: ["https://www.linkedin.com/in/muhammad-adil-1a44a830b/"],
             },
           }),
         }}

@@ -13,7 +13,7 @@ interface Profile {
 }
 
 const profiles: Profile[] = [
-  { name: "Saud Khan", position: "CEO", imageUrl: "/assets/aboutpage/ceoimage2.webp", linkedInUrl: "https://www.linkedin.com/in/saudkhan39", width: 300, height: 300, category: "Leadership" },
+  { name: "Muhammad Adil", position: "CEO", imageUrl: "/assets/aboutpage/ceoimage2.webp", linkedInUrl: "https://www.linkedin.com/in/muhammad-adil-1a44a830b/", width: 300, height: 300, category: "Leadership" },
   { name: "Aamad Khan", position: "Admin Officer", imageUrl: "/assets/aboutpage/amad.jpg", linkedInUrl: "https://www.linkedin.com/company/TechBeside", width: 300, height: 300, category: "Leadership" },
   { name: "Aamir Shahzad", position: "SEO & Project manager", imageUrl: "/assets/aboutpage/amir1.jpg", linkedInUrl: "https://www.linkedin.com/company/TechBeside", width: 300, height: 300, category: "SEO" },
   { name: "Hamdan Khan", position: "Project Manager", imageUrl: "/assets/aboutpage/hamdan2.jpg", linkedInUrl: "https://www.linkedin.com/company/TechBeside", width: 300, height: 300, category: "Leadership" },

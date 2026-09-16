@@ -1,10 +1,9 @@
 import React from "react";
 
 const stats = [
-  { label: "Founded", value: "2019" },
-  { label: "Projects delivered", value: "120+" },
-  { label: "Industries served", value: "8" },
-  { label: "Team members", value: "25+" },
+  { label: "Founded", value: "Building since 2019" },
+  { label: "Delivery", value: "120+ projects shipped" },
+  { label: "Team", value: "25+ engineers & designers" },
 ];
 
 const AboutHeroSection: React.FC = () => {
@@ -13,58 +12,73 @@ const AboutHeroSection: React.FC = () => {
       aria-label="About TechBeside introduction"
       className="relative bg-[#0B0B14] text-white overflow-hidden"
     >
-      {/* Structural background — fine grid + soft indigo glow, no imagery */}
+      {/* Fine grid */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.35]"
         style={{
           backgroundImage:
-            "linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px)",
+            "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
           backgroundSize: "64px 64px",
         }}
       />
+      {/* Soft indigo glow behind the headline */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-40 right-[-10%] h-[520px] w-[520px] rounded-full blur-3xl"
+        className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 h-[560px] w-[900px] rounded-full blur-3xl"
         style={{
           background:
-            "radial-gradient(closest-side, rgba(99,102,241,0.45), transparent)",
-        }}
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute bottom-[-15%] left-[-5%] h-[420px] w-[420px] rounded-full blur-3xl"
-        style={{
-          background:
-            "radial-gradient(closest-side, rgba(99,102,241,0.25), transparent)",
+            "radial-gradient(closest-side, rgba(99,102,241,0.30), transparent)",
         }}
       />
 
-      <div className="relative max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-40 md:pb-24">
-        <p className="text-sm font-medium text-[#A5A6F6] mb-6">
-          About TechBeside
-        </p>
-
-        <h1 className="font-inter font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-[64px] leading-[1.08] tracking-tight max-w-3xl">
+      <div className="relative max-w-[80rem] mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-36 md:pb-20 text-center">
+        {/* Heading */}
+        <h1 className="font-inter font-semibold text-4xl sm:text-5xl md:text-6xl leading-[1.1] tracking-tight max-w-5xl mx-auto">
           Together, we build what your business needs next.
         </h1>
 
-        <p className="mt-6 max-w-xl text-base md:text-lg text-white/70 leading-7 md:leading-8">
+        {/* Subtitle */}
+        <p className="mt-6 max-w-3xl mx-auto text-center text-base md:text-xl text-white/60 leading-8 md:leading-9">
           We&apos;re a software company that pairs careful engineering with a
           genuine stake in your outcome — from the first prototype to the
           systems that run your business.
         </p>
 
-        <dl className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 border-t border-white/10 pt-8 max-w-3xl">
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <dt className="text-sm text-white/50">{stat.label}</dt>
-              <dd className="mt-1 text-2xl md:text-3xl font-semibold text-white">
-                {stat.value}
-              </dd>
-            </div>
-          ))}
-        </dl>
+        {/* CTA */}
+        <div className="mt-12 flex justify-center">
+
+          <a href="/contact"
+          className="inline-flex items-center gap-2 bg-[#6366F1] hover:bg-indigo-500 transition-colors text-white text-lg md:text-xl font-medium py-4 px-10 rounded-full shadow-[0_0_40px_-6px_#6366F1]"
+          >
+          Work with us
+          <svg
+            aria-hidden="true"
+            className="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      {/* Stat row */}
+      <dl className="mt-10 md:mt-18 grid grid-cols-1 md:grid-cols-3 gap-10 border-t border-white/10 pt-10 max-w-6xl mx-auto text-center">
+        {stats.map((stat) => (
+          <div key={stat.label}>
+            <dt className="text-base text-white/45">{stat.label}</dt>
+            <dd className="mt-2 text-xl md:text-2xl font-bold text-white">
+              {stat.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
       </div>
     </section>
   );

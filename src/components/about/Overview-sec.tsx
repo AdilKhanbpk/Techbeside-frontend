@@ -57,17 +57,17 @@ const OverviewSec: React.FC = () => {
 
             <div className="mt-8 pt-6 border-t border-gray-200 flex items-center justify-between gap-4">
               <div>
-                <p className="font-semibold text-gray-900">Saud Khan</p>
+                <p className="font-semibold text-gray-900">Muhammad Adil</p>
                 <p className="text-sm text-gray-500">
                   Chief Executive Officer, TechBeside
                 </p>
               </div>
               <a
-                href="https://www.linkedin.com/in/saudkhan39"
+                href="https://www.linkedin.com/in/muhammad-adil-1a44a830b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-[#6366F1] hover:text-[#4F46E5] whitespace-nowrap transition-colors"
-                aria-label="Visit Saud Khan's LinkedIn profile"
+                aria-label="Visit Muhammad Adil's LinkedIn profile"
               >
                 Connect on LinkedIn
               </a>
