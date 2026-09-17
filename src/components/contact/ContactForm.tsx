@@ -160,24 +160,6 @@ const ContactForm: React.FC = () => {
               {/* Contact details */}
               <div className="mt-10 space-y-7">
 
-                {/* Location */}
-                {/* <div className="flex items-start gap-4"> */}
-
-                  {/* <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.06]">
-                    <MapPin size={19} strokeWidth={1.5} className="text-indigo-300" />
-                  </div> */}
-
-                  {/* <div>
-                    <p className="mb-1 text-xs tracking-wider text-white/40 uppercase">
-                      Our location
-                    </p>
-
-                    <p className="text-sm font-light leading-6 text-white/80 sm:text-base">
-                       
-                    </p>
-                  </div> */}
-
-                {/* </div> */}
 
                 {/* WhatsApp */}
                 <div className="flex items-start gap-4">

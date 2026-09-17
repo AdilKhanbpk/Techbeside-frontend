@@ -9,7 +9,7 @@ const GetQoute = () => {
         Ready to Start Your <span className="text-green-600">Project</span>?
       </h2>
       <Link 
-        href="https://wa.me/923119265290" 
+        href="https://wa.me/923178261618" 
         target="_blank"
         rel="noopener noreferrer"
       >

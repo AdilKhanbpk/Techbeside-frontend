@@ -40,7 +40,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://wa.me/923119265290"
+            href="https://wa.me/923178261618"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 hover:text-white transition-colors"
