@@ -68,7 +68,7 @@ const PricingCards = () => {
 
         <div className="relative max-w-[80rem] mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-36 md:pb-20 text-center">
 
-          <h1 className="font-inter font-semibold text-4xl sm:text-5xl md:text-6xl leading-[1.1] tracking-tight max-w-5xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-[-0.04em] max-w-5xl mx-auto">
             Pricing built around your outcome, not a template.
           </h1>
 

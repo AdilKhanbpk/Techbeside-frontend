@@ -150,3 +150,12 @@
 .contact-phone-container .country-list .country.highlight {
   background: #e0e7ff !important;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

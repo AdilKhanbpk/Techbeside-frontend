@@ -15,10 +15,10 @@ const Slider: React.FC<{ slides: any[] }> = ({ slides }) => {
             src={slide.imageSrc}
             alt={slide.alt || "Slide Thumbnail"}
             fill
-           priority={index === 0}
-loading={index === 0 ? "eager" : "lazy"}
-sizes="(max-width: 768px) 450px, 100vw"
-quality={60}
+            priority={index === 0}
+            loading={index === 0 ? "eager" : "lazy"}
+            sizes="(max-width: 768px) 450px, 100vw"
+            quality={60}
             className="object-cover"
           />
         </div>
@@ -42,9 +42,9 @@ quality={60}
               alt={slide.alt || "Slide Thumbnail"}
               fill
               priority={index === 0}
-loading={index === 0 ? "eager" : "lazy"}
-sizes="(max-width: 768px) 450px, 100vw"
-quality={60}
+              loading={index === 0 ? "eager" : "lazy"}
+              sizes="(max-width: 768px) 450px, 100vw"
+              quality={60}
               className="object-cover"
             />
           )}
@@ -53,7 +53,7 @@ quality={60}
         <div className="absolute inset-0 bg-black/80" />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
-          <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-center max-w-4xl leading-[1.5]">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-[-0.04em] text-center max-w-5xl">
             {slide.heading.split(slide.highlight).map((part: string, i: number) =>
               i === 1
                 ? <span key={i} className={slide.highlightColor}> {slide.highlight} </span>

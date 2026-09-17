@@ -25,12 +25,9 @@ const services = [
   { name: "Mobile App Development", href: "/services/mobile-app-development-company", icon: <FaMobileAlt /> },
   { name: "UI & UX Designing", href: "/services/ui-ux-design-agency", icon: <FaPaintBrush /> },
   { name: "DevOps", href: "/services/devops", icon: <FaCogs /> },
-  { name: "Digital Marketing", href: "/services/digital-marketing-for-software-companies", icon: <FaBullhorn /> },
   { name: "SaaS MVP Development", href: "/services/saas-mvp-development", icon: <FaRocket /> },
   { name: "Project Management", href: "/services/project-management", icon: <FaTasks /> },
-  { name: "SEO & Content Writing", href: "/services/seo-services-for-small-business", icon: <FaSearch /> },
   { name: "Software Maintenance", href: "/services/software-maintenance-services", icon: <FaWrench /> },
-  { name: "Graphic Designing", href: "/services/affordable-graphic-design-services", icon: <FaPencilRuler /> },
   { name: "QA Testing", href: "/services/web-qa-tester", icon: <FaCheck /> },
 ];
 
@@ -67,9 +64,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? "bg-[#0A0E17]/95 backdrop-blur border-b border-white/10" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? "bg-[#0A0E17]/95 backdrop-blur border-b border-white/10" : "bg-transparent"
+        }`}
     >
       <div className="max-w-[93rem] mx-auto px-5 md:px-8 h-[72px] flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0">
@@ -104,16 +100,15 @@ const Header = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
                   transition={{ duration: 0.18 }}
-                  className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[560px]"
+                  className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[300px]"
                 >
-                  <div className="bg-[#0D1420] border border-white/10 rounded-lg shadow-2xl p-5 grid grid-cols-2 gap-1">
+                  <div className="bg-[#0D1420] border border-white/10 rounded-lg shadow-2xl p-5">
                     {services.map((s) => (
                       <Link
                         key={s.name}
                         href={s.href}
-                        className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors ${
-                          isActive(s.href) ? "bg-[#6366F1]/10 text-[#6366F1]" : "text-[#D5D9E2] hover:bg-white/5 hover:text-white"
-                        }`}
+                        className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors ${isActive(s.href) ? "bg-[#6366F1]/10 text-[#6366F1]" : "text-[#D5D9E2] hover:bg-white/5 hover:text-white"
+                          }`}
                       >
                         <span className="text-[#6366F1]">{s.icon}</span>
                         {s.name}
@@ -129,9 +124,8 @@ const Header = () => {
             <Link
               key={item.name}
               href={item.href}
-              className={`relative px-4 py-2 text-sm font-medium transition-colors ${
-                isActive(item.href) ? "text-white" : "text-[#D5D9E2] hover:text-white"
-              }`}
+              className={`relative px-4 py-2 text-sm font-medium transition-colors ${isActive(item.href) ? "text-white" : "text-[#D5D9E2] hover:text-white"
+                }`}
             >
               {item.name}
               {isActive(item.href) && (

@@ -13,7 +13,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({
   backgroundImage,
   title,
-  description,  
+  description,
   buttonText = "Get Started Today",
   buttonLink = "/contact",
 }) => {
@@ -34,7 +34,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Content Wrapper */}
       <div className="relative md:max-w-[1440px] w-full mx-auto pt-32 md:pb-0 pb-10 px-4 sm:px-8 md:px-12 h-full flex flex-col justify-center items-center">
         <div className="w-full text-center md:max-w-4xl flex flex-col justify-center gap-6 md:mx-auto">
-          <h1 style={{ lineHeight: 1.2 }} className="font-semibold text-3xl sm:text-4xl md:text-5xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-[-0.04em]">
             {title}
           </h1>
           <p className="text-base md:text-lg leading-relaxed text-gray-300 mb-6">

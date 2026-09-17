@@ -5,7 +5,7 @@ import backgroundImage from "../../../public/assets/homepage/blog.webp";
 const BlogHeroSection: React.FC = () => {
   return (
     <section className="relative flex justify-center items-center h-screen bg-black text-white">
-      
+
       <div className="absolute inset-0 opacity-25">
         <Image
           src={backgroundImage}
@@ -19,7 +19,7 @@ const BlogHeroSection: React.FC = () => {
 
       {/* Content */}
       <div className="relative text-center px-4 max-w-4xl">
-        <h1 className="font-bold text-3xl md:text-5xl lg:text-6xl">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-[-0.04em]">
           Our latest news and updates
         </h1>
       </div>

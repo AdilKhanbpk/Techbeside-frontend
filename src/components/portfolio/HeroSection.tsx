@@ -5,14 +5,14 @@ const HeroSection: React.FC = () => {
   return (
     <div className="relative bg-black text-white py-16 md:py-24">
       <div className="relative  flex flex-col md:flex-row items-center px-2 md:px-12">
-        
+
         {/* Left Side (Text) */}
         <div className="md:w-1/2 text-center md:text-left md:mt-0 mt-12">
-          <h1 className="text-4xl md:text-5xl  lg:text-6xl font-bold leading-tight">
-          Our <span className="text-indigo-600">Portfolio</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-[-0.04em]">
+            Our <span className="text-indigo-600">Portfolio</span>
           </h1>
           <p className=" mt-2 md:mt-6 text-lg md:text-xl text-gray-300">
-          TechBeside delivers impactful solutions customized to each client's needs. Our portfolio shows how we have helped businesses achieve their goals through innovative designs, seamless development, and strategic marketing. From Marketing to Development, we help you grow your business in every aspect.
+            TechBeside delivers impactful solutions customized to each client's needs. Our portfolio shows how we have helped businesses achieve their goals through innovative designs, seamless development, and strategic marketing. From Marketing to Development, we help you grow your business in every aspect.
           </p>
         </div>
 

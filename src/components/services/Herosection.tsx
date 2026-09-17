@@ -61,7 +61,7 @@ const Herosection: React.FC<HeroSectionProps> = ({ title, description, image }) 
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-stretch justify-between gap-8 md:gap-12">
         {/* Left Section */}
         <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left space-y-5">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-[-0.04em]">
             {title}
           </h1>
           <p className="text-lg lg:text-xl opacity-80 leading-relaxed">{description}</p>
