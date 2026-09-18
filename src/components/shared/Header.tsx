@@ -42,6 +42,7 @@ const navLinks = [
 
 const Header = () => {
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -87,7 +88,10 @@ const Header = () => {
             onMouseLeave={() => setServicesOpen(false)}
           >
             <button
-              className={`flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-[#D5D9E2] hover:text-white transition-colors`}
+              className={`flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-colors ${!scrolled && isHomePage
+                  ? "text-slate-700 hover:text-slate-950 font-semibold"
+                  : "text-[#D5D9E2] hover:text-white"
+                }`}
             >
               Services
               <ChevronDown size={14} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
@@ -107,7 +111,9 @@ const Header = () => {
                       <Link
                         key={s.name}
                         href={s.href}
-                        className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors ${isActive(s.href) ? "bg-[#6366F1]/10 text-[#6366F1]" : "text-[#D5D9E2] hover:bg-white/5 hover:text-white"
+                        className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors ${isActive(s.href)
+                            ? "bg-[#6366F1]/10 text-[#6366F1]"
+                            : "text-[#D5D9E2] hover:bg-white/5 hover:text-white"
                           }`}
                       >
                         <span className="text-[#6366F1]">{s.icon}</span>
@@ -120,37 +126,38 @@ const Header = () => {
             </AnimatePresence>
           </div>
 
-          {navLinks.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className={`relative px-4 py-2 text-sm font-medium transition-colors ${isActive(item.href) ? "text-white" : "text-[#D5D9E2] hover:text-white"
-                }`}
-            >
-              {item.name}
-              {isActive(item.href) && (
-                <span className="absolute left-4 right-4 -bottom-[1px] h-[2px] bg-[#6366F1] rounded-full" />
-              )}
-            </Link>
-          ))}
+          {navLinks.map((item) => {
+            const isLinkActive = isActive(item.href);
+            const linkTextColor = !scrolled && isHomePage
+              ? isLinkActive ? "text-[#5B50E6] font-semibold" : "text-slate-700 hover:text-slate-950 font-medium"
+              : isLinkActive ? "text-white font-semibold" : "text-[#D5D9E2] hover:text-white";
+
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`relative px-4 py-2 text-sm transition-colors ${linkTextColor}`}
+              >
+                {item.name}
+                {isLinkActive && (
+                  <span className="absolute left-4 right-4 -bottom-[1px] h-[2px] bg-[#6366F1] rounded-full" />
+                )}
+              </Link>
+            );
+          })}
         </nav>
 
-        {/* Right actions */}
-        {/* <div className="flex items-center gap-3">
-          <Link
-            href="/contact"
-            className="hidden lg:inline-flex bg-[#6366F1] hover:bg-[#4F46E5] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
-          >
-            Get a quote
-          </Link>
+        {/* Mobile menu icon button */}
+        <div className="flex items-center gap-3 lg:hidden">
           <button
             onClick={() => setDrawerOpen(true)}
-            className="lg:hidden text-white p-2 -mr-2"
+            className={`p-2 -mr-2 transition-colors ${!scrolled && isHomePage ? "text-slate-800 hover:text-slate-950" : "text-white"
+              }`}
             aria-label="Open menu"
           >
             <Menu size={24} />
           </button>
-        </div> */}
+        </div>
       </div>
 
       {/* Mobile drawer */}
