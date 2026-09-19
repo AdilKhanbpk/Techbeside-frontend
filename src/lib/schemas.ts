@@ -17,9 +17,8 @@ export const generateLocalBusinessSchema = () => ({
     addressCountry: "PK",
   },
   sameAs: [
-    "https://www.facebook.com/techbesideofficial/",
+    "https://www.facebook.com/techbesideOfficial/",
     "https://www.linkedin.com/company/techbeside",
-    "https://www.youtube.com/@techbeside",
     "https://www.instagram.com/techbesideofficial/",
     "https://twitter.com/techbesideofficial",
     "https://www.tiktok.com/@techbeside",
@@ -43,9 +42,8 @@ export const generateServiceSchema = (
     url: "https://www.techbeside.dev",
     logo: "https://www.techbeside.dev/logo.png",
     sameAs: [
-      "https://www.facebook.com/techbesideofficial/",
+      "https://www.facebook.com/techbesideOfficial/",
       "https://www.linkedin.com/company/techbeside",
-      "https://www.youtube.com/@techbeside",
       "https://www.instagram.com/techbesideofficial/",
       "https://twitter.com/techbesideofficial",
     ],
@@ -114,7 +112,7 @@ export const generateOrganizationSchema = () => ({
     name: "Muhammad Adil",
     sameAs: [
       "https://www.linkedin.com/in/muhammad-adil-1a44a830b/",
-      "https://github.com/saudkhanbpk/",
+      "https://github.com/adilkhanbpk/",
     ],
   },
   contactPoint: {

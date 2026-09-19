@@ -84,9 +84,7 @@ export default function Page() {
               name: "Muhammad Adil",
               sameAs: [
                 "https://www.linkedin.com/in/muhammad-adil-1a44a830b/",
-                "https://github.com/saudkhanbpk/",
-                "https://gitlab.com/saudkhanbpk",
-                "https://www.behance.net/saudkhan39"
+                "https://github.com/adilkhanbpk/",
               ]
             },
             contactPoint: {
