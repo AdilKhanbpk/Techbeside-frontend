@@ -92,7 +92,7 @@ const DigitalMarketing = () => {
     },
   ];
 
- 
+
 
 
   return (
@@ -125,41 +125,41 @@ const DigitalMarketing = () => {
         title="Digital Marketing Services"
         description={
           <>
-           At TechBeside, we combine creativity and strategy to offer tailored digital marketing services that meet your unique business goals. From effective branding to result-driven campaigns, our team’s expertise ensures your online success.
+            At TechBeside, we combine creativity and strategy to offer tailored digital marketing services that meet your unique business goals. From effective branding to result-driven campaigns, our team’s expertise ensures your online success.
           </>
         }
         image={digitalMarketingHeroImage}
       />
 
       <div className="max-w-[1450px] mx-auto  md:mt-16 mt-9 px-4">
-        <FeatureSection 
-        title="Social Media Marketing: Your Audience, Engaged" 
-        description={
-          <>
-         Our personalized approach to social media marketing helps brands foster authentic connections. With a deep understanding of platform algorithms, we craft compelling content and manage campaigns on Instagram, Facebook, and beyond to captivate and grow your audience.We promote your business digitally through engaging posts and targeted ads. We ensure your brand gets a spotlights online among your competitors. Our experts in marketing department analyze insights and adapt strategies which maximizes reach and hunt targeted audience which then turn into loyal customers.
-          </>
-        }
-           image={marketingImage1}
+        <FeatureSection
+          title="Social Media Marketing: Your Audience, Engaged"
+          description={
+            <>
+              Our personalized approach to social media marketing helps brands foster authentic connections. With a deep understanding of platform algorithms, we craft compelling content and manage campaigns on Instagram, Facebook, and beyond to captivate and grow your audience.We promote your business digitally through engaging posts and targeted ads. We ensure your brand gets a spotlights online among your competitors. Our experts in marketing department analyze insights and adapt strategies which maximizes reach and hunt targeted audience which then turn into loyal customers.
+            </>
+          }
+          image={marketingImage1}
 
-         />
+        />
 
         <FeaturesList title="Why Choose Us" features={features} />
-        <DiagonalFeatureSection sections={sections}  />
-        <FramedFeatureSection  
-        image={marketingImage1}
-        alt="Bespoke solutions show 60% increase in conversion and audience growth"
-        title="Proven Results Across Industries"
-        content={
-          <>
-           With experience across multiple sectors, we bring personalized expertise to every project. For a retail client, our strategic Meta Ads increase conversions by 60%. For startups, our targeted social media marketing campaigns have driven audience growth and brand loyalty.Our diverse portfolio shows our excellence and the values we bring to industries such as technology, healthcare, real estate and e-commerce. Our past excellency push us to deliver more and come with the solutions for your business that not only exceed expectations but to bring dignity.
-          </>
-        }
-      />
-        <ServicesRelatedProjects slug={categorySlug} />
+        <DiagonalFeatureSection sections={sections} />
+        <FramedFeatureSection
+          image={marketingImage1}
+          alt="Bespoke solutions show 60% increase in conversion and audience growth"
+          title="Proven Results Across Industries"
+          content={
+            <>
+              With experience across multiple sectors, we bring personalized expertise to every project. For a retail client, our strategic Meta Ads increase conversions by 60%. For startups, our targeted social media marketing campaigns have driven audience growth and brand loyalty.Our diverse portfolio shows our excellence and the values we bring to industries such as technology, healthcare, real estate and e-commerce. Our past excellency push us to deliver more and come with the solutions for your business that not only exceed expectations but to bring dignity.
+            </>
+          }
+        />
+        {/* <ServicesRelatedProjects slug={categorySlug} /> */}
         <FaqSection title="Frequently Asked Questions" faqs={digitalMarketingFaqs} />
         <OurTeam />
-      <RelatedServices services={services} />
-    
+        {/* <RelatedServices services={services} /> */}
+
         <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           {/* <ClientReviews /> */}
           <ClientTestimonialsSection />

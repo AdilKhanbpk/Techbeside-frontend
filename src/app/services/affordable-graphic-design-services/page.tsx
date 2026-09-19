@@ -92,7 +92,7 @@ const GraphicDesign = () => {
     },
   ];
 
- 
+
 
 
   return (
@@ -125,41 +125,41 @@ const GraphicDesign = () => {
         title="Affordable Graphic Design Services for Your Business"
         description={
           <>
-           <Link href="/" className="text-indigo-600">TechBeside</Link>,{" "}is your go-to agency for graphic design, offering creative solutions that bring your ideas to life. From logos to <Link href="/services/digital-marketing-for-software-companies" className="text-indigo-600">marketing materials</Link>,{" "}our designs are crafted to communicate your brand's message effectively and captivate your audience.
+            <Link href="/" className="text-indigo-600">TechBeside</Link>,{" "}is your go-to agency for graphic design, offering creative solutions that bring your ideas to life. From logos to <Link href="/services/digital-marketing-for-software-companies" className="text-indigo-600">marketing materials</Link>,{" "}our designs are crafted to communicate your brand's message effectively and captivate your audience.
           </>
         }
         image={heroimage}
       />
 
       <div className="max-w-[1450px] mx-auto  md:mt-16 mt-9 px-4">
-        <FeatureSection 
-        title="Partner with One of the Top Graphic Design Companies" 
-        description={
-          <>
-          As one of the leading graphic design companies, we provide professional services that enhance your brand’s identity. Our team of skilled designers specializes in creating high-impact visuals that drive engagement and leave a lasting impression.Our designs reflect your brand personality and attracts your targeted audience. We ensure quality, whether it is logo or other marketing materials. Being creative and innovative is our identity.
-          </>
-        }
-           image={FeatureImage}
+        <FeatureSection
+          title="Partner with One of the Top Graphic Design Companies"
+          description={
+            <>
+              As one of the leading graphic design companies, we provide professional services that enhance your brand’s identity. Our team of skilled designers specializes in creating high-impact visuals that drive engagement and leave a lasting impression.Our designs reflect your brand personality and attracts your targeted audience. We ensure quality, whether it is logo or other marketing materials. Being creative and innovative is our identity.
+            </>
+          }
+          image={FeatureImage}
 
-         />
+        />
 
         <FeaturesList title="Why Choose Us" features={features} />
-        <DiagonalFeatureSection sections={sections}  />
-        <FramedFeatureSection  
-        image={FramedFeatureSectionImage}
-        alt="Feature illustration"
-        title="Comprehensive Web Development Services with Ongoing Support"
-        content={
-          <>
-           Our commitment doesn’t end with the launch of your website or app. We provide comprehensive web development services, from concept to deployment, with continuous support to ensure your platform evolves with your business. Trust us to deliver innovation, functionality, and unmatched quality in every project.With regular updates and maintenance, your platform stays ahead of the competition.
-          </>
-        }
-      />
-        <ServicesRelatedProjects slug={categorySlug} />
+        <DiagonalFeatureSection sections={sections} />
+        <FramedFeatureSection
+          image={FramedFeatureSectionImage}
+          alt="Feature illustration"
+          title="Comprehensive Web Development Services with Ongoing Support"
+          content={
+            <>
+              Our commitment doesn’t end with the launch of your website or app. We provide comprehensive web development services, from concept to deployment, with continuous support to ensure your platform evolves with your business. Trust us to deliver innovation, functionality, and unmatched quality in every project.With regular updates and maintenance, your platform stays ahead of the competition.
+            </>
+          }
+        />
+        {/* {/* <ServicesRelatedProjects slug={categorySlug} /> */} */
         <FaqSection title="Frequently Asked Questions" faqs={graphicDesigningFaqs} />
         <OurTeam />
-      <RelatedServices services={services} />
-    
+        {/* <RelatedServices services={services} /> */}
+
         <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           {/* <ClientReviews /> */}
           <ClientTestimonialsSection />

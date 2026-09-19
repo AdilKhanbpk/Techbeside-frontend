@@ -93,7 +93,7 @@ const SeoContentWriting = () => {
     },
   ];
 
- 
+
 
 
   return (
@@ -126,7 +126,7 @@ const SeoContentWriting = () => {
         title="SEO Content Writing Services"
         description={
           <>
-          At TechBeside, we provide professional SEO content writing services designed to align with your business goals and improve search engine visibility. With a focus on quality and relevance, our content engages audiences and supports a comprehensive SEO content strategy that drives measurable results.
+            At TechBeside, we provide professional SEO content writing services designed to align with your business goals and improve search engine visibility. With a focus on quality and relevance, our content engages audiences and supports a comprehensive SEO content strategy that drives measurable results.
           </>
         }
         image={SEOImage}
@@ -134,33 +134,33 @@ const SeoContentWriting = () => {
 
       <div className="max-w-[1450px] mx-auto  md:mt-16 mt-9 px-4">
         <FeatureSection
-        title="Go-To Technical SEO Agency" 
-        description={
-          <>
-          As a trusted technical SEO agency, we ensure every piece of content is optimized for search engine success. From metadata to keyword placement, our team blends technical expertise with creative writing to help your site rank higher and convert better.We conduct thorough audits to identify and fix any SEO issues, ensuring your website performs at its best. By focusing on on-page optimization, site speed, and mobile responsiveness, we drive organic traffic and improve user engagement.
-          </>
-        }
-           image={seoimage1}
+          title="Go-To Technical SEO Agency"
+          description={
+            <>
+              As a trusted technical SEO agency, we ensure every piece of content is optimized for search engine success. From metadata to keyword placement, our team blends technical expertise with creative writing to help your site rank higher and convert better.We conduct thorough audits to identify and fix any SEO issues, ensuring your website performs at its best. By focusing on on-page optimization, site speed, and mobile responsiveness, we drive organic traffic and improve user engagement.
+            </>
+          }
+          image={seoimage1}
 
-         />
+        />
 
         <FeaturesList title="Why Choose Us" features={features} />
-        <DiagonalFeatureSection sections={sections}  />
-        <FramedFeatureSection  
-        image={seoimage5}
-        alt="With a 50% increase in organic traffic and other measurable results, expert SEO strategies are producing improved keyword rankings"
-        title="Results That Speak for Themselves"
-        content={
-          <>
-           In a recent project, we partnered with an e-commerce platform to revamp their SEO content strategy, resulting in a 50% increase in organic traffic. Additionally, as a technical SEO agency, we helped a tech company optimize its blog content, improving keyword rankings and audience engagement.These successes showcase our ability to drive measurable improvements and deliver lasting results. By aligning strategies with business objectives, we ensure that every optimization contributes to overall growth and visibility.
-          </>
-        }
-      />
-        <ServicesRelatedProjects slug={categorySlug} />
+        <DiagonalFeatureSection sections={sections} />
+        <FramedFeatureSection
+          image={seoimage5}
+          alt="With a 50% increase in organic traffic and other measurable results, expert SEO strategies are producing improved keyword rankings"
+          title="Results That Speak for Themselves"
+          content={
+            <>
+              In a recent project, we partnered with an e-commerce platform to revamp their SEO content strategy, resulting in a 50% increase in organic traffic. Additionally, as a technical SEO agency, we helped a tech company optimize its blog content, improving keyword rankings and audience engagement.These successes showcase our ability to drive measurable improvements and deliver lasting results. By aligning strategies with business objectives, we ensure that every optimization contributes to overall growth and visibility.
+            </>
+          }
+        />
+        {/* <ServicesRelatedProjects slug={categorySlug} /> */}
         <FaqSection title="Frequently Asked Questions" faqs={seoFaqs} />
         <OurTeam />
-      <RelatedServices services={services} />
-    
+        {/* <RelatedServices services={services} /> */}
+
         <div className=" bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
           {/* <ClientReviews /> */}
           <ClientTestimonialsSection />

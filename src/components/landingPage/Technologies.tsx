@@ -69,16 +69,7 @@ const categories: TechnologyCategory[] = [
 ];
 
 const technologies: Record<string, Technology[]> = {
-  "mobile-apps": [
-    { name: "React Native", icon: <FaReact className="w-7 h-7 text-blue-400" />, category: "mobile-apps" },
-    { name: "Expo", icon: <SiExpo className="w-7 h-7 text-gray-300" />, category: "mobile-apps" },
-    { name: "TypeScript", icon: <SiTypescript className="w-7 h-7 text-blue-400" />, category: "mobile-apps" },
-    { name: "Redux", icon: <SiRedux className="w-7 h-7 text-indigo-400" />, category: "mobile-apps" },
-    { name: "Context API", icon: <FaCode className="w-7 h-7 text-blue-400" />, category: "mobile-apps" },
-    { name: "Firebase", icon: <SiFirebase className="w-7 h-7 text-yellow-400" />, category: "mobile-apps" },
-    { name: "OAuth", icon: <FaKey className="w-7 h-7 text-indigo-400" />, category: "mobile-apps" },
-    { name: "Postman", icon: <SiPostman className="w-7 h-7 text-orange-400" />, category: "mobile-apps" },
-  ],
+
   "web-platforms": [
     { name: "React", icon: <FaReact className="w-7 h-7 text-blue-400" />, category: "web-platforms" },
     { name: "Next.js", icon: <SiNextdotjs className="w-7 h-7 text-gray-300" />, category: "web-platforms" },
@@ -92,6 +83,16 @@ const technologies: Record<string, Technology[]> = {
     { name: "jQuery", icon: <SiJquery className="w-7 h-7 text-blue-400" />, category: "web-platforms" },
     { name: "HTML5", icon: <FaHtml5 className="w-7 h-7 text-indigo-400" />, category: "web-platforms" },
     { name: "CSS3", icon: <FaCss3 className="w-7 h-7 text-blue-400" />, category: "web-platforms" },
+  ],
+    "mobile-apps": [
+    { name: "React Native", icon: <FaReact className="w-7 h-7 text-blue-400" />, category: "mobile-apps" },
+    { name: "Expo", icon: <SiExpo className="w-7 h-7 text-gray-300" />, category: "mobile-apps" },
+    { name: "TypeScript", icon: <SiTypescript className="w-7 h-7 text-blue-400" />, category: "mobile-apps" },
+    { name: "Redux", icon: <SiRedux className="w-7 h-7 text-indigo-400" />, category: "mobile-apps" },
+    { name: "Context API", icon: <FaCode className="w-7 h-7 text-blue-400" />, category: "mobile-apps" },
+    { name: "Firebase", icon: <SiFirebase className="w-7 h-7 text-yellow-400" />, category: "mobile-apps" },
+    { name: "OAuth", icon: <FaKey className="w-7 h-7 text-indigo-400" />, category: "mobile-apps" },
+    { name: "Postman", icon: <SiPostman className="w-7 h-7 text-orange-400" />, category: "mobile-apps" },
   ],
   backend: [
     { name: "Node.js", icon: <FaNode className="w-7 h-7 text-green-400" />, category: "backend" },
@@ -138,7 +139,7 @@ const technologies: Record<string, Technology[]> = {
 };
 
 export default function TechnologiesSection() {
-  const [activeCategory, setActiveCategory] = useState("mobile-apps");
+  const [activeCategory, setActiveCategory] = useState("web-platforms");
   const activeName = categories.find((c) => c.id === activeCategory)?.name ?? "";
 
   return (

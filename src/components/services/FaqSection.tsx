@@ -1,70 +1,4 @@
-// "use client";
-// import Link from "next/link";
-// import { useState } from "react";
 
-// interface FAQ {
-//   question: string;
-//   answer: string;
-// }
-
-// interface FaqSectionProps {
-//   title: string;
-//   faqs: FAQ[];
-// }
-
-// const FaqSection: React.FC<FaqSectionProps> = ({ title, faqs }) => {
-//   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-//   const toggleAccordion = (index: number) => {
-//     setOpenIndex(openIndex === index ? null : index);
-//   };
-
-//   return (
-//     <div className="bg-gray-100 md:p-8 md:mt-16 mt-9 px-3">
-//       <h2 className="text-4xl font-bold text-indigo-600 mb-6">{title}</h2>
-
-//       <div className="grid md:grid-cols-3 gap-6">
-//         {/* FAQ List */}
-//         <div className="md:col-span-2">
-//           {faqs.map((faq, index) => (
-//             <div key={index} className="border rounded-lg mb-4 bg-white shadow-sm">
-//               <button
-//                 className="w-full p-4 flex justify-between items-center text-left font-semibold text-lg"
-//                 onClick={() => toggleAccordion(index)}
-//               >
-//                 {faq.question}
-//                 <span className="text-xl font-bold text-indigo-600 ">
-//                   {openIndex === index ? "−" : "+"}
-//                 </span>
-//               </button>
-//               {openIndex === index && (
-//                 <p className="p-4 text-gray-700">{faq.answer}</p>
-//               )}
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Contact Box */}
-//         <div className="bg-indigo-800 text-white p-6 rounded-lg flex flex-col justify-center items-center text-center">
-//           <span className="text-2xl mb-4">💬</span>
-//           <h3 className="text-xl font-bold mb-2">Do you have more questions?</h3>
-//           <p className="text-sm mb-4">Hit the button & tell us. We will try to answer your query.</p>
-//           <a
-//             href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@techbeside.dev"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded-lg inline-block cursor-pointer relative z-10"
-//           >
-//             Shoot a Direct Mail
-//           </a>
-
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default FaqSection;
 "use client";
 
 import { useState } from "react";
@@ -88,10 +22,10 @@ const FaqSection: React.FC<FaqSectionProps> = ({ title, faqs }) => {
 
   return (
     <section className="bg-[#f8f9fc] py-16 md:py-24 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
         {/* Header */}
-        <div className="max-w-3xl mb-12 md:mb-16">
+        <div className="max-w-4xl mb-12 md:mb-16">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-10 bg-indigo-600"></span>
             <span className="text-sm font-semibold tracking-widest uppercase text-indigo-600">
@@ -99,7 +33,7 @@ const FaqSection: React.FC<FaqSectionProps> = ({ title, faqs }) => {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 leading-tight">
             {title}
           </h2>
 
@@ -121,9 +55,8 @@ const FaqSection: React.FC<FaqSectionProps> = ({ title, faqs }) => {
                 return (
                   <div
                     key={index}
-                    className={`border-b border-gray-200 last:border-b-0 transition-colors ${
-                      isOpen ? "bg-indigo-50/40" : "bg-white"
-                    }`}
+                    className={`border-b border-gray-200 last:border-b-0 transition-colors ${isOpen ? "bg-indigo-50/40" : "bg-white"
+                      }`}
                   >
                     <button
                       type="button"
@@ -133,28 +66,25 @@ const FaqSection: React.FC<FaqSectionProps> = ({ title, faqs }) => {
                     >
                       <div className="flex items-start gap-5">
                         <span
-                          className={`hidden sm:block text-sm font-semibold mt-1 ${
-                            isOpen ? "text-indigo-600" : "text-gray-400"
-                          }`}
+                          className={`hidden sm:block text-sm font-semibold mt-1 ${isOpen ? "text-indigo-600" : "text-gray-400"
+                            }`}
                         >
                           {String(index + 1).padStart(2, "0")}
                         </span>
 
                         <span
-                          className={`text-base md:text-lg font-semibold leading-relaxed transition-colors ${
-                            isOpen ? "text-indigo-700" : "text-gray-900"
-                          }`}
+                          className={`text-base md:text-lg font-semibold leading-relaxed transition-colors ${isOpen ? "text-indigo-700" : "text-gray-900"
+                            }`}
                         >
                           {faq.question}
                         </span>
                       </div>
 
                       <span
-                        className={`shrink-0 w-9 h-9 rounded-full border flex items-center justify-center text-xl transition-all ${
-                          isOpen
-                            ? "bg-indigo-600 border-indigo-600 text-white rotate-180"
-                            : "bg-white border-gray-300 text-gray-600"
-                        }`}
+                        className={`shrink-0 w-9 h-9 rounded-full border flex items-center justify-center text-xl transition-all ${isOpen
+                          ? "bg-indigo-600 border-indigo-600 text-white rotate-180"
+                          : "bg-white border-gray-300 text-gray-600"
+                          }`}
                       >
                         {isOpen ? "−" : "+"}
                       </span>
@@ -162,11 +92,10 @@ const FaqSection: React.FC<FaqSectionProps> = ({ title, faqs }) => {
 
                     {/* Answer */}
                     <div
-                      className={`grid transition-all duration-300 ease-in-out ${
-                        isOpen
-                          ? "grid-rows-[1fr] opacity-100"
-                          : "grid-rows-[0fr] opacity-0"
-                      }`}
+                      className={`grid transition-all duration-300 ease-in-out ${isOpen
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                        }`}
                     >
                       <div className="overflow-hidden">
                         <p className="px-6 md:px-8 pb-7 pl-6 sm:pl-[4.75rem] pr-12 text-gray-600 leading-7 text-sm md:text-base">
@@ -181,7 +110,7 @@ const FaqSection: React.FC<FaqSectionProps> = ({ title, faqs }) => {
           </div>
 
           {/* Contact Card */}
-          <div className="lg:sticky lg:top-8">
+          <div className="lg:sticky lg:top-8 pt-12">
             <div className="relative overflow-hidden rounded-2xl bg-indigo-950 p-7 md:p-8 text-white shadow-[0_15px_40px_rgba(30,27,75,0.15)]">
 
               {/* Decorative element */}
@@ -223,7 +152,7 @@ const FaqSection: React.FC<FaqSectionProps> = ({ title, faqs }) => {
                 </p>
 
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@techbeside.dev"
+                  href="/contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group w-full inline-flex items-center justify-between bg-white text-indigo-950 font-semibold px-5 py-4 rounded-xl hover:bg-indigo-50 transition-all duration-200"

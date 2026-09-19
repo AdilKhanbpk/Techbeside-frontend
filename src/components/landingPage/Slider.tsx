@@ -70,7 +70,7 @@ const Slider: React.FC<{ slides: SlideData[] }> = ({ slides }) => {
       </div>
 
       {/* Soft Overlay */}
-      <div className="absolute inset-0 z-10 bg-white/20 backdrop-blur-[1px]" />
+      <div className="absolute inset-0 z-10 bg-black/20 backdrop-blur-[1px]" />
 
       {/* Content Carousel - Only Text Content Slides */}
       <div className="relative z-20 w-full">

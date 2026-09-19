@@ -305,6 +305,9 @@
 // export default Footer;
 
 "use client";
+import Image from "next/image";
+import Link from "next/link";
+import TechBesideLogo from "../../../public/logo.png";
 
 const Footer = () => {
   const socials = [
@@ -368,16 +371,16 @@ const Footer = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
 
-            <div className="flex items-center justify-center md:justify-start gap-3">
-              <div className="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-600/20">
-                <span className="text-white font-bold text-lg">
-                  T
-                </span>
-              </div>
-
-              <span className="text-xl font-bold tracking-tight">
-                TechBeside
-              </span>
+            <div className="flex items-center justify-center md:justify-start">
+              <Link href="/" className="inline-block">
+                <Image
+                  src={TechBesideLogo}
+                  alt="TechBeside logo"
+                  width={160}
+                  height={36}
+                  className="w-36 sm:w-40 h-auto"
+                />
+              </Link>
             </div>
 
             <p className="text-sm text-gray-400 mt-3 max-w-sm">
@@ -423,7 +426,7 @@ const Footer = () => {
             © {new Date().getFullYear()} TechBeside. All rights reserved.
           </p>
 
-       
+
 
         </div>
       </div>

@@ -10,7 +10,7 @@ const Buttons = () => {
 
   // Open the strategy link in the same tab
   const handleStrategyClick = () => {
-    window.location.href = "https://calendly.com/contact-TechBeside/30min";
+    window.location.href = "https://calendly.com/techbeside/30min";
   };
 
   // Open the WhatsApp link in the same tab

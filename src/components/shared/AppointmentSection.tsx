@@ -37,7 +37,7 @@ const AppointmentSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleButtonClick = () => {
-    window.open("https://calendly.com/contact-techbeside/30min", "_blank");
+    window.open("https://calendly.com/techbeside/30min", "_blank");
   };
 
   useEffect(() => {
@@ -73,7 +73,7 @@ const AppointmentSection: React.FC = () => {
     script.onload = () => {
       if (window.Calendly) {
         window.Calendly.initBadgeWidget({
-          url: "https://calendly.com/contact-techbeside/30min",
+          url: "https://calendly.com/techbeside/30min",
           text: "Schedule Free Strategy Call",
           color: "#6366F1",
           textColor: "#ffffff",

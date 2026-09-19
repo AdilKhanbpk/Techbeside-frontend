@@ -149,8 +149,8 @@ export default function Page() {
         }}
       />
 
-{/* <!-- Google tag (gtag.js) --> */}
-<Script
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-940020951"
         strategy="afterInteractive"
       />
@@ -161,7 +161,7 @@ export default function Page() {
           gtag('js', new Date());
           gtag('config', 'AW-940020951');
         `}
-</Script>
+      </Script>
 
       <Slider />
       <div className="max-w-[1450px] mx-auto  px-4 ">
@@ -170,11 +170,8 @@ export default function Page() {
       <div className="max-w-[1450px] mx-auto px-4 md:mt-16 mt-9">
         {/* <ServicesSection /> */}
         <Technologies />
-<div className="relative h-[300vh]">
-  <div className="sticky top-[80px] h-[calc(100vh-80px)]">
-    <WorkProcess />
-  </div>
-</div>        <OurValues />
+        <WorkProcess />
+        <OurValues />
         <div className="md:mt-16 mt-9">
           <ProjectsCount />
         </div>

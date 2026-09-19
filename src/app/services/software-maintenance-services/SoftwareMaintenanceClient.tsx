@@ -218,7 +218,7 @@ const SoftwareMaintenanceClient = () => {
                             className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
                         >
                             <a
-                                href="https://calendly.com/contact-TechBeside/30min"
+                                href="https://calendly.com/techbeside/30min"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex h-12 items-center gap-3 rounded-full bg-indigo-600 px-7 text-sm font-medium text-white shadow-[0_8px_24px_-8px_rgba(79,70,229,0.7)] transition-all duration-300 hover:bg-indigo-700 hover:shadow-[0_12px_28px_-8px_rgba(79,70,229,0.8)]"
@@ -426,7 +426,7 @@ const SoftwareMaintenanceClient = () => {
                                 </p>
                             </div>
                             <a
-                                href="https://calendly.com/contact-TechBeside/30min"
+                                href="https://calendly.com/techbeside/30min"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex shrink-0 h-12 items-center gap-3 rounded-full bg-white px-7 text-sm font-medium text-indigo-950 shadow-lg transition-transform hover:scale-105"
@@ -441,10 +441,10 @@ const SoftwareMaintenanceClient = () => {
 
             {/* ═══════════════════ SHARED SECTIONS ═══════════════════ */}
             <div className="max-w-[1450px] mx-auto px-4">
-                <ServicesRelatedProjects slug={categorySlug} />
+                {/* <ServicesRelatedProjects slug={categorySlug} /> */}
                 <FaqSection title="Frequently Asked Questions" faqs={maintenanceFaqs} />
                 <OurTeam />
-                <RelatedServices services={services} />
+                {/* <RelatedServices services={services} /> */}
 
                 <div className="bg-indigo-600 md:mt-16 mt-9 md:mb-16 mb-9">
                     <ClientTestimonialsSection />

@@ -19,7 +19,7 @@ const RelatedServices: React.FC<RelatedServicesProps> = ({ services }) => {
     <div className="md:mt-20 mt-12 ">
       {/* Section Title */}
       <h2 className="text-3xl md:text-5xl font-bold text-center text-[#6366F1] mb-12">
-       Related Services
+        Related Services
       </h2>
 
       {/* Services Grid */}
