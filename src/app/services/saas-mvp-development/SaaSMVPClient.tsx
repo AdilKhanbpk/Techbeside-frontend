@@ -637,7 +637,7 @@ const SaaSMVPClient = () => {
             </section>
 
             {/* ═══════════════════ INDUSTRY SOLUTIONS PORTFOLIO ═══════════════════ */}
-            <section className="relative overflow-hidden bg-[#080b20] py-20 md:py-28">
+            {/* <section className="relative overflow-hidden bg-[#080b20] py-20 md:py-28">
                 <div className="relative z-10 mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
                     <motion.div
                         className="mb-16 max-w-2xl"
@@ -689,7 +689,7 @@ const SaaSMVPClient = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ═══════════════════ SHARED SECTIONS ═══════════════════ */}
             <div className="max-w-[1450px] mx-auto px-4">
