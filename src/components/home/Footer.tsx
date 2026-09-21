@@ -57,9 +57,19 @@ const Footer = () => {
 
         <AppointmentSection />
 
-        <p className="text-sm text-[#8993A8] border-t border-white/10 pt-6 w-full text-center">
-          © 2025 <span className="text-[#6366F1] font-semibold">TechBeside</span>. All rights reserved.
-        </p>
+        <div className="border-t border-white/10 pt-6 w-full flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#8993A8]">
+          <p className="order-2 sm:order-1">
+            © {new Date().getFullYear()} <span className="text-[#6366F1] font-semibold">TechBeside</span>. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6 order-1 sm:order-2">
+            <Link href="/terms-conditions" className="hover:text-white transition-colors">
+              Terms & Conditions
+            </Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

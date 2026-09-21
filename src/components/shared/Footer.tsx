@@ -420,14 +420,25 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/[0.08] py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
-
+        <div className="border-t border-white/[0.08] py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-500">
             © {new Date().getFullYear()} TechBeside. All rights reserved.
           </p>
 
-
-
+          <div className="flex items-center gap-6">
+            <Link
+              href="/terms-conditions"
+              className="text-xs text-gray-400 hover:text-white transition-colors"
+            >
+              Terms & Conditions
+            </Link>
+            <Link
+              href="/privacy-policy"
+              className="text-xs text-gray-400 hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
