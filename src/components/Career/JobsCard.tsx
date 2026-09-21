@@ -1,12 +1,11 @@
 "use client";
 import JobDetail from "./JobDetail";
 import { useSelector } from "react-redux";
-import { MapPin, Clock } from "lucide-react";
+import { MapPin, Clock, Briefcase, ArrowRight } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 import { RootState } from "@/redux/store";
 import { useState } from "react";
 import useGetAllJobs from "@/hooks/useGetAllJobs";
-
 
 interface JobCardProps {
   category: string;
@@ -16,7 +15,6 @@ interface JobCardProps {
   company: string;
   timeAgo: Date;
 }
-
 
 const JobCard = ({
   category = "Development",
@@ -33,48 +31,52 @@ const JobCard = ({
   });
 
   return (
-    <div className="bg-[#F4F6FC] text-black rounded-[24px] p-6 md:w-[360px] w-[300px] h-[280px] hover:shadow-lg transition-shadow">
-      <div className="flex items-center mb-3">
-        <div className="flex items-center">
-          <div className="w-2 h-2 rounded-full bg-indigo-600 mr-2"></div>
-          <span className="text-indigo-600 text-sm font-medium">
-            {category}
-          </span>
-        </div>
+    <div className="group relative bg-white rounded-2xl p-6 hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-300 border border-gray-100 hover:border-indigo-200 cursor-pointer">
+      {/* Category Badge */}
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-sm font-medium mb-4">
+        <div className="w-2 h-2 rounded-full bg-indigo-600"></div>
+        {category}
       </div>
 
-      <h2 className="text-xl font-bold text-gray-900 mb-4">{title}</h2>
+      {/* Job Title */}
+      <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors line-clamp-2">
+        {title}
+      </h3>
 
-      <div className="flex items-center justify-between space-x-4 mb-4 text-gray-600">
-        <div className="flex items-center">
-          <MapPin className="w-4 h-4 mr-1" />
+      {/* Job Details */}
+      <div className="flex flex-wrap items-center gap-4 mb-6 text-gray-600">
+        <div className="flex items-center gap-1.5">
+          <MapPin className="w-4 h-4" />
           <span className="text-sm">{location}</span>
         </div>
-        <div className="flex items-center">
-          <div className="w-1.5 h-1.5 rounded-full bg-gray-400 mr-1"></div>
+        <div className="flex items-center gap-1.5">
+          <Briefcase className="w-4 h-4" />
           <span className="text-sm">{type}</span>
         </div>
       </div>
 
-      <div className="flex items-center justify-between mt-20">
-        <div className="flex items-center">
-          <div className="w-8 h-8 bg-[#6366F1] rounded-full flex items-center justify-center mr-2">
-            <span className="text-white text-sm">T</span>
+      {/* Footer */}
+      <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
+            <span className="text-indigo-600 text-sm font-semibold">T</span>
           </div>
-          <span className="font-medium">{company}</span>
+          <div>
+            <p className="text-sm font-medium text-gray-900">{company}</p>
+            <div className="flex items-center gap-1 text-xs text-gray-500">
+              <Clock className="w-3 h-3" />
+              <span>{timeDistance}</span>
+            </div>
+          </div>
         </div>
-        <div className="flex items-center text-gray-500 text-sm">
-          <Clock className="w-4 h-4 mr-1" />
-          <span>{timeDistance}</span>
-        </div>
+        <ArrowRight className="w-5 h-5 text-indigo-600 group-hover:translate-x-1 transition-transform" />
       </div>
     </div>
   );
 };
 
-
 const JobsCard = () => {
-useGetAllJobs()
+  useGetAllJobs();
   const { allJobs } = useSelector((state: RootState) => state.job);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -92,21 +94,23 @@ useGetAllJobs()
 
   return (
     <>
-      <div className=" mt-9 md:mt-16">
-        <div className=" ">
-          <p className="font-inter font-semibold md:text-5xl text-3xl text-indigo-600">Open positions</p>
-          <p className="font-inter font-normal text-[22px] text-[#838696] mt-2">
-            Come join the team!
+      <section className="py-16 md:py-24">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <p className="text-sm font-medium text-indigo-600 mb-4">Join Our Team</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+            Open Positions
+          </h2>
+          <p className="text-xl text-gray-600">
+            Find your next opportunity and grow with us
           </p>
         </div>
-        <div className="flex flex-wrap py-8  md:gap-5  justify-center  gap-4  ">
+
+        {/* Jobs Grid */}
         {allJobs?.length > 0 ? (
-            allJobs.map((job) => (
-              <div
-                key={job._id}
-                onClick={() => openModal(job)}
-                className="cursor-pointer"
-              >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {allJobs.map((job) => (
+              <div key={job._id} onClick={() => openModal(job)}>
                 <JobCard
                   category={job.category}
                   title={job.title}
@@ -116,15 +120,22 @@ useGetAllJobs()
                   timeAgo={job.createdAt}
                 />
               </div>
-            ))
-          ) : (
-            <p className="text-gray-600 text-lg text-center">
-              Sorry, no job openings are available right now. Please check back
-              later!
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-16">
+            <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Briefcase className="w-8 h-8 text-gray-400" />
+            </div>
+            <p className="text-gray-600 text-lg">
+              No job openings available right now.
             </p>
-          )}
-        </div>
-      </div>
+            <p className="text-gray-500 text-sm mt-2">
+              Check back soon for new opportunities!
+            </p>
+          </div>
+        )}
+      </section>
 
       {selectedJob && (
         <JobDetail

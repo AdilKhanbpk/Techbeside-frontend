@@ -24,13 +24,13 @@ const Career = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.TechBeside.co/",
+                item: "https://www.techbeside.dev/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Career",
-                item: "https://www.TechBeside.co/career",
+                item: "https://www.techbeside.dev/career",
               },
             ],
           }),
@@ -40,7 +40,7 @@ const Career = () => {
     <div className='max-w-[1450px] mx-auto px-4 md:mt-16'>
       <CoreValues/>
       <JobsCard />
-      <DiversitySection/>
+      {/* <DiversitySection/> */}
       </div>
     </>
   )

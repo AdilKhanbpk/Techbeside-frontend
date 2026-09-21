@@ -1,105 +1,96 @@
-import Image, { StaticImageData } from 'next/image';
-import sunGlasses from '../../../public/assets/careerpage/face-sunglasses 1.png';
-import grow from '../../../public/assets/careerpage/grow.png'
-import fun from '../../../public/assets/careerpage/fun.png'
-import impact from '../../../public/assets/careerpage/impact.png'
-import tranperent from '../../../public/assets/careerpage/tranperent.png'
-import push from '../../../public/assets/careerpage/push.png'
-import pride from '../../../public/assets/careerpage/pride.png'
-import unite from '../../../public/assets/careerpage/unite.png'
-
+import { Sparkles, TrendingUp, Zap, Target, Users, Eye, Award, Smile } from 'lucide-react';
 
 interface ValueCardType {
-  icon: StaticImageData | string; 
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
 
 const ValueCard: React.FC<ValueCardType> = ({ icon, title, description }) => (
-  <div className="bg-[#FFFFFF] sm:w-[240px] w-full h-auto -top-2 p-3 border rounded-[24px] shadow-md">
-    <div className="flex justify-between">
-      <div className="flex items-center mb-4">
-        <h3>
-          <span className="font-normal text-[14] text-black font-inter">{title.split(" ")[0]}</span> <br />
-          <span className="font-bold text-[24px] text-black font-inter">
-            {title.split(" ")[1]} {title.split(" ")[2]}
-          </span>
-        </h3>
+  <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-indigo-500/50 transition-all duration-300">
+    <div className="flex items-start gap-4">
+      <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500/30 group-hover:text-indigo-300 transition-all">
+        {icon}
       </div>
-      <div className="font-inter font-normal text-base leading-7 text-[#838696]">
-        
-          <Image src={icon} alt="icon" className="w-12 h-10 text-indigo-900 object-contain" />
-        
+      <div className="flex-1">
+        <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+        <p className="text-gray-400 leading-relaxed">{description}</p>
       </div>
     </div>
-    <p className="text-gray-600  mt-3">{description}</p>
   </div>
 );
 
 const CoreValues: React.FC = () => {
+  const values = [
+    {
+      icon: <Sparkles className="w-6 h-6" />,
+      title: "Be You",
+      description: "Celebrating individuality while nurturing an environment in which everyone is heard, valued and respected."
+    },
+    {
+      icon: <TrendingUp className="w-6 h-6" />,
+      title: "Strive to Grow",
+      description: "Become shaped through continuous evolution and exploration of ideas in ways to open the door to personal and professional development."
+    },
+    {
+      icon: <Zap className="w-6 h-6" />,
+      title: "Push the Boundaries",
+      description: "Do not believe in mediocrity but rather value the amazing ideas by which new solutions can be created."
+    },
+    {
+      icon: <Target className="w-6 h-6" />,
+      title: "Strive to Impact",
+      description: "In your unwavering conviction to make a difference, create solutions that would be most relevant to clients and the communities in which we engage."
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: "Unite As One",
+      description: "We come together, combining all that we have to reach a common target and build lasting relationships."
+    },
+    {
+      icon: <Eye className="w-6 h-6" />,
+      title: "Be Transparent",
+      description: "Open communication, clear expectations to empower trust, and honesty in everything we say and do."
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      title: "Take Pride",
+      description: "With every project we execute, put your heart into it and take pride in the work we accomplish."
+    },
+    {
+      icon: <Smile className="w-6 h-6" />,
+      title: "Have Fun",
+      description: "Because work is more than just about doing tasks; it is about work, passion, creativity, and sharing an amazing journey with the team."
+    }
+  ];
+
   return (
-    <div className=" md:py-16 mt-9 lg:mt-24 md:mt-44  ">
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 sm:space-x-3 ">
-        <div className="mb-6">
-          <h2 className="text-3xl md:text-5xl font-bold mb-2 text-indigo-600">Our core values</h2>
-          <p className=" max-w-2xl">
-          Throughout everything we do at TechBeside, our core values guide us. Inspire our team, shape our culture, and ensure that our clients receive exceptional results.
+    <section className="py-16 md:py-24 bg-[#0B0B14] -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+      <div className="max-w-[1450px] mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <p className="text-sm font-medium text-indigo-400 mb-4">What Drives Us</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            Our Core Values
+          </h2>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            Throughout everything we do at TechBeside, our core values guide us. They inspire our team, shape our culture, and ensure exceptional results.
           </p>
         </div>
 
-        <div className="flex flex-wrap sm:justify-end justify-center gap-10">
-          <ValueCard
-            icon={sunGlasses}
-            title="Be You"
-            description="Celebrating individuality while nurturing an environment in which everyone is heard, valued and respected."
-          />
-          <ValueCard
-            icon={grow}
-            title="Strive to Grow"
-            description="Become shaped through continuous evolution and exploration of ideas in ways to open the door to personal and professional development."
-          />
+        {/* Values Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {values.map((value, index) => (
+            <ValueCard
+              key={index}
+              icon={value.icon}
+              title={value.title}
+              description={value.description}
+            />
+          ))}
         </div>
       </div>
-
-      <div className="mt-10">
-        <div className="flex flex-wrap sm:justify-end justify-center gap-10 w-full">
-          <ValueCard
-            icon={push}
-            title="Push the Boundaries"
-            description="Do not believe in mediocrity but rather value the amazing ideas by which new solutions can be created."
-          />
-          <ValueCard
-            icon={impact}
-            title="Strive to Impact"
-            description="In your unwavering conviction to make a difference, create solutions that would be most relevant to clients and the communities in which we engage."
-          />
-          <ValueCard
-            icon={unite}
-            title="Unite As One"
-            description="We come together, combining all that we have to reach a common target and build lasting relationships"
-          />
-        </div>
-      </div>
-      <div className="mt-10">
-        <div className="flex flex-wrap sm:justify-end lg:pr-72  justify-center  gap-10 w-full">
-          <ValueCard
-            icon={tranperent}
-            title="Be Transparent"
-            description="Open communication, clear expectations to empower trust, and honesty in everything we say and do."
-          />
-          <ValueCard
-            icon={pride}
-            title="Take Pride"
-            description="With every project we execute, put your heart into it and take pride in the work we accomplish."
-          />
-          <ValueCard
-            icon={fun}
-            title="Have Fun"
-            description="Because work is more than just about doing tasks; it is about work, passion, creativity, and sharing an amazing journey with the team."
-          />
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

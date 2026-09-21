@@ -1,9 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 import CommonButton from "../common/Button";
 import { FC } from "react";
-import CareerSectionImage from "../../../public/assets/careerpage/Rectangle 402.webp";
 import axios from "axios";
 import { backend_url } from "@/newLayout";
 import { toast } from "react-toastify";
@@ -70,6 +68,7 @@ const CareerHeroSection: FC = () => {
           professionalUrl: "",
           resume: null,
         });
+        setDialogOpen(false);
       } else {
         toast.error(res.data.message);
       }
@@ -90,40 +89,72 @@ const CareerHeroSection: FC = () => {
   const handleDialogClose = () => setDialogOpen(false);
 
   return (
-    <div className={`${isDialogOpen ? "blurred" : ""}`}>
-      <div className="relative bg-black text-white h-[644px]">
-        <div className="max-w-6xl mx-auto px-4 py-12 md:py-20">
-          <div className="mb-8 md:mb-12 md:p-10 md:mt-0 mt-14">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-[-0.04em] mb-6">
-              Careers - <span className="text-indigo-600">Join Our Team</span>
-            </h1>
-            <p className="text-lg md:text-xl max-w-2xl mb-8">
-              Are you at your best in an atmosphere of trust, knowhow, freedom
-              and support, alongside talented and creative people just like you?
-              That's our working style.
-            </p>
-            <CommonButton
-              className="bg-[#6366F1] hover:bg-indigo-700 shadow-[0_4px_16px_-4px_#3b71ca] text-white px-6 py-3 rounded-[12px] transition-colors w-[228px] h-[48px]"
-              title="Send your resume"
-              handleClick={handleDialogOpen}
-            />
-          </div>
-          <div className="relative">
-            <div className="absolute lg:left-[308px] lg:-top-20 md:left-0 md:top-0 top-5 overflow-hidden w-full md:w-auto">
-              <Image
-                src={CareerSectionImage}
-                width={1200}
-                height={1200}
-                priority
-                quality={75}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
-                alt="Team collaboration"
-                className="w-full h-full rounded-[24px] md:h-96 object-cover"
-              />
-            </div>
+    <>
+      <section
+        aria-label="Career introduction"
+        className="relative bg-[#0B0B14] text-white overflow-hidden"
+      >
+        {/* Fine grid background */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 opacity-[0.35]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
+            backgroundSize: "64px 64px",
+          }}
+        />
+        
+        {/* Soft indigo glow */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 h-[560px] w-[900px] rounded-full blur-3xl"
+          style={{
+            background:
+              "radial-gradient(closest-side, rgba(99,102,241,0.30), transparent)",
+          }}
+        />
+
+        <div className="relative max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-40 md:pb-24">
+          {/* Tag */}
+          <p className="text-center text-sm font-medium text-[#A5A6F6] mb-6">
+            Careers at TechBeside
+          </p>
+
+          {/* Heading */}
+          <h1 className="text-center font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight max-w-5xl mx-auto">
+            Build the future with us, one <span className="text-indigo-500">line of code</span> at a time
+          </h1>
+
+          {/* Subtitle */}
+          <p className="mt-6 max-w-3xl mx-auto text-center text-base md:text-xl text-white/60 leading-8 md:leading-9">
+            Join a team where trust, knowhow, and creative freedom fuel extraordinary work. We're looking for talented people who want to make an impact.
+          </p>
+
+          {/* CTA */}
+          <div className="mt-12 flex justify-center">
+            <button
+              onClick={handleDialogOpen}
+              className="inline-flex items-center gap-2 bg-[#6366F1] hover:bg-indigo-500 transition-colors text-white text-lg md:text-xl font-medium py-4 px-10 rounded-full shadow-[0_0_40px_-6px_#6366F1]"
+            >
+              Submit Your Resume
+              <svg
+                aria-hidden="true"
+                className="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Dialog */}
       {isDialogOpen && (
@@ -132,20 +163,20 @@ const CareerHeroSection: FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="absolute inset-0 flex items-center justify-center p-4 z-50 lg:mt-32 md:mt-[360px] mt-[740px]"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50"
             onClick={handleDialogClose}
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
-              className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden relative"
+              className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden relative max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
               <button
                 onClick={handleDialogClose}
-                className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+                className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 transition-colors duration-200 z-10"
               >
                 <X className="w-5 h-5 text-gray-500" />
               </button>
@@ -168,7 +199,7 @@ const CareerHeroSection: FC = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none text-gray-900"
                         placeholder="John Doe"
                         required
                       />
@@ -180,7 +211,7 @@ const CareerHeroSection: FC = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none text-gray-900"
                         placeholder="john@example.com"
                         required
                       />
@@ -196,7 +227,7 @@ const CareerHeroSection: FC = () => {
                         name="phoneNumber"
                         value={formData.phoneNumber}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none text-gray-900"
                         placeholder="+1 (555) 000-0000"
                         required
                       />
@@ -208,7 +239,7 @@ const CareerHeroSection: FC = () => {
                         name="location"
                         value={formData.location}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none text-gray-900"
                         placeholder="City, Country"
                         required
                       />
@@ -224,7 +255,7 @@ const CareerHeroSection: FC = () => {
                         name="jobField"
                         value={formData.jobField}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none text-gray-900"
                         placeholder="e.g., Frontend Development"
                         required
                       />
@@ -236,7 +267,7 @@ const CareerHeroSection: FC = () => {
                         name="professionalUrl"
                         value={formData.professionalUrl}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all duration-200 outline-none text-gray-900"
                         placeholder="https://linkedin.com/in/..."
                       />
                     </div>
@@ -260,13 +291,11 @@ const CareerHeroSection: FC = () => {
                               required
                             />
                           </label>
-
-                          {formData.resume ? (
-                            <p className="mt-2 text-sm text-gray-600">{formData.resume.name}</p>
-                          ) : (
-                            <p className="pl-1">or drag and drop</p>
-                          )}
+                          <p className="pl-1">or drag and drop</p>
                         </div>
+                        {formData.resume && (
+                          <p className="mt-2 text-sm text-gray-600">{formData.resume.name}</p>
+                        )}
                         <p className="text-xs text-gray-500">PDF, DOC up to 10MB</p>
                       </div>
                     </div>
@@ -309,7 +338,7 @@ const CareerHeroSection: FC = () => {
           </motion.div>
         </AnimatePresence>
       )}
-    </div>
+    </>
   );
 };
 
